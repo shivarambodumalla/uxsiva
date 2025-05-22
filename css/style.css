@@ -1,0 +1,69 @@
+/* Regular */
+@font-face {
+    font-family: 'PP Formula';
+    src: url('../fonts/formula/PP-Formula-Regular.woff2') format('woff2'),
+         url('../fonts/formula/PP-Formula-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Semi Extended Bold */
+  @font-face {
+    font-family: 'PP Formula';
+    src: url('../fonts/formula/PP-Formula-SemiExtendedBold.woff2') format('woff2'),
+         url('../fonts/formula/PP-Formula-SemiExtendedBold.woff') format('woff');
+    font-weight: 600; /* or 700 if you want to treat it as bold */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Extra Bold */
+  @font-face {
+    font-family: 'PP Formula';
+    src: url('../fonts/formula/PP-Formula-ExtraBold.woff2') format('woff2'),
+         url('../fonts/formula/PP-Formula-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  /* Light Theme Overrides */
+  [data-bs-theme="light"] {
+    --btn-bg: #E9DADA;
+    --btn-color: #5C3333;
+    --btn-border: #C8AAAA;
+    --bs-body-color: #2B2B2B;
+    --bs-secondary-color: #7A4C4B;
+
+    --bs-body-bg: #faf3e9;   /* soft light (near white with a cool tone) */
+    --bs-body-color: rgb(30, 30, 40);
+    --bs-body-image: url(../img/bkg-noise-2.png);
+  }
+
+  /* Dark Theme Overrides */
+  [data-bs-theme="dark"] {
+    --btn-bg: #4A3C42;
+    --btn-color: #D1ACAC;
+    --btn-border: #D1ACAC;
+    --bs-body-color: #F4E2E2;
+    --bs-secondary-color: #D3A8A5;
+
+
+    --bs-body-bg: rgb(20, 20, 28);
+    --bs-body-color: rgb(255, 255, 255);
+    --bs-body-image: url(../img/bkg-noise-1.png);
+  }
+  
+  body {
+    font-family: 'PP Formula', sans-serif;
+  }
+  #bg-noise{
+    background-image: var(--bs-body-image);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+   
+  }
+
+  
