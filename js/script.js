@@ -1,6 +1,24 @@
 $('#toggleTheme').click(function () {
     const currentTheme = $('html').attr('data-bs-theme');
-    $('html').attr('data-bs-theme', currentTheme === 'dark' ? 'light' : 'dark');
-    
-    console.log('Theme toggled to:', currentTheme === 'dark' ? 'light' : 'dark');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    // Apply new theme
+    $('html').attr('data-bs-theme', newTheme);
+
+    // Toggle icon
+    const icon = $('#themeIcon');
+    if (newTheme === 'light') {
+      icon.removeClass('ri-sun-line').addClass('ri-moon-line');
+    } else {
+      icon.removeClass('ri-moon-line').addClass('ri-sun-line');
+    }
+  });
+
+  //Navigation bar scroll effect
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 100) {
+      $('.navbar').addClass('scrolled');
+    } else {
+      $('.navbar').removeClass('scrolled');
+    }
   });
