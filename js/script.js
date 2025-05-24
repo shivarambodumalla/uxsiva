@@ -16,9 +16,10 @@ $('#toggleTheme').click(function () {
 
   //Navigation bar scroll effect
   $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('.navbar').addClass('scrolled');
     } else {
       $('.navbar').removeClass('scrolled');
     }
   });
+  $(window).trigger('scroll');
