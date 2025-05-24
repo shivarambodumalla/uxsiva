@@ -216,22 +216,39 @@
 }
 span.rect.tr::before,
 span.rect.tr::after{
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
 }
 span.rect.tl::before,span.rect.tl::after{
+    top: -1px;
+    left: -1px;
+}
+span.rect.br::before,span.rect.br::after{
+    bottom: -1px;
+    right: -1px;
+}
+span.rect.bl::before,span.rect.bl::after{
+    bottom: -1px;
+    left: -1px;
+}
+
+.projects-header .span.rect.tr::before,
+.projects-header span.rect.tr::after{
+    top: 0;
+    right: 0;
+}
+.projects-header span.rect.tl::before,.projects-header span.rect.tl::after{
     top: 0;
     left: 0;
 }
-span.rect.br::before,span.rect.br::after{
+.projects-header span.rect.br::before,.projects-header span.rect.br::after{
     bottom: 0;
     right: 0;
 }
-span.rect.bl::before,span.rect.bl::after{
+.projects-header span.rect.bl::before,.projects-header span.rect.bl::after{
     bottom: 0;
     left: 0;
 }
-
 .projects span.rect.tr::before,
 .projects span.rect.tr::after{
     top: -1px;
