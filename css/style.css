@@ -356,3 +356,11 @@ span.rect.bl::before,span.rect.bl::after{
 .certificate img{
     border-radius:24px;
 }
+button.navbar-toggler {
+    border: none !important;
+    &:hover,
+  &:focus,&:active,&:focus-visible {
+    border: none  !important;
+    outline:0 !important;
+  }
+}
