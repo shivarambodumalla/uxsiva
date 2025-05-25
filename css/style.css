@@ -159,7 +159,7 @@
     display: block;
     position: absolute;
     inset: 0px 0px -20px;
-    background-image: linear-gradient(var(--bs-grid-color) 1px, transparent 1px), linear-gradient(to right, var(--bs-grid-color) 1px, transparent 1px);
+    background-image: linear-gradient(var(--bs-primary-4p) 1px, transparent 1px), linear-gradient(to right, var(--bs-primary-4p) 1px, transparent 1px);
     background-size: 32px 32px;
     background-position: center top;
     mask: linear-gradient(transparent 0%, white 50%, white 75%, transparent 100%);
@@ -343,4 +343,13 @@ span.rect.bl::before,span.rect.bl::after{
     text-decoration: none;
     color:var(--bs-primary);
   }
-  
+  .process-list li{
+    margin-bottom:1rem;
+    font-size: 1rem;
+  }
+  .process-list i{
+    font-size: 1.2rem;
+  }
+.border-box {
+    border:1px solid var(--bs-primary-8p);
+}
