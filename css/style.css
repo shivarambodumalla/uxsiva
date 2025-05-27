@@ -183,6 +183,15 @@
     background-color: var(--bs-body-bg);
     transition: background-color 0.5s ease;
   }
+  
+@media (max-width: 991.98px) { /* Applies only in collapsed (mobile) view */
+    nav.navbar.navbar-expand-lg.px-3.navbar-custom.fixed-top {
+        background-color: var(--bs-body-bg);
+        transition: background-color 0.5s ease;
+        /* border-bottom:1px solid var(--bs-primary-16p); */
+    
+    }
+  }
   .navbar-custom .container-fluid{
     border:2px dashed transparent;
     transition: border-color 0.5s ease;
@@ -363,4 +372,8 @@ button.navbar-toggler {
     border: none  !important;
     outline:0 !important;
   }
+}
+ul li{
+    line-height: 1.6;
+    padding-bottom:0.5rem;
 }
