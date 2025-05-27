@@ -1,6 +1,6 @@
 // Apply theme on page load
 $(document).ready(function () {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     $('html').attr('data-bs-theme', savedTheme);
     
     const icon = $('#themeIcon');
