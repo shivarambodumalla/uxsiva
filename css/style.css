@@ -377,3 +377,6 @@ ul li{
     line-height: 1.6;
     padding-bottom:0.5rem;
 }
+.line-height-1{
+  line-height: 1.6 !important;
+}
