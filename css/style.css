@@ -383,3 +383,6 @@ ul li{
 .italics{
     font-style: italic;
 }
+.card-link h4,.card-link p{
+  color: var(--bs-body-color) !important;
+}
