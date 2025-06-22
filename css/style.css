@@ -380,3 +380,6 @@ ul li{
 .line-height-1{
   line-height: 1.6 !important;
 }
+.italics{
+    font-style: italic;
+}

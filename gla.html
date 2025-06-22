@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.svg" type="image/x-icon">
+  <title>Greatlearning Academy App (GLA) - B Sivarami Reddy – Product Designer & Design Leader</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+ 
+</head>
+<body id="bg-noise">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-3 navbar-custom fixed-top" >
+    <div class="container-fluid">
+      
+      <!-- Left: Logo -->
+      <a class="navbar-brand fw-bold" href="index.html">
+        <b>SIVARAMI REDDY</b>
+      </a>
+      <span class="rect tr"></span>
+      <span class="rect tl"></span>
+      <span class="rect br"></span>
+      <span class="rect bl"></span>
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+  
+        <!-- Center: Links -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#case-studies">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+        </ul>
+  
+        <!-- Right: Icons + Theme Toggle -->
+        <ul class="navbar-nav align-items-center gap-3 flex-row">
+          <li class="nav-item">
+            <a class="nav-link icon-btn" href="https://www.linkedin.com/in/b-sivarami-reddy-483152148/" target="_blank" title="LinkedIn">
+              <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-btn" href="resume_b_sivarami_reddy.pdf" target="_blank" title="Resume">
+              <i class="ri-file-paper-line ri-lg"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-btn" href="mailto:ux.siva@gmail.com" title="ux.siva@gmail.com">
+              <i class="ri-mail-send-line ri-lg"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            
+              <button class="icon-btn" id="toggleTheme" title="Toggle Theme">
+                <i class="ri-sun-line ri-lg" id="themeIcon"></i>
+              </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-wrapper hero d-flex align-items-center justify-content-center text-center py-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">Bridging Dreams to Careers <br/>  Great Learning Academy's Mobile App Experience</h1>
+      <p class="lead">How we transformed India's leading professional learning platform to better serve 1.6M+ ambitious learners on their career journey</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="py-5">
+      <h5 class="display-6 fw-bold mb-2">The Challenge That Started It All</h5>
+      <p class="lead italics">Picture this: A computer science student in Pune, scrolling through job requirements at 11 PM, realizing they need to upskill in Python. A marketing professional in Delhi, commuting to work, wanting to learn data analytics during their 45-minute metro ride. These aren't just scenarios—they're the reality of <strong>1.6 million users</strong> on Great Learning Academy.</p>
+
+      <h5>The Problem</h5>
+      <p>Despite being India's leading professional learning platform, our mobile experience wasn't living up to the ambitions of our users—72% of whom were accessing courses primarily through mobile devices.</p>
+
+      <h5>💡 The "Aha!" Moment</h5>
+      <p>Our research revealed a fascinating behavior: *Users learn on mobile but practice on laptops.* This insight became the cornerstone of our redesign strategy.</p>
+
+    </section>
+
+    <section class="py-5">
+      <h5 class="display-6 fw-bold mb-5">🔍 Deep Dive: Understanding Our Learners</h5>
+     
+        <h5 class="mb-4">The Numbers That Told a Story</h5>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span> 
+            <div class="card-custom bg-yellow">
+              <h5>1,605,425 total users</h5>
+              <p>across the platform</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span> 
+            <div class="card-custom bg-blue">
+              <h5>62% college students and freshers</h5>
+              <p>hungry for their first break</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span> 
+            <div class="card-custom bg-blue">
+              <h5>52% complete beginners</h5>
+              <p>with zero work experience</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span> 
+            <div class="card-custom bg-blue">
+              <h5>72% mobile-first learners</h5>
+              <p>juggling studies, jobs, and dream</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-lg-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span> 
+            <div class="card-custom bg-blue">
+              <h5>Average age: 18–34</h5>
+              <p>the generation that doesn't wait for tomorrow</p>
+            </div>
+          </div>
+              
+        </div>
+        <h5 class="mt-4">Diving Deeper into User Behavior</h5>
+        <p>When we analyzed the data further, fascinating patterns emerged. Our users weren't just passive consumers of content—they were strategic learners with specific goals and constraints. The majority came from Tier 1 cities like Mumbai, Delhi, Bangalore, and Pune, where competition for jobs is fierce and upskilling is seen as a survival strategy rather than a luxury.</p>
+        <p>What struck us most was the diversity in educational backgrounds. While 16% came from computer science, we had significant representation from electronics (3.7%), business studies (3.3%), and mechanical engineering (2.5%). This told us that our platform was becoming a bridge for career transitions, not just skill enhancement within existing domains.</p>
+        <p>The mobile usage pattern was particularly revealing. Unlike other e-learning platforms where desktop dominates, our users were predominantly mobile-first. This wasn't just a preference—it was a necessity. Many were accessing content during commutes, between classes, or in shared living spaces where laptops weren't practical.</p>
+    </section>
+
+    <section class="py-5">
+      <h5 class="display-6 fw-bold mb-5">Research That Changed Everything</h5>
+      <p>I led a comprehensive user research initiative combining quantitative analytics with qualitative interviews. We spoke to students burning the midnight oil, professionals stealing learning moments between meetings, and fresh graduates anxiously preparing for interviews.</p>
+      <p>The research process was extensive and multi-faceted. We started with Google Analytics data to understand user behavior patterns, then conducted 6 in-depth interviews with users from different segments. The interviews were conducted via phone and Google Meet due to geographical constraints and pandemic restrictions.</p>
+      <p>Our recruitment strategy was deliberate—we wanted to speak to both experienced learners (professionals with 3+ years of experience) and college students. This gave us a complete picture of motivations across different life stages.</p>
+      <h5 class="mt-4">The Interview Process:</h5>
+      <p>Each interview lasted 45–60 minutes and covered three main areas:</p>
+      <ul>
+        <li>
+          <strong>Personal and Professional Background</strong> – Understanding their current situation, education, work experience, and daily routines
+        </li>
+        <li>
+          <strong>Learning Motivations</strong> – What drove them to seek online learning, their goals, and where they saw themselves in the future
+        </li>
+        <li>
+          <strong>Platform Experience</strong> – Their interaction with Great Learning Academy, pain points, and suggestions for improvement
+        </li>
+      </ul>
+
+      <h5>Key Insights:</h5>
+      <ul>
+        <li>Learning happens in <strong>micro-moments</strong>: bus rides, lunch breaks, before bed</li>
+        <li><strong>Career anxiety drives urgency</strong> – every course is a step toward landing that dream job</li>
+        <li><strong>Mobile is for consumption, laptop is for creation</strong> – a hybrid learning behavior</li>
+        <li><strong>Short-form content wins</strong> – attention spans are precious commodities</li>
+        <li><strong>Peer validation matters</strong> – Users wanted to see others' success stories</li>
+        <li><strong>Progress visualization is crucial</strong> – They needed to see how learning connected to career outcomes</li>
+      </ul>
+
+      <h5 >Data That Spoke Volumes</h5>
+      <p>The quantitative data painted a clear picture of who our users were and how they behaved on the platform.</p>
+
+      <div class="row">
+        <div class="col-md-3 col-lg-3 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <img src="img/gla/g-1.png" class="card-img-top mb-3" alt="...">
+          <div class="card-custom bg-yellow">
+            <h5>Registration Source Analysis</h5>
+            <p>Experience wise distribution showing 52% freshers, 10% college students</p>
+            <p>This distribution showed us that mobile and web were equally important touchpoints, but the mobile app was gaining traction among our core demographic.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <img src="img/gla/g-2.png" class="card-img-top mb-3" alt="...">
+          <div class="card-custom bg-yellow">
+            <h5>72% mobile usage vs 28% desktop</h5>
+            <p>The device usage data was the most revealing insight. It completely changed our product strategy from desktop-first to mobile-first design thinking.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <img src="img/gla/g-3.png" class="card-img-top mb-3" alt="...">
+          <div class="card-custom bg-yellow">
+            <h5>Age Distribution Chart</h5>
+            <p>Majority users aged 18–34</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <img src="img/gla/g-3.png" class="card-img-top mb-3" alt="...">
+          <div class="card-custom bg-yellow">
+            <h5>Educational Background Distribution</h5>
+            <p>16% Computer Science, 3.7% E&C, 3.3% Business Studies breakdown</p>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">Understanding Our Users: Empathy Mapping</h1>
+      <p>To synthesize our research findings, we created comprehensive empathy maps that captured not just what users did, but what they thought, felt, and experienced throughout their learning journey.</p>
+      <div class="row  g-3 align-items-start justify-content-start">
+        <div class="col-12 col-md-10"><img src="img/gla/Full Empathy Map.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">👥 Meet Our Users: Personas</h1>
+      <p>Based on our research, we identified three primary user personas that represented 85% of our user base. Each persona had distinct motivations, behaviors, and pain points that influenced our design decisions.</p>
+      <div class="row  g-3 align-items-start justify-content-start">
+        <div class="col-12 col-md-6"><img src="img/gla/p-1.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-6"><img src="img/gla/p-2.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-6"><img src="img/gla/p-3.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">🎨 Design Philosophy: Mobile-First, Career-Focused</h1>
+      <p>Instead of simply shrinking desktop experiences, we reimagined mobile learning from the ground up with three core principles:</p>
+      <div class="row">
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Micro-Learning Architecture</h5>
+            <p>
+              Learning in 5-10 minute digestible chunks that respect busy schedules
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Career-Outcome Mapping</h5>
+            <p>
+              Every interaction reinforced the connection between learning and career goals
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Seamless Device Ecosystem</h5>
+            <p>
+              Smooth transitions from mobile consumption to desktop practice
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <h5 class="mt-4"> The Challenge of Mobile Learning</h5>
+      <p>Designing for mobile learning presented unique challenges that traditional e-learning platforms hadn't</p>
+      <div class="row">
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Attention Fragmentation</h5>
+            <p>
+              Mobile users are constantly interrupted—notifications, calls, environmental distractions. Our design needed to accommodate these interruptions gracefully.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Context Switching</h5>
+            <p>
+              Users often switch between learning and other activities multiple times within a single session. We needed to make it easy to resume exactly where they left off.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Limited Screen Real Estate</h5>
+            <p>
+              Complex concepts had to be broken down and presented in digestible visual formats without losing educational value.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Varied Network Conditions</h5>
+            <p>
+              Many users had inconsistent internet connectivity, requiring offline-first thinking and progressive loading strategies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Touch-First Interactions</h5>
+            <p>
+              Navigation patterns needed to be thumb-friendly and accommodate one-handed usage scenarios.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">Our Design Principles</h1>
+      <div class="row">
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Principle 1: Respect Cognitive Load</h5>
+            <p>
+              Mobile learning happens in high-distraction environments. We designed with minimal cognitive overhead, using clear visual hierarchy and progressive disclosure to prevent information overload.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Principle 2: Celebrate Small Wins</h5>
+            <p>
+              Given the anxiety and imposter syndrome prevalent among our users, we designed multiple touchpoints for positive reinforcement—from completing video segments to achieving daily learning goals.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Principle 3: Visual Learning First</h5>
+            <p>
+              Complex technical concepts were redesigned with visual explanations, interactive elements, and real-world examples that could be understood even on small screens.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Principle 4: Career Context Always</h5>
+            <p>
+              Every feature was designed to answer the user's underlying question: "How does this help me achieve my career goals?" Skills were tagged with job relevance, and progress was measured against industry standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span> 
+          <div class="card-custom">
+            <h5>Principle 5: Community-Driven Motivation</h5>
+            <p>
+              Recognizing that learning can be isolating, especially for mobile users, we integrated social elements that fostered peer support and healthy competition.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">🚀 The Solution: Three Products, One Unified Experience</h1>
+      <h5>Understanding the Product Ecosystem</h5>
+      <p>Great Learning Academy's unique value proposition lay in its three-tiered approach to professional education. Unlike competitors who focused on a single model, we offered a comprehensive pathway from free exploration to professional certification.</p>
+
+      <p><strong>The Business Model Challenge:</strong><br>
+      How do you create a cohesive experience across three different product tiers while maintaining clear value differentiation? This became one of our core UX challenges.</p>
+
+      <h5>Information Architecture</h5>
+      <p>
+      <em>Visual representation of Free Courses, Premium Courses, and University Programs hierarchy</em></p>
+
+      <p>Our information architecture needed to serve multiple user intents simultaneously:</p>
+      <!-- <ul>
+        <li><strong>Browsers</strong> exploring what's available</li>
+        <li><strong>Committed learners</strong> deep in a course</li>
+        <li><strong>Career-focused users</strong> looking for job-relevant skills</li>
+        <li><strong>Comparison shoppers</strong> evaluating tier benefits</li>
+      </ul> -->
+      <div class="row  g-3 align-items-start justify-content-start">
+        <div class="col-12 col-md-10"><img src="img/gla/IA.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">Product Architecture Redesign</h1>
+      <div class="row">
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span>
+          <div class="card-custom">
+            <h5>Free Courses 📚</h5>
+            <p><em>The Gateway Experience</em></p>
+            <p>
+              Free courses served as our primary user acquisition and retention tool. The UX challenge was creating enough value to build trust while establishing clear upgrade paths.
+            </p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Career milestone celebrations</li>
+              <li>Community features for peer learning</li>
+              <li>Skill assessment tools</li>
+              <li>Basic project templates</li>
+              <li>Certificate of completion (paid)</li>
+            </ul>
+            <p><strong>Design Considerations:</strong></p>
+            <ul>
+              <li>Had to feel substantial, not like a "lite" version</li>
+              <li>Clear value communication without overwhelming free users</li>
+              <li>Subtle but effective upgrade prompts</li>
+              <li>Community features to increase engagement and retention</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span>
+          <div class="card-custom">
+            <h5>Premium Courses 💎</h5>
+            <p><em>The Professional Developer</em></p>
+            <p>
+              Premium courses were designed for serious learners willing to invest in their career advancement. The UX needed to justify the price point through superior learning experiences.
+            </p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Advanced project-based learning with real-world applications</li>
+              <li>1:1 mentor matching and guidance</li>
+              <li>Industry-specific interview prep modules</li>
+              <li>Resume review and job placement assistance</li>
+              <li>Advanced analytics and learning insights</li>
+              <li>Priority community access and networking</li>
+            </ul>
+            <p><strong>Design Considerations:</strong></p>
+            <ul>
+              <li>Premium feel through enhanced UI elements and interactions</li>
+              <li>Sophisticated progress tracking and skill mapping</li>
+              <li>Mentor interaction workflows that felt personal and valuable</li>
+              <li>Job market integration showing salary expectations and requirements</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 rects border-box p-3">
+          <span class="rect tr"></span>
+          <span class="rect tl"></span>
+          <span class="rect br"></span>
+          <span class="rect bl"></span>
+          <div class="card-custom">
+            <h5>University Programs 🎓</h5>
+            <p><em>The Career Transformer</em></p>
+            <p>
+              University programs represented our highest-value offering, designed for users making significant career transitions or advancement leaps.
+            </p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Comprehensive curriculum tracking across multiple courses</li>
+              <li>Academic calendar integration with deadlines and milestones</li>
+              <li>Placement preparation dashboard with interview scheduling</li>
+              <li>Industry project collaborations and internship opportunities</li>
+              <li>Alumni network access and career counseling</li>
+              <li>Official university certificates and degrees</li>
+            </ul>
+            <p><strong>Design Considerations:</strong></p>
+            <ul>
+              <li>Academic feel balanced with professional utility</li>
+              <li>Long-term engagement patterns (6–24 month programs)</li>
+              <li>Multiple stakeholder interactions (mentors, peers, career counselors)</li>
+              <li>Integration with external academic systems and job portals</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">🎨 Visual Design: Where Function Meets Emotion</h1>
+      <h5>Design System Evolution</h5>
+      
+      <em>Color palette, typography, iconography, component library</em></p>
+
+      <h5>Design Language</h5>
+      <p>We developed a visual system that felt both <strong>professional and approachable</strong> — important for users who were often intimidated by the learning process.</p>
+
+      <p><strong>Color Psychology:</strong></p>
+      <ul>
+        <li><strong>Primary Blue</strong>: Trust and stability (crucial for nervous learners)</li>
+        <li><strong>Success Green</strong>: Achievement and progress</li>
+        <li><strong>Warning Orange</strong>: Gentle nudges without pressure</li>
+        <li><strong>Neutral Grays</strong>: Clean, distraction-free content focus</li>
+      </ul>
+      <div class="row  g-3 mb-4 align-items-start justify-content-start">
+        <div class="col-12 col-md-10"><img src="img/gla/design-system.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+      
+
+      <p><strong>Typography Hierarchy:</strong><br>
+      Mobile-optimized reading with clear information architecture that works on 5-inch screens</p>
+
+      <div class="row  g-3 align-items-start justify-content-start">
+        <div class="col-12 col-md-10"><img src="img/gla/design-system-1.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+
+    </section>
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">High-Fidelity Designs</h1>
+      <div class="row  g-3 mb-4 align-items-start justify-content-start">
+        <div class="col-12 col-md-12"><img src="img/gla/1.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/2.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/3.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/4.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/5.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/6.jpg" class="img-fluid rounded" alt=""></div>
+        <div class="col-12 col-md-12"><img src="img/gla/7.jpg" class="img-fluid rounded" alt=""></div>
+      </div>
+    </section>
+     <section class="py-5">
+      <h1 class="display-6 fw-bold mb-4">Key Metrics Improved</h1>
+      <div class="row">
+          <div class="col-12 col-md-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span>
+            <div class="card-custom">
+              <h5>Engagement Metrics</h5>
+              <ul>
+                <li><strong>Mobile session duration</strong>: ↑ 40%</li>
+                <li><strong>Course completion rate</strong>: ↑ 35%</li>
+                <li><strong>Daily active users</strong>: ↑ 28%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span>
+            <div class="card-custom">
+              <h5>Learning Outcomes</h5>
+              <ul>
+                <li><strong>Skill assessment scores</strong>: ↑ 45%</li>
+                <li><strong>Certificate completion</strong>: ↑ 50%</li>
+                <li><strong>Career milestone achievements</strong>: ↑ 60%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 rects border-box p-3">
+            <span class="rect tr"></span>
+            <span class="rect tl"></span>
+            <span class="rect br"></span>
+            <span class="rect bl"></span>
+            <div class="card-custom">
+              <h5>Business Impact</h5>
+              <ul>
+                <li><strong>Premium conversion</strong>: ↑ 25%</li>
+                <li><strong>User retention (30-day)</strong>: ↑ 32%</li>
+                <li><strong>App store ratings</strong>: 3.2 → 4.6 stars</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      
+
+    </section>
+
+    <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">🎯 Key Takeaways</h1>
+      <ul>
+        <li><strong>User research is your superpower</strong> – The insights about mobile learning vs. laptop practice changed everything</li>
+        <li><strong>Design for emotions, not just tasks</strong> – Career anxiety and learning motivation are design challenges</li>
+        <li><strong>Performance is UX</strong> – A slow app kills learning momentum</li>
+        <li><strong>Think ecosystem, not just screens</strong> – Mobile and desktop experiences should complement, not compete</li>
+      </ul>
+
+      <h3>The Impact Statement</h3>
+      <p>
+        This project wasn't just about improving an app—it was about <strong>democratizing professional education</strong> for millions of ambitious learners across India. Every design decision was made with the understanding that we were potentially changing someone's career trajectory.
+      </p>
+      <p><strong>The result?</strong> A mobile learning experience that doesn't just deliver content, but builds confidence, maintains motivation, and bridges the gap between aspiration and achievement.</p>
+
+      <h3 class="display-6 fw-bold my-5" >Project Summary</h3>
+      <p><em>This case study represents 8 months of intensive user research, design iteration, and collaboration with cross-functional teams. The redesigned Great Learning Academy mobile app now serves as the primary touchpoint for over 1.6 million learners on their professional journey.</em></p>
+      <ul>
+        <li><strong>Role:</strong> UX Designer, Manager & Researcher</li>
+        <li><strong>Timeline:</strong> 8 months</li>
+        <li><strong>Team:</strong> 2 Designers, 4 Developers, 2 Product Managers</li>
+        <li><strong>Tools:</strong> Figma, Principle, Analytics, User Interviews, A/B Testing</li>
+      </ul>
+    </section>
+
+
+
+
+    <!-- <section class="py-5">
+      <h1 class="display-6 fw-bold mb-5">👥 Meet Our Users: Personas</h1>
+      <p>---</p>
+    </section> -->
+
+    <!-- <div class="row  g-3 mb-4 align-items-start justify-content-start">
+        <div class="col-12 col-md-10"><img src="img/gla/design-system.jpg" class="img-fluid rounded" alt=""></div>
+      </div> -->
+
+
+  </div>
+  
+  
+  
+  
+  <section class="mb-5 hero-wrapper hero d-flex align-items-center justify-content-center text-center">
+    <div class="container mb-5">
+      <h1 class="display-1 fw-bold">Thank you</h1>
+      <!-- <p class="lead"> Our users' needs often differ from our initial assumptions. Rather than insisting on changing their behaviours to suit our solution, we should customise our solution to meet their specific needs.</p> -->
+    </div>
+    </section>
+
+  
+  <!-- Contact -->
+  <section class="bg-primary text-white py-5 text-center">
+    <div class="container py-5">
+      <h2>Let’s Work Together</h2>
+      <p>Open to roles where I can drive impact through thoughtful design and clean code.</p>
+      <div class="mt-3">
+        <a href="mailto:ux.siva@gmail.com" class="text-white me-3"><i class="ri-mail-line"></i> ux.siva@gmail.com</a>
+        <a href="https://linkedin.com/in/b-sivarami-reddy-483152148/" class="text-white me-3"><i class="ri-linkedin-line"></i> LinkedIn</a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- <h2 class="mt-4">Outline Buttons</h2>
+  <button class="btn btn-outline-primary me-2 btn-lg">Outline Primary <i class="ri-arrow-right-long-line"></i></button>
+  <button class="btn btn-outline-secondary me-2 btn-lg">Outline Secondary <i class="ri-arrow-right-long-line"></i></button>
+  <button class="btn btn-outline-tertiary me-2 btn-lg">Outline Tertiary <i class="ri-arrow-right-long-line"></i></button>
+
+  -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WF03MQCYHW');
+</script>
+</body>
+</html>
