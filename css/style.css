@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
   /* Light Theme Overrides */
@@ -61,8 +63,10 @@
   }
   
   body{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-family: "Sora", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px; 
+    line-height: 1.6;
   }
   
   #bg-noise{
@@ -385,4 +389,7 @@ ul li{
 }
 .card-link h4,.card-link p{
   color: var(--bs-body-color) !important;
+}
+#toggleTheme{
+  display:none !important
 }
