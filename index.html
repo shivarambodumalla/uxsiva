@@ -1,784 +1,417 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="favicon.svg" type="image/x-icon">
-  <title>Home - B Sivarami Reddy : Product Designer & Design Leader</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
- 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designing for Impact, Led by Empathy — Sivarami Reddy</title>
+    <title>Form Follows Function — The Portfolio of B. Sivarami Reddy</title>
+    <meta name="description" content="B. Sivarami Reddy is a UX Design Leader and Design Manager based in Bengaluru, India. He designs meaningful, user-focused digital experiences guided by the belief that form follows function." />
+    <meta name="keywords" content="UX Designer, Design Manager, Portfolio, Product Design, User Experience, Bengaluru, Frontend Engineer, UI/UX, Figma, ReactJS" />
+    <meta name="author" content="B. Sivarami Reddy" />
+    <link rel="canonical" href="https://uxsiva.onrender.com/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Form Follows Function — The Portfolio of B. Sivarami Reddy" />
+    <meta property="og:description" content="UX Design Leader and Strategist crafting meaningful experiences that connect users and stories." />
+    <meta property="og:image" content="https://uxsiva.onrender.com/og-image.jpg" />
+    <meta property="og:url" content="https://uxsiva.onrender.com/" />
+    <meta property="og:site_name" content="B. Sivarami Reddy Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="B. Sivarami Reddy — UX Design Leader & Strategist" />
+    <meta name="twitter:description" content="Creating digital products guided by the belief that form follows function." />
+    <meta name="twitter:image" content="https://uxsiva.onrender.com/og-image.jpg" />
+
+    <!-- Favicon (Browser Tab Icon) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- Favicon for all browsers -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
 </head>
-<body id="bg-noise">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg px-3 navbar-custom fixed-top" >
-    
-    <div class="container-fluid">
-      
-      <!-- Left: Logo -->
-      <a class="navbar-brand fw-bold" href="index.html">
-        <b>SIVARAMI REDDY</b>
-      </a>
 
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-  
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Navbar Content -->
-      <div class="collapse navbar-collapse justify-content-between" id="mainNav">
-  
-        <!-- Center: Links -->
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#case-studies">Case Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-        </ul>
-  
-        <!-- Right: Icons + Theme Toggle -->
-        <ul class="navbar-nav align-items-center gap-3 flex-row">
-          <li class="nav-item">
-            <a class="nav-link icon-btn" href="https://www.linkedin.com/in/b-sivarami-reddy-483152148/" target="_blank" title="LinkedIn">
-              <i class="ri-linkedin-fill ri-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link icon-btn" href="resume_b_sivarami_reddy.pdf" target="_blank" title="Resume">
-              <i class="ri-file-paper-line ri-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link icon-btn" href="mailto:ux.siva@gmail.com" target="_blank" title="ux.siva@gmail.com">
-              <i class="ri-mail-send-line ri-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            
-              <button class="icon-btn" id="toggleTheme" title="Toggle Theme">
-                <i class="ri-sun-line ri-lg" id="themeIcon"></i>
-              </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body class="bg-lightBg dark:bg-darkBg text-gray-800 dark:text-gray-200 min-h-screen flex flex-col">
 
-  
-  <section class="hero text-left py-5 ">
-    <div class="container">
-      <h1 class="display-1 fw-bold">👋 Hi, I’m B. Sivarami Reddy</h1>
-      <h5 class="line-height-1">
-        Design Manager | Principal UX Designer | Learning Experience Strategist | Founding Team Member at Great Learning | Core Product Team | UX & Strategy Leader
-      </h5>
-      <div class="mt-4">
-        
-      <a href="#case-studies" class="btn btn-primary me-2 btn-lg mb-3">Casestudies </a>
-      <a href="resume_b_sivarami_reddy.pdf" target="_blank" class="btn btn-outline-primary me-2 btn-lg mb-3"><i class="ri-download-line"></i> Download Resume </a>
+  <!-- Header -->
+  <!-- <header class="flex justify-between items-center p-6">
+    <h1 class="text-2xl font-semibold">B Sivarami Reddy<span class="text-primary">.</span></h1>
+    <button id="themeToggle" class="border border-gray-400 dark:border-gray-600 px-3 py-1 rounded-full text-sm">
+      Toggle Theme
+    </button>
+  </header> -->
+<main class="max-w-7xl mx-auto p-4 md:p-6">
+        <div class="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-8 lg:gap-12">
+            <!-- Left Column - Sticky Profile Card -->
+            <div class="sticky-profile">
+                <div class="relative">
+                    
 
-      </div>
-    </div>
-  </section>
-  
-  <!-- About Me -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-4">About Me</h2>
-      <p>Hello! I’m <strong>B. Sivarami Reddy</strong> — a UX Design Leader and Frontend Engineer based in Bengaluru, India, with over 9 years of experience designing and building digital products that are intuitive, scalable, and impactful.</p>
-      
-      <p>My career began in frontend engineering, where I developed a deep understanding of how things work under the hood. Over time, I transitioned into UX and product design, combining my technical roots with a passion for user behavior, interaction, and visual storytelling. This unique blend helps me bridge strategy and execution — turning user needs into functional, delightful experiences.</p>
-      
-      <p>At <strong>Great Learning</strong>, I’ve been a core member of the founding team, helping shape the design culture and drive key product initiatives. From building Learning Management Systems to designing sales tools and internal platforms like GL Shine and the Jedi App, I’ve led projects that improved learner satisfaction, boosted productivity, and saved crores in operational costs.</p>
-      
-      <p>I approach design with empathy, research, and iteration. Whether I’m redesigning an LMS to earn a 5-star rating or streamlining a sales workflow to improve compliance, I aim for outcomes that are simple, purposeful, and measurable.</p>
-      
-      <p>My toolkit includes <strong>Figma, Adobe CC, Sketch, HTML/CSS, JavaScript, ReactJS</strong>, and <strong>WordPress</strong>. I’m equally comfortable leading design systems, mentoring junior designers, and collaborating across product, engineering, and business teams.</p>
-      
-      <p>Outside of work, I enjoy mentoring, exploring accessibility and design systems, and staying sharp with the latest trends in UX and front-end development. I’m especially passionate about building products that support learning and create impact at scale.</p>
-      
-      <p><strong>I’m currently open to new opportunities</strong> — whether in a leadership role, as a consultant, or helping scale design operations. Let’s build something meaningful together.</p>
-    
-      <p><strong>Location:</strong> Bengaluru, India · Open to Remote, Hybrid, or Relocation</p>
-    </section>
-    
-  </div>
+                    <!-- Profile Card -->
+                    <div class="lg:fixed border border-gray-700 rounded-3xl p-8 lg:p-10 flex flex-col items-center lg:max-w-[400px]">
+                        <!-- Header -->
+                        <div class="text-center mb-6">
+                            <h1 class="text-4xl tracking-tight mb-1">B Sivarami Reddy</h1>
+                            <p class="text-sm text-gray-400">
+                                Principal Designer & UX Design Manager
+                            </p>
+                        </div>
 
-  
-  <!-- Featured Projects -->
-  <section id="case-studies" class="py-5 ">
-    <div class="container">
-      <div class="row rects projects-header">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class="col-12 col-lg-2 blocks d-flex flex-wrap p-0">
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-        </div>        
-        <div class="col-12 col-lg-8 p-0">
-          <div class="hblocks d-flex flex-wrap p-0">
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            
-          </div>
-          <div class="p-4 text-center projects-section">
-            <h2 class="mb-4 display-3 bold">Featured Projects</h2>
-            <p class="lead">Here are some of my recent projects that showcase my design and development skills.</p>
-          </div>
-          <div class="hblocks d-flex flex-wrap p-0">
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-            <div class="hblock"></div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-2 blocks d-flex flex-wrap p-0">
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
-        </div> 
-      </div>
+                        <!-- Profile Image -->
+                        <div class="mb-6">
+                            <div class="w-64 h-64 rounded-3xl overflow-hidden mx-auto mb-4">
+                                <img src="img/sivaramireddy.jpeg" 
+                                    alt="B Sivarami Reddy" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
 
-      <!-- Projects -->
-      <div class="row projects rects">
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="jedi.html">
-              <img src="img/jedi-1.png" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Jedi Dashboard </h4>
-                <p class="card-text"> Increasing Ops Efficiency through Product & Automation</p>
-                <a href="jedi.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="olympus.html">
-              <img src="img/olympus-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Olympus LMS Enhancement</h4>
-                <p>Empowering Dreams, Accelerating Careers, and Cultivating Lifelong Learning Adventures!</p>
-                <a href="olympus.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="shine.html">
-              <img src="img/shine-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">GL Shine</h4>
-                <p class="card-text">Unifying Sales Efficiency and Compliance for Optimal Performance</p>
-                <a href="shine.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="tyre.html">
-              <img src="img/tyre-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Tyremarket</h4>
-                <p class="card-text">Experiemntal attempt to bring offline experience to online</p>
-                <a href="tyre.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="nurture.html">
-              <img src="img/nurture-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Nurture Co</h4>
-                <p class="card-text">App for care takes and Givers</p>
-                <a href="nurture.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
+                        <!-- Contact Info -->
+                        <div class="text-center mb-4">
+                            <p class="text-md">Driving business impact through human-centered design, systems thinking, and team leadership</p> 
+                        </div>
 
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="cvreview.html">
-              <img src="img/cv-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">AI Enbled CV Review</h4>
-                <p class="card-text">Resume Review Experience for Great Learning Career Services</p>
-                <a href="cvreview.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="glaide.html">
-              <img src="img/glaide-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">GLAIde </h4>
-                <p class="card-text">AI-Powered Doubt Clearing & Chapter Summarization</p>
-                <a href="glaide.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
+                        <!-- Experience -->
+                        <p class="text-xs text-gray-500 mb-6">
+                            10+ Years Experience | Great Learning
+                        </p>
 
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="visa.html">
-              <img src="img/visa-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Visa Application </h4>
-                <p class="card-text">For document accuracy, and real-time visibility</p>
-                <a href="visa.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="gla.html">
-              <img src="img/gla-1.jpg" class="card-img-top mb-3" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title pb-2 fw-semibold">Great Learning Academy's Mobile App</h4>
-                  <p class="card-text">Bridging Dreams to Careers</p>
-                  <a href="gla.html" class="btn btn-link">View more</a>
+                        <!-- Social Icons -->
+                        <div class="flex gap-4 mb-8">
+                            <a href="https://linkedin.com/in/b-sivarami-reddy-483152148" target="_blank" rel="noopener noreferrer" 
+                               class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:border-gray-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect width="4" height="12" x="2" y="9"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <!-- <a href="https://uxsiva.onrender.com" target="_blank" rel="noopener noreferrer" 
+                               class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:border-gray-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                                    <path d="M2 12h20"/>
+                                </svg>
+                            </a> -->
+                            <a href="tel:9900014642" 
+                               class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:border-gray-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:ux.siva@gmail.com" 
+                               class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:border-gray-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Hire Me Button -->
+                        <!-- <button class="w-full bg-primary text-black py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#00dd77] transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            <span>HIRE ME!</span>
+                        </button> -->
+                        <button class="w-full border border-primary text-primary py-2 rounded-full flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            <span>DOWNLOAD CV</span>
+                        </button>
+                    </div>
                 </div>
-            </a>
-          </div>
+            </div>
 
-          <div class="col-12 col-sm-6 col-lg-4 rects project p-3">
-            <span class="rect tr"></span>
-            <span class="rect tl"></span>
-            <span class="rect br"></span>
-            <span class="rect bl"></span>
-            <a class="card-link" href="glapro.html">
-              <img src="img/glapro-1.jpg" class="card-img-top mb-3" alt="...">
-              <div class="card-body">
-                <h4 class="card-title pb-2 fw-semibold">Great Learning Academy Pro</h4>
-                <p class="card-text">AI-Powered Career Acceleration Platform</p>
-                <a href="glapro.html" class="btn btn-link">View more</a>
-              </div>
-            </a>
-          </div>
+            <!-- Right Column - Scrollable Content -->
+             <!-- <div class="mb-8">
+                        <button class="border border-gray-700 px-6 py-2 rounded-full text-sm flex items-center gap-2 hover:border-gray-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            CONTACT
+                        </button>
+                    </div> -->
+            <div class="space-y-16">
+                <!-- Contact Form Section -->
+               <section class="lg:min-h-[50vh] lg:max-h-[65vh] flex flex-col justify-center max-w-4xl mx-auto  pt-24 pb-16">
+                    <h1 class="text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+                        A <span class="text-primary">Designer</span> who specializes in UX and Interaction Design
+                    </h1>
+                    <p class="text-gray-400 text-lg mb-10">
+                        I create digital products that are aesthetically pleasing, effortless to use, and guided by the belief that 
+                        <span class="text-primary font-medium">form follows function</span>, crafting meaningful experiences that connect users and stories.
+                    </p>
 
-          
+                    <div class="text-gray-400 text-base leading-relaxed space-y-6 max-w-3xl">
+                        <p>
+                        I bridge the gap between strategy and shipment. My career began in frontend engineering, giving me a deep technical understanding 
+                        of how to build things that are scalable and robust. This unique blend of technical roots and empathy for users allows me 
+                        to confidently lead the entire product design lifecycle.
+                        </p>
+
+                        <p>
+                        With over 10+ years of experience, I focus on turning complex user needs into simple and functional experiences. 
+                        At Great Learning, I’ve led key initiatives from redesigning learning systems to building internal platforms always 
+                        aiming for measurable outcomes like improved satisfaction, higher productivity, and operational savings. 
+                        My toolkit includes Figma, ReactJS, and HTML/CSS, and I’m equally at home mentoring teams, building design systems, 
+                        and aligning design with business strategy to create impact at scale.
+                        </p>
+                    </div>
+                </section>
+                
+
+                <section id="projects" class="py-16">
+                    <div class="mb-8">
+                        <button class="flex items-center gap-2 px-6 py-2 border border-gray-600 rounded-full text-white text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <span>Projects</span>
+                        </button>
+                    </div>
+                    <!-- Section Header -->
+                    <div class="flex items-center gap-3 mb-8">
+                        <h2 class="text-4xl font-semibold">Featured <span class="text-primary">Projects</span></h2>
+                    </div>
+
+                    <!-- Grid Layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[minmax(200px,auto)]">
+                        <!-- Project 1: Large text-only block -->
+                        <a href="#" class="group border border-gray-700 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 p-8 hover:border-gray-600 transition-all duration-300 md:row-span-2 flex flex-col justify-center">
+                            <img src="img/GLA-app-mock.png" alt="Great Learning Academy's Mobile App" class="w-full object-cover mb-4 rounded-lg group-hover:scale-105 transition-transform duration-500" />
+                        <h3 class="text-2xl mb-3 group-hover:text-primary transition-colors">Great Learning Academy’s Mobile App</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Bridging Dreams to Careers along with Great Learning Academy Pro</p>
+                        </a>
+
+                        <!-- Project 3 -->
+                        <a href="#" class="group border border-gray-700 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-300">
+                        <div class="h-44 overflow-hidden">
+                            <img src="img/cv-1.jpg" alt="AI Enabled CV Review" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-gray-900/60 to-gray-900/80">
+                            <h3 class="text-xl mb-2 group-hover:text-primary transition-colors">AI Enabled CV Review</h3>
+                            <p class="text-gray-400 text-sm">Resume Review Experience for Great Learning Career Services</p>
+                        </div>
+                        </a>
+
+
+                        
+
+                        
+                        <!-- Project 4 -->
+                        <a href="#" class="group border border-gray-700 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-300">
+                            <div class="h-44 overflow-hidden">
+                                <img src="img/jedi-2.jpg" alt="Great Learning Academy's Mobile App" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <div class="p-6 bg-gradient-to-b from-gray-900/60 to-gray-900/80">
+                                <h3 class="text-xl mb-2 group-hover:text-primary transition-colors">Jedi Dashboard</h3>
+                                <p class="text-gray-400 text-sm">Increasing Ops Efficiency through Product & Automation</p>
+                            </div>
+                        </a>
+
+                        <!-- Project 5 -->
+                        <a href="#" class="group border border-gray-700 rounded-2xl bg-gradient-to-br from-green-900/20 overflow-hidden to-green-400/10 hover:border-gray-600 transition-all duration-300">
+                            <div class="h-44 overflow-hidden">
+                                <img src="img/olympus-2.jpg" alt="Great Learning Academy's Mobile App" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <div class="p-6 bg-gradient-to-b from-gray-900/60 to-gray-900/80">
+                                <h3 class="text-xl mb-2 group-hover:text-primary transition-colors">Olympus LMS Enhancement</h3>
+                                <p class="text-gray-400 text-sm">Empowering Dreams, Accelerating Careers, and Cultivating Lifelong Learning Adventures!</p>
+                            </div>
+                        </a>
+
+                        <!-- Project 2 -->
+                        <a href="#" class="group border border-gray-700 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-300">
+                            <div class="h-44 overflow-hidden">
+                                <img src="img/shine-2.jpg" alt="GL Shine" class="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <div class="p-6 bg-gradient-to-b from-gray-900/60 to-gray-900/80">
+                                <h3 class="text-xl mb-2 group-hover:text-primary transition-colors">GL Shine</h3>
+                                <p class="text-gray-400 text-sm">Unifying Sales Efficiency and Compliance for Optimal Performance</p>
+                            </div>
+                        </a>
+                    </div>
+                    </section>
+
+
+
+
+
+                <!-- Work Experience Section -->
+               <section class="my-16">
+                    <!-- Resume Button -->
+                    <div class="mb-8">
+                        <button class="flex items-center gap-2 px-6 py-2 border border-gray-600 rounded-full text-white text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                            <span>RESUME</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-3 mb-12">
+                        <!-- <div class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                        </div> -->
+                        <h2 class="text-4xl font-semibold text-white">My Work <span class="text-primary">Experience</span></h2>
+                    </div>
+
+                    <div class="relative pl-6 border-l border-gray-700 space-y-10">
+                        <!-- Great Learning -->
+                        <div class="relative">
+                        <div class="absolute -left-[31px] w-3 h-3 bg-primary rounded-full"></div>
+                        <p class="text-sm text-gray-400 mb-1">2018 - Present</p>
+                        <h3 class="text-2xl font-medium text-white">Principal Designer</h3>
+                        <p class="text-gray-400 text-sm mb-3">Great Learning · Bengaluru, India</p>
+                        <div class="text-gray-300 text-[14px] leading-relaxed">
+                            <ul class="list-disc list-outside space-y-2 text-gray-300 leading-relaxed">
+                                <li class="flex gap-3">
+                                    <span class="text-primary mt-1.5">•</span>
+                                    <span>Led UX for Olympus, Shine & Jedi, improving engagement by 32% within six months and achieving 5-star learner satisfaction in 2023.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-primary mt-1.5">•</span>
+                                    <span>Scaled and mentored the founding design team, establishing a unified design culture that bridged product and business functions.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-primary mt-1.5">•</span>
+                                    <span>Founded a design system that cut UI inconsistencies by 60% and reduced release cycles by 35% within one year.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-primary mt-1.5">•</span>
+                                    <span>Directed UX migration from LeadSquared, boosting task compliance by 28% and completing transition in four months.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-primary mt-1.5">•</span>
+                                    <span>Drove measurable business impact of ₹50 crore annual savings and 50–80% higher team productivity through optimized workflows.</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                        <!-- Pentaur Technology -->
+                        <div class="relative">
+                        <div class="absolute -left-[31px] w-3 h-3 bg-primary rounded-full"></div>
+                        <p class="text-sm text-gray-400 mb-1">2017 - 2018</p>
+                        <h3 class="text-2xl font-medium text-white">UX Designer · Web Developer</h3>
+                        <p class="text-gray-400 text-sm mb-3">Pentaur Technology Pvt Ltd · Bengaluru, India</p>
+                        <div class="text-gray-300 text-[14px] leading-relaxed">
+                            <ul class="list-disc list-outside space-y-2 text-gray-300 leading-relaxed">
+                                <li>Developed cross-platform email campaigns for Visa and Northern Trust
+                                with 100% compatibility, meeting business, customer, and privacy goals
+                                within three months of joining.</li>
+                                <li> Built responsive apps with 95% accessibility compliance across Android
+                                and iOS, elevating UX through precision in typography and layout.</li>
+                                <li>Increased engagement by 20% on Marketo and improved UX for Nurture Co.,
+                                aligning storytelling-driven design with brand and automation strategy.</li>
+                            </ul>
+                        </div>
+                        </div>
+
+                        <!-- Tyre Discounters -->
+                        <div class="relative">
+                        <div class="absolute -left-[31px] w-3 h-3 bg-primary rounded-full"></div>
+                        <p class="text-sm text-gray-400 mb-1">2015 - 2017</p>
+                        <h3 class="text-2xl font-medium text-white">Frontend Engineer (Web & UX Designer)</h3>
+                        <p class="text-gray-400 text-sm mb-3">Tyre Discounters Pvt Ltd · Bengaluru, India</p>
+                        <div class="text-gray-300 text-[14px] leading-relaxed">
+                            <ul class="list-disc list-outside space-y-2 text-gray-300 leading-relaxed">
+                                <li>Revamped a 15-year-old legacy system, improving usability and engagement within 6 months and boosting sales through better customer experience.</li>
+                                <li> Designed and delivered the TyreMarket website from 0–1 and multiple WordPress apps, reducing iteration cycles by 20% and ensuring scalable, responsive delivery</li>
+                            </ul>
+                            
+                        </div>
+                        </div>
+
+                        <!-- Dotline -->
+                        <div class="relative">
+                        <div class="absolute -left-[31px] w-3 h-3 bg-primary rounded-full"></div>
+                        <p class="text-sm text-gray-400 mb-1">2013 - 2014</p>
+                        <h3 class="text-2xl font-medium text-white">Web Designer</h3>
+                        <p class="text-gray-400 text-sm mb-3">Dotline Technologies · Bengaluru, India</p>
+                        <p class="text-gray-300 text-[14px] leading-relaxed">
+                            Designed responsive web layouts improving load speed by 30% and overall accessibility across devices.
+                        </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                
+                
+
+                <!-- Certifications Section -->
+                <section>
+                    <div class="mt-8 mb-4">
+                        <button class="flex items-center gap-2 px-6 py-2 border border-gray-600 rounded-full text-white text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>CERTIFICATES</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-3 mb-8">
+
+                        <h2 class="text-4xl">Earned <span class="text-primary">Credentials</span></h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="border border-gray-700 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+                            <h3 class="text-lg mb-2">Certified User Experience Analyst (CXA™)</h3>
+                            <p class="text-sm text-gray-400 mb-1">Human Factors International (HFI)</p>
+                            <p class="text-xs text-gray-500">Jul 2025 - Present</p>
+                        </div>
+
+                        <div class="border border-gray-700 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+                            <h3 class="text-lg mb-2">edX Verified Certificate for Introduction to Web Accessibility</h3>
+                            <p class="text-sm text-gray-400 mb-1">edX</p>
+                            <p class="text-xs text-gray-500">Jun 2025 - Present</p>
+                        </div>
+
+                        <div class="border border-gray-700 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+                            <h3 class="text-lg mb-2">HUMAN-COMPUTER INTERACTION - HCI</h3>
+                            <p class="text-sm text-gray-400 mb-1">The Interaction Design Foundation</p>
+                            <p class="text-xs text-gray-500">Sep 2017 - Present</p>
+                        </div>
+
+                        <div class="border border-gray-700 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+                            <h3 class="text-lg mb-2">Conducting Usability Testing</h3>
+                            <p class="text-sm text-gray-400">IxDF - Interaction Design Foundation</p>
+                        </div>
+
+                        <div class="border border-gray-700 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+                            <h3 class="text-lg mb-2">UX Management: Strategy and Tactics</h3>
+                            <p class="text-sm text-gray-400">IxDF - Interaction Design Foundation</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-          <!-- Add more items as needed -->
-        </div>
+    </main>
 
-      
-      
-  
-      <!-- <div class="mb-4 project-card">
-        <h5>GL Shine – Unified Sales Productivity Platform</h5>
-        <p>Redesigned sales tools to boost LC productivity by 50–80% and save ₹50 Cr in tool costs.</p>
-        <a href="https://reform.mygreatlearning.com/shine-v3" class="btn btn-sm btn-primary">View Case Study</a>
-      </div>
-  
-      <div class="mb-4 project-card">
-        <h5>Olympus LMS – Learning Experience Redesign</h5>
-        <p>Improved learning flow and UX for 1000+ learners, achieving a 4.78/5 satisfaction score.</p>
-        <a href="https://olympus.mygreatlearning.com/" class="btn btn-sm btn-primary">View Case Study</a>
-      </div>
-  
-      <div class="mb-4 project-card">
-        <h5>Jedi App – PM Efficiency Booster</h5>
-        <p>Streamlined workflows to double PM capacity and reduce operational load.</p>
-        <a href="https://ninja.mygreatlearning.com/" class="btn btn-sm btn-primary">View Case Study</a>
-      </div> -->
-    </div>
-  </section>
-
-  <section class="container my-5">
-    <h2 class="mb-4 display-6 fw-bold">Licenses & Certifications</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-0 certificates">
-      <!-- Certification Card -->
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/hfi.png" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">Certified User Experience Analyst (CXA™)</h5>
-            <p class="text-muted mb-1 small">Human Factors International HFI</p>
-            <p class="mb-1 small"><strong>Issued:</strong> Jul 2025</p>
-            <a href="https://www.credly.com/badges/3da25665-79b2-4d14-9296-df2a510d634b/public_url" class="btn btn-link" target="_blank">Credentials</a> 
-            <p class="mb-1 small"><strong>Credential ID: 2025 - 759</strong></p> 
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification Card -->
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/w3c.png" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">W3Cx: Introduction to Web Accessibility (WAI0.1x)</h5>
-            <p class="text-muted mb-1 small">World Wide Web Consortium (W3C) via edX</p>
-            <p class="mb-1 small"><strong>Issued:</strong> June 23, 2025</p>
-            <a href="https://courses.edx.org/certificates/863eebb93de44710ab86dae9c24e0619?_gl=1*zevanx*_gcl_au*MzYzMTA1NTUuMTc0OTQ4MzQ2NA..*_ga*MTE3NDcyOTc3Ny4xNzQ5NDgzNDYx*_ga_D3KS4KMDT0*czE3NTA2NTAxODkkbzkkZzEkdDE3NTA2NTU3OTQkajEkbDAkaDA." class="btn btn-link" target="_blank">Credentials</a> 
-            <p class="mb-1 small"><strong>Credential ID: </strong>863eebb93de44710ab86dae9c24e0619 </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification Card -->
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">How to Create Intuitive Products</h5>
-            <p class="text-muted mb-1 small">Interaction Design Foundation</p>
-            <p class="mb-1 small"><strong>Issued:</strong> Oct 2024</p>
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/c4aad99d-3f06-41a4-b526-957f8e55bf6c" class="btn btn-link" target="_blank">Credentials</a>
-            <!-- <p class="mb-1 small"><strong>Credential ID:</strong> —</p> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/UOA.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">Qualitative Research Methods</h5>
-            <p class="text-muted mb-1 small">University of Amsterdam</p>
-            <p class="mb-1 small"><strong>Issued:</strong> Sep 2020</p>
-            <p class="mb-1 small"><strong>Credential ID:</strong> T48JCK6KRL55</p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/T48JCK6KRL55" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/UOA.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">Quantitative Methods</h5>
-            <p class="text-muted mb-1 small">University of Amsterdam</p>
-            <p class="mb-1 small"><strong>Issued:</strong> Sep 2020</p>
-            <p class="mb-1 small"><strong>Credential ID:</strong> QTV4BNUU6V8M</p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/QTV4BNUU6V8M" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/wu.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">Social Psychology by Wesleyan University</h5>
-            <p class="text-muted mb-1 small">Wesleyan UniversityWesleyan University</p>
-            <p class="mb-1 small"><strong>Issued:</strong> Sep 2020</p>
-            <p class="mb-1 small"><strong>Credential ID:</strong> F5ST39N3RZBE</p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/F5ST39N3RZBE" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">HUMAN-COMPUTER INTERACTION - HCI</h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <p class="mb-1 small"><strong>Issued:</strong> Sep 2017</p>
-            <a href="https://www.interaction-design.org/sivarami-reddy/certificate/course/NwgZFnPH7?r=sivarami-reddy" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">USER RESEARCH — METHODS AND BEST PRACTICES</h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p>
-            <a href="https://www.interaction-design.org/sivarami-reddy/certificate/course/Nrm0Dc4s4?r=sivarami-reddy" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">AI for Designers</h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/46520d16-3ca8-4407-aaa4-354640344d3d" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">
-              Conducting Usability Testing
-              </h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/2b177cf6-1c04-4459-b92a-e855d0d4c6bd" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">
-              Perception and Memory in HCI and UX
-              </h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/b977436e-10b2-435d-9835-b7d7eea884d1" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">
-              The Brain and Technology: Brain Science in Interface Design
-            </h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/798a9903-0312-42ec-ae02-06854fb9f9ba" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">
-              UI Design Patterns for Successful Software
-            </h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/42121cff-0a7d-4514-97e9-cd5c51627c1f" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="col rects certificate">
-        <span class="rect tr"></span>
-        <span class="rect tl"></span>
-        <span class="rect br"></span>
-        <span class="rect bl"></span>
-        <div class=" h-100  p-3 d-flex flex-row align-items-start">
-          <img src="img/idf.jpeg" alt="IxDF Logo" width="48" class="me-3 mt-1">
-          <div class="flex-grow-1">
-            <h5 class="mb-1">
-              UX Management: Strategy and Tactics
-            </h5>
-            <p class="text-muted mb-1 small">IxDF - The Interaction Design FoundationIxDF </p>
-            <!-- <p class="mb-1 small"><strong>Issued:</strong> Aug 2017</p> -->
-            <a href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/PLk5Nz0lQ" class="btn btn-link" target="_blank">Credentials</a>
-            
-          </div>
-        </div>
-      </div>
-
-
-
-
-      
-      
-
-
-
-      
-      
-      </div>
-  
-      <!-- Duplicate and modify for each certificate -->
-      
-  
-      <!-- Add more cards here... -->
-  
-    </div>
-  </section>
-  
-  
-  <!-- Skills Section -->
-<section class="py-5 skills">
-  <div class="container">
-    <h1 class="text-left bold display-3 ">Skills</h2>
-    <p class="lead">Skills That Bridge Creativity, Code, and Strategy</p>
-
-    <!-- Skill Category -->
-    <div class="rects skills-card">
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-      <h4><i class="ri-brush-fill text-primary me-2"></i>Design Skills</h4>
-      <div class="row g-3">
-        <!-- List each skill -->
-        <div class="col-6 col-md-4 col-lg-3" >User Research</div>
-        <div class="col-6 col-md-4 col-lg-3" >Wireframing</div>
-        <div class="col-6 col-md-4 col-lg-3" >Prototyping</div>
-        <div class="col-6 col-md-4 col-lg-3" >Information Architecture</div>
-        <div class="col-6 col-md-4 col-lg-3" >Interaction Design</div>
-        <div class="col-6 col-md-4 col-lg-3" >Visual Design</div>
-        <div class="col-6 col-md-4 col-lg-3" >End-to-End Design Process</div>
-        <div class="col-6 col-md-4 col-lg-3" >Personas</div>
-        <div class="col-6 col-md-4 col-lg-3" >Storyboarding</div>
-        <div class="col-6 col-md-4 col-lg-3" >Mockups</div>
-        <div class="col-6 col-md-4 col-lg-3" >User Experience Design</div>
-        <div class="col-6 col-md-4 col-lg-3" >Experience Design</div>
-        <div class="col-6 col-md-4 col-lg-3" >User Experience</div>
-        <div class="col-6 col-md-4 col-lg-3" >User Journeys</div>
-        <div class="col-6 col-md-4 col-lg-3" >Decision-Making</div>
-        <div class="col-6 col-md-4 col-lg-3" >Customer Experience</div>
-        <div class="col-6 col-md-4 col-lg-3" >Design Research</div>
-      </div>
-    </div>
-
-    <!-- Development Skills -->
-    <div class="rects skills-card">
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-      <h4><i class="ri-code-box-line text-primary me-2"></i>Development Skills</h4>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">HTML</div>
-        <div class="col-6 col-md-4 col-lg-3">CSS</div>
-        <div class="col-6 col-md-4 col-lg-3">JavaScript</div>
-        <div class="col-6 col-md-4 col-lg-3">jQuery</div>
-        <div class="col-6 col-md-4 col-lg-3">ReactJS</div>
-        <div class="col-6 col-md-4 col-lg-3">WordPress (Theme Development)</div>
-        <div class="col-6 col-md-4 col-lg-3">Product Development</div>
-      </div>
-    </div>
-
-    <!-- Design Tools -->
-    <div class="rects skills-card">
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-      <h4><i class="ri-tools-fill text-primary me-2"></i>Design Tools</h4>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">Figma</div>
-        <div class="col-6 col-md-4 col-lg-3">Sketch</div>
-        <div class="col-6 col-md-4 col-lg-3">Adobe Illustrator</div>
-        <div class="col-6 col-md-4 col-lg-3">Adobe Photoshop</div>
-      </div>
-    </div>
-
-    <!-- Leadership Skills -->
-    <div class="rects skills-card">
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-      <h4><i class="ri-team-fill text-primary me-2"></i>Leadership Skills</h4>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">Design Systems</div>
-        <div class="col-6 col-md-4 col-lg-3">Responsive Design</div>
-        <div class="col-6 col-md-4 col-lg-3">Cross-Functional Collaboration</div>
-        <div class="col-6 col-md-4 col-lg-3">Analytical Skills</div>
-        <div class="col-6 col-md-4 col-lg-3">Leadership & Team Management</div>
-        <div class="col-6 col-md-4 col-lg-3">Design Leadership</div>
-      </div>
-    </div>
-
-    <!-- Strategic Skills -->
-    <div class="rects skills-card">
-      <span class="rect tr"></span>
-      <span class="rect tl"></span>
-      <span class="rect br"></span>
-      <span class="rect bl"></span>
-      <h4><i class="ri-lightbulb-flash-fill text-primary me-2"></i>Strategic Skills</h4>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">Strategic Thinking</div>
-        <div class="col-6 col-md-4 col-lg-3">Project Management</div>
-        <div class="col-6 col-md-4 col-lg-3">Stakeholder Engagement</div>
-        <div class="col-6 col-md-4 col-lg-3">Business Objectives</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  
-  <!-- Contact -->
-  <section class="bg-primary text-white py-5 text-center">
-    <div class="container py-5">
-      <h2>Let’s Work Together</h2>
-      <p>Open to roles where I can drive impact through thoughtful design and clean code.</p>
-      <div class="mt-3">
-        <a href="mailto:ux.siva@gmail.com" class="text-white me-3"><i class="ri-mail-line"></i> ux.siva@gmail.com</a>
-        <a href="https://linkedin.com/in/b-sivarami-reddy-483152148/" class="text-white me-3"><i class="ri-linkedin-line"></i> LinkedIn</a>
-       
-      </div>
-    </div>
-  </section>
-
-  <!-- <h2 class="mt-4">Outline Buttons</h2>
-  <button class="btn btn-outline-primary me-2 btn-lg">Outline Primary <i class="ri-arrow-right-long-line"></i></button>
-  <button class="btn btn-outline-secondary me-2 btn-lg">Outline Secondary <i class="ri-arrow-right-long-line"></i></button>
-  <button class="btn btn-outline-tertiary me-2 btn-lg">Outline Tertiary <i class="ri-arrow-right-long-line"></i></button>
-
-  -->
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WF03MQCYHW');
-</script>
+  <!-- Footer -->
+  <footer class="text-center py-16 px-6">
+    <p class="text-sm">
+      &copy; 2024 B. Sivarami Reddy. All rights reserved.
+    </p>
+  </footer>
 </body>
 </html>
