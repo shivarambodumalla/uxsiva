@@ -1,775 +1,706 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GLA App - Transforming Great Learning Academy: From Online Courses to an AI-Powered Career Accelerator</title>
-    <meta name="description" content="A mobile-first redesign of Great Learning Academy Pro — merging AI personalization and UX design to accelerate real career outcomes." />
-    <meta name="keywords" content="UX Designer, Design Manager, Portfolio, Product Design, User Experience, Bengaluru, Frontend Engineer, UI/UX, Figma, ReactJS" />
-    <meta name="author" content="B. Sivarami Reddy" />
-    <link rel="canonical" href="https://uxsiva.onrender.com/" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLA App — Transforming Great Learning Academy: From Online Courses to an AI-Powered Career Accelerator</title>
+  <meta name="description"
+    content="A mobile-first redesign of Great Learning Academy Pro — merging AI personalization and UX design to accelerate real career outcomes." />
+  <meta name="keywords" content="UX Designer, Mobile App, AI, EdTech, Product Design, User Experience, Bengaluru" />
+  <meta name="author" content="B. Sivarami Reddy" />
+  <link rel="canonical" href="https://uxsiva.onrender.com/gla.html" />
 
-    <!-- Open Graph / Social Meta -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Form Follows Function — The Portfolio of B. Sivarami Reddy" />
-    <meta property="og:description" content="UX Design Leader and Strategist crafting meaningful experiences that connect users and stories." />
-    <meta property="og:image" content="https://uxsiva.onrender.com/og-image.jpg" />
-    <meta property="og:url" content="https://uxsiva.onrender.com/" />
-    <meta property="og:site_name" content="B. Sivarami Reddy Portfolio" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="B. Sivarami Reddy — UX Design Leader & Strategist" />
-    <meta name="twitter:description" content="Creating digital products guided by the belief that form follows function." />
-    <meta name="twitter:image" content="https://uxsiva.onrender.com/og-image.jpg" />
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Favicon (Browser Tab Icon) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <!-- Favicon for all browsers -->
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GLA App — Transforming Great Learning Academy" />
+  <meta property="og:description"
+    content="A mobile-first redesign of Great Learning Academy Pro — merging AI personalization and UX design to accelerate real career outcomes." />
+  <meta property="og:image" content="https://uxsiva.onrender.com/og-image.jpg" />
+  <meta property="og:url" content="https://uxsiva.onrender.com/gla.html" />
+  <meta property="og:site_name" content="B. Sivarami Reddy Portfolio" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GLA App — Transforming Great Learning Academy" />
+  <meta name="twitter:description"
+    content="A mobile-first redesign merging AI personalization and UX design to accelerate career outcomes." />
+  <meta name="twitter:image" content="https://uxsiva.onrender.com/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 
-<body class="bg-lightBg dark:bg-darkBg text-gray-800 dark:text-gray-200 min-h-screen flex flex-col">
+<body>
+
+  <!-- Cursor Spotlight Overlay -->
+  <div class="spotlight" aria-hidden="true"></div>
 
   <!-- Top Bar -->
-  <header class="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-gray-800 lg:px-5 px-2 py-3 flex items-center justify-between">
-  <!-- Left Section -->
-  <div class="flex items-center gap-2">
-    <a href="index.html" class="flex items-center gap-1 text-gray-400 hover:text-primary transition-colors">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" 
-           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-           class="mt-[1px]">
-        <polyline points="15 18 9 12 15 6" />
-      </svg>
-      <span class="text-sm font-medium tracking-wide uppercase">Back</span>
-    </a>
-    <span class="text-gray-500 px-1">/</span>
-    <h2 class="text-sm sm:text-base font-semibold text-white">GLA Mobile App</h2>
-  </div>
-
-  <!-- Right Section (Visible only on Desktop) -->
-  <div class="hidden sm:flex items-center gap-3">
-    <div class="flex flex-col text-right leading-tight">
-      <span class="text-sm text-gray-200 font-medium">B. Sivarami Reddy</span>
-      <span class="text-xs text-gray-500">Principal Designer & UX Design Manager</span>
+  <header class="topbar">
+    <div class="topbar__left">
+      <a href="index.html" class="topbar__back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back
+      </a>
+      <span class="topbar__sep">/</span>
+      <span class="topbar__title">GLA Mobile App</span>
     </div>
-    <img src="img/avatar.png" alt="Profile" class="w-8 h-8 rounded-full border border-gray-700" />
-  </div>
-</header>
-    
+    <div class="topbar__right">
+      <div class="topbar__info">
+        <span class="topbar__name">B. Sivarami Reddy</span><br>
+        <span class="topbar__role">Principal Designer & UX Design Manager</span>
+      </div>
+      <img src="img/avatar.png" alt="Profile" class="topbar__avatar" />
+    </div>
+  </header>
 
-<main class="container mx-auto px-6 pt-10 pb-20 text-gray-300">
-  <!-- Hero Section -->
-  <section class="mb-12">
-    <h1 class="text-3xl sm:text-4xl font-bold text-primary mb-4 leading-tight">
-      Bridging Dreams to Careers
-    </h1>
-    <p class="text-lg text-gray-200 mb-6">
-      Transforming Great Learning Academy’s Mobile Experience & Launching Great Learning Academy Pro: 
-      An AI-Powered Career Acceleration Platform
-    </p>
-  </section>
+  <main class="cs-main">
 
-  <!-- Overview Section -->
-  <section class="mb-16">
-    <h2 class="text-2xl font-semibold mb-4">Overview</h2>
-    <p class="mb-4">
-      How we reimagined India’s leading professional learning platform to better serve 
-      <strong>1.6M+ ambitious learners</strong> on their journey from learning to meaningful career growth.
-    </p>
-    <blockquote>
-      <p class="mb-4 italic text-gray-400">
-        “A computer science student in Pune, scrolling through job listings at 11 PM, realizing they need to learn Python.
-        A marketing professional in Delhi, commuting to work, eager to study data analytics during their 45-minute metro ride.”
+    <!-- ===== HERO ===== -->
+    <section class="cs-hero">
+      <h1 class="cs-hero__title">Bridging Dreams to Careers</h1>
+      <p class="cs-hero__subtitle">
+        Transforming Great Learning Academy's Mobile Experience & Launching Great Learning Academy Pro:
+        An AI-Powered Career Acceleration Platform
       </p>
-    </blockquote>
-    
-    <p class="mb-4">
-      These aren’t just hypothetical personas—they represent the real learning moments of over 
-      <strong>1.6 million users</strong> on Great Learning Academy. 
-    </p>
-    <p>
-      Despite being India’s top professional learning platform, our mobile experience wasn’t matching the ambition of our users. 
-      With over <strong>72% of learners accessing courses via mobile</strong>, it was clear that the app needed to evolve beyond 
-      being a learning portal—it had to become a <strong>true career companion</strong>.
-    </p>
-  </section>
-  <section class="py-20 text-gray-300">
-  <div class="container mx-auto">
-    <!-- Title -->
-    <h2 class="text-3xl font-semibold text-primary mb-12">Impact Metrics</h2>
+    </section>
 
-    <!-- Metrics Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      
-      <!-- Career Impact -->
-      <div class="space-y-6 border-l-2 border-primary pl-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Career Impact</h3>
-          <p class="text-gray-400">30% faster time-to-skill mastery through optimized learning flows and adaptive pacing, enabling professionals to transition from learners to job-ready contributors more effectively.</p>
+    <!-- ===== OVERVIEW ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Overview</h2>
+      <p class="cs-section__text">
+        How we reimagined India's leading professional learning platform to better serve
+        <strong>1.6M+ ambitious learners</strong> on their journey from learning to meaningful career growth.
+      </p>
+      <blockquote class="cs-blockquote">
+        "A computer science student in Pune, scrolling through job listings at 11 PM, realizing they need to learn
+        Python.
+        A marketing professional in Delhi, commuting to work, eager to study data analytics during their 45-minute metro
+        ride."
+      </blockquote>
+      <p class="cs-section__text">
+        These aren't just hypothetical personas—they represent the real learning moments of over
+        <strong>1.6 million users</strong> on Great Learning Academy.
+      </p>
+      <p class="cs-section__text">
+        Despite being India's top professional learning platform, our mobile experience wasn't matching the ambition of
+        our users.
+        With over <strong>72% of learners accessing courses via mobile</strong>, it was clear that the app needed to
+        evolve beyond
+        being a learning portal—it had to become a <strong>true career companion</strong>.
+      </p>
+    </section>
+
+    <!-- ===== IMPACT METRICS ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title cs-section__title--accent">Impact Metrics</h2>
+      <div class="cs-grid cs-grid--2">
+
+        <!-- Career Impact -->
+        <div class="cs-timeline">
+          <div class="cs-timeline__item">
+            <h3>Career Impact</h3>
+            <p>30% faster time-to-skill mastery through optimized learning flows and adaptive pacing, enabling
+              professionals to transition from learners to job-ready contributors more effectively.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Learning Hours Growth</h3>
+            <p>60% increase in average course consumption hours within the mobile app, reflecting stronger learning
+              intent and higher platform stickiness.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>AI Resume Impact</h3>
+            <p>67% of learners received job interview calls within three months of program completion, supported by
+              personalized AI-driven resume enhancements.</p>
+          </div>
         </div>
 
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Learning Hours Growth</h3>
-          <p class="text-gray-400">60% increase in average course consumption hours within the mobile app, reflecting stronger learning intent and higher platform stickiness.</p>
+        <!-- Learning & Engagement -->
+        <div class="cs-timeline">
+          <div class="cs-timeline__item">
+            <h3>Learner Retention</h3>
+            <p>3.2× higher retention rate compared to free-tier learners, demonstrating the sustained value of guided,
+              structured learning journeys.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Completion Excellence</h3>
+            <p>85% course completion within projected timelines, achieved through micro-learning design and consistent
+              progress nudges.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Feature Engagement</h3>
+            <p>89% utilization of core Pro features and a 40% increase in session duration per learner, reflecting
+              deeper engagement and perceived value.</p>
+          </div>
         </div>
 
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">AI Resume Impact</h3>
-          <p class="text-gray-400">67% of learners received job interview calls within three months of program completion, supported by personalized AI-driven resume enhancements.</p>
-        </div>
-      </div>
-
-      <!-- Learning & Engagement -->
-      <div class="space-y-6 border-l-2 border-primary pl-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Learner Retention</h3>
-          <p class="text-gray-400">3.2× higher retention rate compared to free-tier learners, demonstrating the sustained value of guided, structured learning journeys.</p>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Completion Excellence</h3>
-          <p class="text-gray-400">85% course completion within projected timelines, achieved through micro-learning design and consistent progress nudges.</p>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Feature Engagement</h3>
-          <p class="text-gray-400">89% utilization of core Pro features and a 40% increase in session duration per learner, reflecting deeper engagement and perceived value.</p>
-        </div>
-      </div>
-
-      <!-- Experience & Satisfaction -->
-      <div class="space-y-6 border-l-2 border-primary pl-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">User Ratings</h3>
-          <p class="text-gray-400">4.6★ average user satisfaction, up from 3.2★ pre-redesign, validating the humanized and intuitive learning experience.</p>
+        <!-- Experience & Satisfaction -->
+        <div class="cs-timeline">
+          <div class="cs-timeline__item">
+            <h3>User Ratings</h3>
+            <p>4.6★ average user satisfaction, up from 3.2★ pre-redesign, validating the humanized and intuitive
+              learning experience.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Confidence Building</h3>
+            <p>78% of learners reported higher confidence in technical interviews, credited to targeted feedback and
+              adaptive skill assessments.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>AI Precision</h3>
+            <p>92% accuracy in skill gap detection through AI models, allowing for precise and relevant upskilling
+              recommendations.</p>
+          </div>
         </div>
 
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Confidence Building</h3>
-          <p class="text-gray-400">78% of learners reported higher confidence in technical interviews, credited to targeted feedback and adaptive skill assessments.</p>
+        <!-- Business Growth -->
+        <div class="cs-timeline">
+          <div class="cs-timeline__item">
+            <h3>Revenue Acceleration</h3>
+            <p>156% year-over-year growth in subscription revenue, driven by enhanced user experience and product-market
+              fit refinement.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Renewal Momentum</h3>
+            <p>40% increase in Pro plan renewals, reflecting strengthened learner trust and long-term engagement with
+              the ecosystem.</p>
+          </div>
+          <div class="cs-timeline__item">
+            <h3>Customer Value Expansion</h3>
+            <p>34% improvement in customer lifetime value (LTV) and a 25% rise in premium conversions, powered by a
+              clearer articulation of outcomes and impact.</p>
+          </div>
         </div>
 
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">AI Precision</h3>
-          <p class="text-gray-400">92% accuracy in skill gap detection through AI models, allowing for precise and relevant upskilling recommendations.</p>
-        </div>
       </div>
+    </section>
 
-      <!-- Business Growth -->
-      <div class="space-y-6 border-l-2 border-primary pl-6">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Revenue Acceleration</h3>
-          <p class="text-gray-400">156% year-over-year growth in subscription revenue, driven by enhanced user experience and product-market fit refinement.</p>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Renewal Momentum</h3>
-          <p class="text-gray-400">40% increase in Pro plan renewals, reflecting strengthened learner trust and long-term engagement with the ecosystem.</p>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-semibold text-gray-200 mb-1">Customer Value Expansion</h3>
-          <p class="text-gray-400">34% improvement in customer lifetime value (LTV) and a 25% rise in premium conversions, powered by a clearer articulation of outcomes and impact.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="container mx-auto py-16 text-gray-300">
-  <!-- Section Title -->
-  <div class="mb-10">
-    <h2 class="text-3xl font-semibold text-white mb-3">User Research: Understanding Our Learners</h2>
-    <p class="text-gray-400 max-w-3xl">
-      Our design journey began with listening. Through in-depth research across 1.6M+ learners on Great Learning Academy, 
-      we uncovered the real motivations, habits, and needs driving modern learning in India.
-    </p>
-  </div>
-
-  <!-- Two Outlined Cards -->
-  <div class="grid md:grid-cols-2 gap-8">
-    <!-- Card 1: Who We’re Designing For -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <h3 class="text-xl font-semibold text-white mb-4">Who We’re Designing For</h3>
-      <p class="text-gray-400 mb-6">
-        Our research spanned 1.6M+ learners across India. Here’s what we discovered about their backgrounds and motivations:
-      </p>
-      <ul class="space-y-3 text-gray-300 list-disc list-inside">
-        <li><span class="text-white font-medium">62%</span> college students and freshers seeking their first break</li>
-        <li><span class="text-white font-medium">52%</span> complete beginners with little or no work experience</li>
-        <li><span class="text-white font-medium">72%</span> mobile-first learners balancing study, work, and upskilling</li>
-        <li><span class="text-white font-medium">Ages 18–34</span> the generation that learns on the move</li>
-      </ul>
-    </div>
-
-    <!-- Card 2: Key Behavior Patterns -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <h3 class="text-xl font-semibold text-white mb-4">Key Behavior Patterns</h3>
-      <p class="text-gray-400 mb-6">
-        Our learners aren’t passive consumers. They’re strategic, self-driven individuals seeking growth through flexibility and focus.
-      </p>
-      <ul class="space-y-3 text-gray-300 list-disc list-inside">
-        <li>Learning happens in <span class="text-white font-medium">micro-moments</span> during commutes, lunch breaks, and late nights</li>
-        <li><span class="text-white font-medium">Mobile for learning, laptop for practice</span> a hybrid learning habit</li>
-        <li>Short-form content and visible progress maintained high motivation</li>
-        <li><span class="text-white font-medium">Peer validation</span> — seeing others succeed significantly increased engagement</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="container mx-auto py-16 text-gray-300">
-  <!-- Section Title -->
-  <div class="mb-10">
-    <h2 class="text-3xl font-semibold text-white mb-3">What the Data Told Us</h2>
-    <p class="text-gray-400 max-w-3xl">
-      Our learner analytics revealed powerful insights that shaped the platform redesign — helping us understand where, how, and why learners engage with Great Learning Academy.
-    </p>
-  </div>
-
-  <!-- Four Cards -->
-  <div class="grid md:grid-cols-2 gap-8">
-    
-    <!-- Card 1: Registration Source -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <img src="img/gla/g-1.png" alt="Registration Source" class="w-full rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-white mb-2">Registration Source</h3>
-      <p class="text-gray-400">
-        Web and Android showed nearly equal sign-ups, reflecting balanced usage across devices. 
-        A closer look revealed that <span class="text-white font-medium">52% were freshers</span> 
-        and <span class="text-white font-medium">10% were college students</span> — both key learner audiences.
-      </p>
-    </div>
-
-    <!-- Card 2: Device Usage -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <img src="img/gla/g-2.png" alt="Device Usage" class="w-full rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-white mb-2">Device Usage</h3>
-      <p class="text-gray-400">
-        <span class="text-white font-medium">72% learners accessed via mobile</span> compared to 28% on desktop. 
-        This insight drove a critical shift toward a mobile-first experience — 
-        optimizing navigation, readability, and feature accessibility for smaller screens.
-      </p>
-    </div>
-
-    <!-- Card 3: Age Distribution -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <img src="img/gla/g-3.png" alt="Age Distribution" class="w-full rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-white mb-2">Age Distribution</h3>
-      <p class="text-gray-400">
-        The majority of learners fell within the <span class="text-white font-medium">18–34 age range</span>, 
-        underscoring the importance of fast, flexible, and career-relevant learning experiences tailored 
-        to young professionals and students seeking real-world growth.
-      </p>
-    </div>
-
-    <!-- Card 4: Educational Background -->
-    <div class="border border-gray-700 rounded-2xl p-4 hover:border-primary transition-colors">
-      <img src="img/gla/g-4.png" alt="Educational Background" class="w-full rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-white mb-2">Educational Background</h3>
-      <p class="text-gray-400">
-        Learners came from a diverse mix of academic disciplines — 
-        <span class="text-white font-medium">16% Computer Science</span>, 
-        <span class="text-white font-medium">3.7% Electronics & Communication</span>, 
-        and <span class="text-white font-medium">3.3% Business Studies</span>. 
-        This blend highlighted the platform’s role as a bridge between tech and non-tech career transitions.
-      </p>
-    </div>
-
-  </div>
-</section>
-<section class="container mx-auto py-16 text-gray-300">
-  <!-- Section: Bridge to Pro -->
-  <div class="max-w-4xl mb-14">
-    <h2 class="text-3xl font-semibold text-white mb-4">Bridging Learning to Career Transitions</h2>
-    <p class="text-gray-400">
-      As Great Learning Academy empowered millions of learners to start their upskilling journey, 
-      the next evolution was clear — creating a bridge for professionals ready to accelerate their careers. 
-      Our research uncovered a growing segment seeking faster, outcome-oriented learning that directly impacted employability and growth.
-    </p>
-  </div>
-
-  <!-- Section: The Pro Opportunity -->
-  <div class="border border-gray-700 rounded-2xl p-4 mb-16 hover:border-primary transition-colors">
-    <h3 class="text-2xl font-semibold text-white mb-4">The Pro Opportunity</h3>
-    <p class="text-gray-400 mb-4">
-      Deeper analysis revealed a powerful insight about mid-level professionals aged 25–35 — 
-      they wanted learning experiences that directly led to tangible career outcomes. 
-      This audience wasn’t just motivated by curiosity, but by measurable growth.
-    </p>
-    <ul class="list-disc pl-6 space-y-2 text-gray-400">
-      <li><span class="text-white font-medium">78%</span> expressed willingness to subscribe for faster, career-focused learning.</li>
-      <li>Career-oriented features saw <span class="text-white font-medium">3× higher engagement</span> compared to general learning modules.</li>
-      <li>The biggest friction point was <span class="text-white font-medium">time-to-skill acquisition</span> — professionals wanted speed with structure.</li>
-    </ul>
-    <p class="text-gray-400 mt-4">
-      <span class="text-white font-medium">Insight:</span> Professionals don’t just want to learn — they want 
-      <span class="text-primary font-semibold">AI-powered career acceleration.</span>
-    </p>
-  </div>
-
-  <!-- Section: The Insight -->
-  <div class="max-w-4xl mb-16">
-    <h3 class="text-2xl font-semibold text-white mb-4">The Insight: The “Aha!” Moment</h3>
-    <p class="text-gray-400 mb-4">
-      User research revealed a pivotal behavioral pattern that redefined our design philosophy:
-      learners preferred studying on mobile but practicing on laptops. 
-      This dual-device habit reflected a generation that valued flexibility without compromising depth.
-    </p>
-    <p class="text-gray-400 mb-4">
-      Recognizing this, we designed <span class="text-white font-medium">Great Learning Academy Pro</span> — 
-      an AI-powered, subscription-based platform built for professionals aged 25–35, 
-      combining personalized guidance, adaptive learning paths, and measurable skill outcomes.
-    </p>
-    <p class="text-gray-400">
-      The result was a career acceleration ecosystem that merged flexibility with structure — helping learners 
-      upskill faster, smarter, and with clearer professional direction.
-    </p>
-  </div>
-
-  <!-- Section: Personas & Empathy Mapping -->
-  <div class="space-y-10">
-    <div>
-      <h3 class="text-3xl font-semibold text-white mb-4">Personas & Empathy Mapping</h3>
-      <p class="text-gray-400 max-w-4xl mb-8">
-        From our research, we distilled findings into key personas that represented 85% of our audience. 
-        These personas helped our design and product teams empathize deeply — shaping experiences tailored 
-        to each learner’s goals, challenges, and motivations.
+    <!-- ===== USER RESEARCH ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">User Research: Understanding Our Learners</h2>
+      <p class="cs-section__text">
+        Our design journey began with listening. Through in-depth research across 1.6M+ learners on Great Learning
+        Academy,
+        we uncovered the real motivations, habits, and needs driving modern learning in India.
       </p>
 
-      <!-- Free Personas -->
-      <h4 class="text-xl font-semibold text-primary mb-3">Free Learner Personas</h4>
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-        <img src="img/gla/p-1.jpg" alt="Free Persona 1" class="w-full rounded-xl">
-        <img src="img/gla/p-2.jpg" alt="Free Persona 2" class="w-full rounded-xl">
-        <img src="img/gla/p-3.jpg" alt="Free Persona 3" class="w-full rounded-xl">
-      </div>
-
-      <!-- Pro Personas -->
-      <h4 class="text-xl font-semibold text-primary mb-3">Pro Learner Personas</h4>
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-        <img src="img/glapro/p-1.jpg" alt="Pro Persona 1" class="w-full rounded-xl">
-        <img src="img/glapro/p-2.jpg" alt="Pro Persona 2" class="w-full rounded-xl">
-        <img src="img/glapro/p-3.jpg" alt="Pro Persona 3" class="w-full rounded-xl">
-      </div>
-
-      <!-- Empathy Mapping -->
-      <h4 class="text-xl font-semibold text-primary mb-3">Empathy Mapping: From Data to Understanding</h4>
-      <div class="md:w-5/6">
-        <img src="img/gla/Full Empathy Map.jpg" alt="Empathy Map" class="w-full lg:w-[60%] rounded-xl">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container mx-auto py-16 text-gray-300 space-y-16">
-
-  <!-- 1. Intro Narrative Block -->
-  <div class="mx-auto">
-    <h2 class="text-3xl font-semibold text-white mb-4">Design Philosophy: <span class="text-primary">Mobile-First, Career-Focused</span></h2>
-    <p class="text-gray-400">
-      When redesigning Great Learning Academy for mobile, we didn’t just scale down the desktop experience — 
-      we reimagined learning from the ground up.  
-      Our goal was to create a platform that respected our learners’ time, environment, and ambitions.
-    </p>
-  </div>
-
-  <!-- 2. Core Design Foundations (three-column feature grid with icons) -->
-  <div class="bg-gray-800/40 border border-gray-700 rounded-2xl p-4">
-    <h3 class="text-2xl font-semibold text-white mb-6 text-center">Core Design Foundations</h3>
-    <div class="grid md:grid-cols-3 gap-10">
-      
-      <div class="space-y-3">
-        <h4 class="text-lg font-semibold text-primary">1. Micro-Learning Architecture</h4>
-        <p class="text-gray-400">
-          We built the experience around 5–10 minute learning moments, enabling users to 
-          learn in short bursts — during commutes, breaks, or downtime — without losing continuity. 
-          This turned learning into a flexible, daily ritual.
-        </p>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="text-lg font-semibold text-primary">2. Career-Outcome Mapping</h4>
-        <p class="text-gray-400">
-          Every design decision reinforced a single truth — learning must lead to measurable career growth.  
-          Course flows, progress tracking, and recommendations were directly tied to industry-relevant skills and outcomes.
-        </p>
-      </div>
-
-      <div class="space-y-3">
-        <h4 class="text-lg font-semibold text-primary">3. Seamless Device Ecosystem</h4>
-        <p class="text-gray-400">
-          Learners could start on mobile, practice on desktop, and switch effortlessly between devices.  
-          This hybrid continuity supported real-world learning habits and improved completion rates.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 3. The Challenge of Mobile Learning (vertical timeline / staggered layout) -->
-  <div>
-    <h3 class="text-2xl font-semibold text-white mb-6">The Challenge of Mobile Learning</h3>
-    <p class="text-gray-400 max-w-4xl mb-10">
-      Designing for mobile education introduced unique challenges traditional e-learning rarely faced.  
-      Each was met through iterative UX strategy, data-backed decisions, and continuous testing with real learners.
-    </p>
-
-    <div class="space-y-8 border-l-2 border-primary pl-6">
-      <div>
-        <h4 class="text-lg font-semibold text-gray-100 mb-1">Attention Fragmentation</h4>
-        <p class="text-gray-400">
-          With constant interruptions — calls, notifications, movement — our design emphasized graceful recovery, 
-          enabling smooth pause–resume learning without friction.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold text-gray-100 mb-1">Context Switching</h4>
-        <p class="text-gray-400">
-          Learners often jumped between apps. We prioritized continuity, ensuring progress was auto-saved 
-          and accessible instantly across sessions and devices.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold text-gray-100 mb-1">Limited Screen Real Estate</h4>
-        <p class="text-gray-400">
-          Complex topics were distilled into bite-sized visuals and micro-interactions — 
-          preserving depth while avoiding overload.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold text-gray-100 mb-1">Varied Network Conditions</h4>
-        <p class="text-gray-400">
-          With learners across India’s diverse connectivity spectrum, we implemented offline-first principles 
-          and progressive content loading for uninterrupted access.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold text-gray-100 mb-1">Touch-First Interactions</h4>
-        <p class="text-gray-400">
-          Every gesture, button, and navigation element was optimized for thumb-friendly, one-handed use, 
-          supporting genuine on-the-go learning.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4. Our Design Principles (split visual layout) -->
-  <div class="grid md:grid-cols-2 gap-10 items-start">
-    <div>
-      <h3 class="text-2xl font-semibold text-white mb-4">Our Design Principles</h3>
-      <p class="text-gray-400 mb-6">
-        Our core design system revolved around human-centered simplicity and emotional connection.  
-        We translated psychological insights and user behavior into a modular, rewarding, and deeply personal experience.
-      </p>
-      <ul class="space-y-5">
-        <li>
-          <h4 class="text-lg font-semibold text-primary">1. Respect Cognitive Load</h4>
-          <p class="text-gray-400">A clean visual hierarchy and progressive disclosure helped users stay focused in high-distraction environments.</p>
-        </li>
-        <li>
-          <h4 class="text-lg font-semibold text-primary">2. Celebrate Small Wins</h4>
-          <p class="text-gray-400">Micro-rewards like streaks, badges, and milestone pop-ups encouraged consistency and built learner confidence.</p>
-        </li>
-        <li>
-          <h4 class="text-lg font-semibold text-primary">3. Visual Learning First</h4>
-          <p class="text-gray-400">Abstract or technical concepts were transformed into visual storytelling and real-world analogies for quick comprehension.</p>
-        </li>
-        <li>
-          <h4 class="text-lg font-semibold text-primary">4. Career Context Always</h4>
-          <p class="text-gray-400">Skill tags and outcome dashboards continuously reinforced relevance to learners’ professional goals.</p>
-        </li>
-        <li>
-          <h4 class="text-lg font-semibold text-primary">5. Community-Driven Motivation</h4>
-          <p class="text-gray-400">Peer validation and achievement sharing turned solitary study into social growth.</p>
-        </li>
-      </ul>
-    </div>
-    <div class="rounded-2xl overflow-hidden border border-gray-700 bg-gray-800/30 p-6">
-      <img src="img/gla/gla-mobile.png" alt="Mobile Design Preview" class="rounded-xl mb-4 mx-auto">
-      <p class="text-gray-400 text-sm">
-        The mobile learning interface prioritized readability, progress visibility, and motivation —
-        built to help learners grow anytime, anywhere.
-      </p>
-    </div>
-  </div>
-
-  <!-- 5. Closing Summary -->
-  <div class="mt-16">
-    <h3 class="text-xl font-semibold text-white mb-3">In Essence</h3>
-    <p class="text-gray-400">
-      Our design philosophy revolved around one guiding belief to empower learners to grow their careers anytime, anywhere, 
-      with focus, flexibility, and confidence.  
-      The result was a mobile-first ecosystem that turned ambition into action and curiosity into capability.
-    </p>
-  </div>
-
-</section>
-
-<section class="container mx-auto py-20 text-gray-300">
-  <div class="mb-12">
-    <h2 class="font-semibold text-white mb-3 text-3xl">The Learning Ecosystem</h2>
-    <p class="text-gray-400">
-      Each learning tier was designed with a clear purpose — to guide learners from exploration to career transformation through structured, outcome-driven experiences.
-    </p>
-  </div>
-
-  <div class="grid md:grid-cols-2 gap-6">
-    <!-- Free Courses -->
-    <div class="border border-gray-700 rounded-2xl p-6 bg-gray-800/30 hover:bg-gray-800/50 transition">
-      <h3 class="text-xl font-semibold text-primary mb-2">Free Courses — The Gateway Experience</h3>
-      <p class="text-gray-400 mb-4">A frictionless entry point that builds trust and inspires continued learning.</p>
-      <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
-        <li>Career milestone celebrations</li>
-        <li>Peer learning community</li>
-        <li>Skill assessments & certificates (add-on)</li>
-      </ul>
-      <p class="text-gray-500 text-sm">
-        Designed to feel substantial — not “lite.” Clear progression cues and subtle upgrade prompts improved retention.
-      </p>
-    </div>
-
-    <!-- Premium Courses -->
-    <div class="border border-gray-700 rounded-2xl p-6 bg-gray-800/30 hover:bg-gray-800/50 transition">
-      <h3 class="text-xl font-semibold text-primary mb-2">Premium Courses — The Professional Developer</h3>
-      <p class="text-gray-400 mb-4">For motivated learners ready to invest in deeper specialization and career acceleration.</p>
-      <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
-        <li>Project-based learning with mentor support</li>
-        <li>Interview prep & placement guidance</li>
-        <li>Advanced analytics & networking</li>
-      </ul>
-      <p class="text-gray-500 text-sm">
-        Delivered with premium visual polish, adaptive tracking, and mentor-led workflows.
-      </p>
-    </div>
-
-    <!-- University Programs -->
-    <div class="border border-gray-700 rounded-2xl p-6 bg-gray-800/30 hover:bg-gray-800/50 transition">
-      <h3 class="text-xl font-semibold text-primary mb-2">University Programs — The Career Transformer</h3>
-      <p class="text-gray-400 mb-4">Comprehensive academic programs for learners making major professional shifts.</p>
-      <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
-        <li>Structured multi-course learning paths</li>
-        <li>Internships & academic milestones</li>
-        <li>Career counseling & alumni network</li>
-      </ul>
-      <p class="text-gray-500 text-sm">
-        Balanced academic rigor with career relevance; supported multi-stakeholder coordination.
-      </p>
-    </div>
-
-    <!-- Pro Courses -->
-    <div class="border border-gray-700 rounded-2xl p-6 bg-gray-800/30 hover:bg-gray-800/50 transition">
-      <h3 class="text-xl font-semibold text-primary mb-2">Pro Courses — The Career Accelerator</h3>
-      <p class="text-gray-400 mb-4">An AI-powered advancement layer for professionals seeking measurable growth.</p>
-      <ul class="list-disc pl-5 text-gray-400 space-y-1 mb-4">
-        <li>AI-personalized learning & coding exercises</li>
-        <li>Portfolio projects & mock interviews</li>
-        <li>Smart resume builder & job-readiness dashboard</li>
-      </ul>
-      <p class="text-gray-500 text-sm">
-        Modular, adaptive, and performance-driven — built for speed, outcomes, and employability.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="container mx-auto py-20 text-gray-300 space-y-24">
-
-  <!-- Section Intro -->
-  <div class="mx-autor">
-    <h2 class="font-semibold text-white mb-3 text-3xl">
-      Visual Design: <span class="text-primary"> </span> Where Function Meets Emotion
-    </h2>
-    <p class="text-gray-400 leading-relaxed">
-      Designing for Great Learning Academy meant striking a balance between trust and motivation — creating an interface that feels professional yet human, structured yet inspiring.
-      The visual system evolved to embody both the rigor of career-focused learning and the warmth of personal growth.
-    </p>
-  </div>
-
-  <!-- Row 1: Text Left, Image Right -->
-  <div class="grid md:grid-cols-2 gap-12 items-start">
-    <div>
-      <h3 class="text-2xl font-semibold text-primary mb-3">Design System Evolution</h3>
-      <p class="text-gray-400 mb-4">
-        To ensure visual consistency across the platform, we developed a scalable design system grounded in accessibility, clarity, and emotional resonance.
-      </p>
-      <ul class="list-disc pl-5 space-y-2 text-gray-400">
-        <li><span class="font-medium text-gray-200">Color Palette:</span> Guided by psychology to drive emotion and engagement</li>
-        <li><span class="font-medium text-gray-200">Typography:</span> Legible and hierarchical, optimized for mobile readability</li>
-        <li><span class="font-medium text-gray-200">Iconography:</span> Minimal and functional, reinforcing intuitive navigation</li>
-        <li><span class="font-medium text-gray-200">Component Library:</span> Modular elements ensuring design consistency and rapid iteration</li>
-      </ul>
-    </div>
-    <div>
-      <img src="img/gla/design-system.jpg" alt="Design System Overview" class="rounded-2xl border border-gray-700 shadow-md w-full">
-    </div>
-  </div>
-
-  <!-- Row 2: Image Left, Text Right -->
-  <div class="grid md:grid-cols-2 gap-12 items-start">
-    <div class="order-1 md:order-none">
-      <img src="img/gla/design-system-1.jpg" alt="Typography and Color Samples" class="rounded-2xl border border-gray-700 shadow-md w-full">
-    </div>
-    <div class="border-l-2 border-primary pl-6">
-      <h3 class="text-2xl font-semibold text-primary mb-3">Design Language</h3>
-      <p class="text-gray-400 mb-4">
-        Our visual language was guided by a simple philosophy:
-        <span class="text-gray-200 font-medium">“Empower learners through design that feels achievable, not intimidating.”</span>
-        It had to balance credibility for professionals with friendliness for beginners.
-      </p>
-      <div class="grid md:grid-cols-2 gap-10 mt-6">
-        <div>
-          <h4 class="text-lg font-semibold text-gray-200 mb-2">Color Psychology</h4>
-          <ul class="list-disc pl-5 text-gray-400 space-y-2">
-            <li><span class="text-gray-200 font-medium">Primary Blue:</span> Evokes trust, focus, and stability</li>
-            <li><span class="text-gray-200 font-medium">Success Green:</span> Symbolizes growth, progress, and achievement</li>
-            <li><span class="text-gray-200 font-medium">Warning Orange:</span> Used sparingly for motivational alerts</li>
-            <li><span class="text-gray-200 font-medium">Neutral Grays:</span> Maintain calm, distraction-free focus</li>
+      <div class="cs-grid cs-grid--2">
+        <!-- Card 1 -->
+        <div class="cs-card">
+          <h3 class="cs-card__title">Who We're Designing For</h3>
+          <p class="cs-card__text" style="margin-bottom:0.75rem">Our research spanned 1.6M+ learners across India.
+            Here's what we discovered about their backgrounds and motivations:</p>
+          <ul class="cs-list">
+            <li><strong>62%</strong> college students and freshers seeking their first break</li>
+            <li><strong>52%</strong> complete beginners with little or no work experience</li>
+            <li><strong>72%</strong> mobile-first learners balancing study, work, and upskilling</li>
+            <li><strong>Ages 18–34</strong> the generation that learns on the move</li>
           </ul>
-        
-          <h4 class="text-lg font-semibold text-gray-200 mt-6 mb-2">Typography Hierarchy</h4>
-          <ul class="list-disc pl-5 text-gray-400 space-y-2">
-            <li><span class="text-gray-200 font-medium">Primary Typeface:</span> Modern sans-serif with professional clarity</li>
-            <li><span class="text-gray-200 font-medium">Hierarchy:</span> Structured rhythm for headers and body text</li>
-            <li><span class="text-gray-200 font-medium">Readability:</span> Tuned for small screens and consistent contrast</li>
-            <li><span class="text-gray-200 font-medium">Microcopy:</span> Supportive and human, designed to reassure learners</li>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cs-card">
+          <h3 class="cs-card__title">Key Behavior Patterns</h3>
+          <p class="cs-card__text" style="margin-bottom:0.75rem">Our learners aren't passive consumers. They're
+            strategic, self-driven individuals seeking growth through flexibility and focus.</p>
+          <ul class="cs-list">
+            <li>Learning happens in <strong>micro-moments</strong> during commutes, lunch breaks, and late nights</li>
+            <li><strong>Mobile for learning, laptop for practice</strong> a hybrid learning habit</li>
+            <li>Short-form content and visible progress maintained high motivation</li>
+            <li><strong>Peer validation</strong> — seeing others succeed significantly increased engagement</li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-
-</section>
-
-<section class="container mx-auto py-20 text-gray-300">
-  <!-- Title + Intro -->
-  <div class="mb-12">
-    <h2 class="text-3xl font-semibold text-white mb-3">High-Fidelity Designs</h2>
-    <p class="text-gray-400">
-      Translating insights into pixel-perfect interfaces, from Great Learning Academy to Great Learning Pro — every screen was crafted for clarity, flow, and engagement.
-    </p>
-  </div>
-
-  <!-- Free / GLA Designs -->
-  <div class="mb-20">
-    <h3 class="text-2xl font-semibold text-primary mb-6 border-l-2 border-primary pl-4">
-      Great Learning Academy (Free)
-    </h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <img src="img/gla/1.jpg" alt="GLA Screen 1" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/2.jpg" alt="GLA Screen 2" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/3.jpg" alt="GLA Screen 3" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/4.jpg" alt="GLA Screen 4" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/5.jpg" alt="GLA Screen 5" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/6.jpg" alt="GLA Screen 6" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/gla/7.jpg" alt="GLA Screen 7" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-    </div>
-  </div>
-
-  <!-- Pro / GL Pro Designs -->
-  <div>
-    <h3 class="text-2xl font-semibold text-primary mb-6 border-l-2 border-primary pl-4">
-      Great Learning Pro
-    </h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <img src="img/glapro/1.jpg" alt="GL Pro Screen 1" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/2.jpg" alt="GL Pro Screen 2" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/3.jpg" alt="GL Pro Screen 3" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/4.jpg" alt="GL Pro Screen 4" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/5.jpg" alt="GL Pro Screen 5" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/6.jpg" alt="GL Pro Screen 6" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/7.jpg" alt="GL Pro Screen 7" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-      <img src="img/glapro/8.jpg" alt="GL Pro Screen 8" class="w-full rounded-2xl border border-gray-700 shadow-md hover:shadow-lg transition">
-    </div>
-  </div>
-</section>
-
-<section class="container mx-auto py-20 text-gray-300">
-  <!-- Intro -->
-  <div class="max-w-4xl mb-12">
-    <h2 class="text-3xl font-semibold text-white mb-4">Impact & Reflection</h2>
-    <p class="text-gray-400 leading-relaxed">
-      Great Learning Academy Pro evolved from a learning platform into an AI-powered career acceleration ecosystem. 
-      By focusing on measurable career outcomes over course completion, we created a premium experience that delivers tangible professional growth.
-    </p>
-  </div>
-
-  <!-- Main Text -->
-  <div class="max-w-5xl grid md:grid-cols-2 gap-12 items-start mb-16">
-    <div>
-      <p class="text-gray-400 mb-6">
-        AI personalization—from skill gap analysis to interview preparation—transformed learning into a guided career journey, adapting to each user’s goals and pace.
+    <!-- ===== WHAT THE DATA TOLD US ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">What the Data Told Us</h2>
+      <p class="cs-section__text">
+        Our learner analytics revealed powerful insights that shaped the platform redesign — helping us understand
+        where, how, and why learners engage with Great Learning Academy.
       </p>
-      <div class="border-l-2 border-primary pl-5">
-        <h3 class="text-lg font-semibold text-primary mb-2">Key Insight</h3>
-        <p class="text-gray-200 italic">
-          Effective AI in education amplifies human decisions — it doesn’t replace them.
+
+      <div class="cs-grid cs-grid--2">
+        <div class="cs-card">
+          <img src="img/gla/g-1.png" alt="Registration Source">
+          <h3 class="cs-card__title">Registration Source</h3>
+          <p class="cs-card__text">Web and Android showed nearly equal sign-ups, reflecting balanced usage across
+            devices. A closer look revealed that <strong>52% were freshers</strong> and <strong>10% were college
+              students</strong> — both key learner audiences.</p>
+        </div>
+        <div class="cs-card">
+          <img src="img/gla/g-2.png" alt="Device Usage">
+          <h3 class="cs-card__title">Device Usage</h3>
+          <p class="cs-card__text"><strong>72% learners accessed via mobile</strong> compared to 28% on desktop. This
+            insight drove a critical shift toward a mobile-first experience — optimizing navigation, readability, and
+            feature accessibility for smaller screens.</p>
+        </div>
+        <div class="cs-card">
+          <img src="img/gla/g-3.png" alt="Age Distribution">
+          <h3 class="cs-card__title">Age Distribution</h3>
+          <p class="cs-card__text">The majority of learners fell within the <strong>18–34 age range</strong>,
+            underscoring the importance of fast, flexible, and career-relevant learning experiences tailored to young
+            professionals and students seeking real-world growth.</p>
+        </div>
+        <div class="cs-card">
+          <img src="img/gla/g-4.png" alt="Educational Background">
+          <h3 class="cs-card__title">Educational Background</h3>
+          <p class="cs-card__text">Learners came from a diverse mix of academic disciplines — <strong>16% Computer
+              Science</strong>, <strong>3.7% Electronics & Communication</strong>, and <strong>3.3% Business
+              Studies</strong>. This blend highlighted the platform's role as a bridge between tech and non-tech career
+            transitions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRIDGE TO PRO ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Bridging Learning to Career Transitions</h2>
+      <p class="cs-section__text">
+        As Great Learning Academy empowered millions of learners to start their upskilling journey,
+        the next evolution was clear — creating a bridge for professionals ready to accelerate their careers.
+        Our research uncovered a growing segment seeking faster, outcome-oriented learning that directly impacted
+        employability and growth.
+      </p>
+
+      <div class="cs-card" style="margin-bottom:2rem">
+        <h3 class="cs-card__title" style="font-size:1.35rem">The Pro Opportunity</h3>
+        <p class="cs-card__text" style="margin-bottom:0.75rem">
+          Deeper analysis revealed a powerful insight about mid-level professionals aged 25–35 —
+          they wanted learning experiences that directly led to tangible career outcomes.
+          This audience wasn't just motivated by curiosity, but by measurable growth.
+        </p>
+        <ul class="cs-list">
+          <li><strong>78%</strong> expressed willingness to subscribe for faster, career-focused learning.</li>
+          <li>Career-oriented features saw <strong>3× higher engagement</strong> compared to general learning modules.
+          </li>
+          <li>The biggest friction point was <strong>time-to-skill acquisition</strong> — professionals wanted speed
+            with structure.</li>
+        </ul>
+        <p class="cs-section__text" style="margin-top:1rem">
+          <strong>Insight:</strong> Professionals don't just want to learn — they want
+          <span style="color:var(--green);font-weight:600">AI-powered career acceleration.</span>
         </p>
       </div>
-    </div>
-    <div class="bg-gray-900/50 border border-gray-700 rounded-2xl p-6">
-      <h3 class="text-xl font-semibold text-white mb-4">Key Takeaways</h3>
-      <ul class="space-y-3 text-gray-400 list-disc pl-5">
-        <li><span class="text-gray-200 font-medium">User research drives clarity.</span> The mobile-learning vs. laptop-practice insight defined our strategy.</li>
-        <li><span class="text-gray-200 font-medium">Design for emotion.</span> Confidence and motivation are as vital as usability.</li>
-        <li><span class="text-gray-200 font-medium">Performance = Experience.</span> Smooth interactions sustain learning momentum.</li>
-        <li><span class="text-gray-200 font-medium">Think ecosystem.</span> Mobile and desktop must complement, not compete.</li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- Final Reflection -->
-  <div class="max-w-4xl">
-    <p class="text-gray-400 leading-relaxed">
-      This project went beyond improving an app — it democratized professional education for over 
-      <span class="text-primary font-medium">1.6 million learners.</span> 
-      The result is a mobile learning experience that builds confidence, maintains motivation, 
-      and bridges the gap between aspiration and achievement — laying the foundation for future 
-      <span class="text-primary font-medium">AI-powered career transformation.</span>
-    </p>
-  </div>
-</section>
+      <h3 class="cs-section__subtitle" style="color:var(--lightest-slate)">The Insight: The "Aha!" Moment</h3>
+      <p class="cs-section__text">
+        User research revealed a pivotal behavioral pattern that redefined our design philosophy:
+        learners preferred studying on mobile but practicing on laptops.
+        This dual-device habit reflected a generation that valued flexibility without compromising depth.
+      </p>
+      <p class="cs-section__text">
+        Recognizing this, we designed <strong>Great Learning Academy Pro</strong> —
+        an AI-powered, subscription-based platform built for professionals aged 25–35,
+        combining personalized guidance, adaptive learning paths, and measurable skill outcomes.
+      </p>
+      <p class="cs-section__text">
+        The result was a career acceleration ecosystem that merged flexibility with structure — helping learners
+        upskill faster, smarter, and with clearer professional direction.
+      </p>
+    </section>
 
+    <!-- ===== PERSONAS & EMPATHY MAPPING ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Personas & Empathy Mapping</h2>
+      <p class="cs-section__text">
+        From our research, we distilled findings into key personas that represented 85% of our audience.
+        These personas helped our design and product teams empathize deeply — shaping experiences tailored
+        to each learner's goals, challenges, and motivations.
+      </p>
 
+      <h3 class="cs-section__subtitle">Free Learner Personas</h3>
+      <div class="cs-img-grid cs-img-grid--3" style="margin-bottom:2rem">
+        <img src="img/gla/p-1.jpg" alt="Free Persona 1">
+        <img src="img/gla/p-2.jpg" alt="Free Persona 2">
+        <img src="img/gla/p-3.jpg" alt="Free Persona 3">
+      </div>
 
+      <h3 class="cs-section__subtitle">Pro Learner Personas</h3>
+      <div class="cs-img-grid cs-img-grid--3" style="margin-bottom:2rem">
+        <img src="img/glapro/p-1.jpg" alt="Pro Persona 1">
+        <img src="img/glapro/p-2.jpg" alt="Pro Persona 2">
+        <img src="img/glapro/p-3.jpg" alt="Pro Persona 3">
+      </div>
 
+      <h3 class="cs-section__subtitle">Empathy Mapping: From Data to Understanding</h3>
+      <div style="max-width:600px">
+        <img src="img/gla/Full Empathy Map.jpg" alt="Empathy Map"
+          style="width:100%;border-radius:12px;border:1px solid var(--lightest-navy)">
+      </div>
+    </section>
 
+    <!-- ===== DESIGN PHILOSOPHY ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">
+        Design Philosophy: <span style="color:var(--green)">Mobile-First, Career-Focused</span>
+      </h2>
+      <p class="cs-section__text">
+        When redesigning Great Learning Academy for mobile, we didn't just scale down the desktop experience —
+        we reimagined learning from the ground up.
+        Our goal was to create a platform that respected our learners' time, environment, and ambitions.
+      </p>
 
+      <!-- Core Design Foundations -->
+      <div class="cs-feature-box" style="margin-bottom:3rem">
+        <h3 class="cs-feature-box__title">Core Design Foundations</h3>
+        <div class="cs-grid cs-grid--3">
+          <div>
+            <h4 class="cs-section__subtitle" style="font-size:1.05rem">1. Micro-Learning Architecture</h4>
+            <p class="cs-card__text">
+              We built the experience around 5–10 minute learning moments, enabling users to
+              learn in short bursts — during commutes, breaks, or downtime — without losing continuity.
+              This turned learning into a flexible, daily ritual.
+            </p>
+          </div>
+          <div>
+            <h4 class="cs-section__subtitle" style="font-size:1.05rem">2. Career-Outcome Mapping</h4>
+            <p class="cs-card__text">
+              Every design decision reinforced a single truth — learning must lead to measurable career growth.
+              Course flows, progress tracking, and recommendations were directly tied to industry-relevant skills and
+              outcomes.
+            </p>
+          </div>
+          <div>
+            <h4 class="cs-section__subtitle" style="font-size:1.05rem">3. Seamless Device Ecosystem</h4>
+            <p class="cs-card__text">
+              Learners could start on mobile, practice on desktop, and switch effortlessly between devices.
+              This hybrid continuity supported real-world learning habits and improved completion rates.
+            </p>
+          </div>
+        </div>
+      </div>
 
-</main>
+      <!-- Challenge of Mobile Learning -->
+      <h3 class="cs-section__title" style="font-size:1.5rem">The Challenge of Mobile Learning</h3>
+      <p class="cs-section__text">
+        Designing for mobile education introduced unique challenges traditional e-learning rarely faced.
+        Each was met through iterative UX strategy, data-backed decisions, and continuous testing with real learners.
+      </p>
+      <div class="cs-timeline" style="margin-bottom:3rem">
+        <div class="cs-timeline__item">
+          <h4>Attention Fragmentation</h4>
+          <p>With constant interruptions — calls, notifications, movement — our design emphasized graceful recovery,
+            enabling smooth pause–resume learning without friction.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h4>Context Switching</h4>
+          <p>Learners often jumped between apps. We prioritized continuity, ensuring progress was auto-saved and
+            accessible instantly across sessions and devices.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h4>Limited Screen Real Estate</h4>
+          <p>Complex topics were distilled into bite-sized visuals and micro-interactions — preserving depth while
+            avoiding overload.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h4>Varied Network Conditions</h4>
+          <p>With learners across India's diverse connectivity spectrum, we implemented offline-first principles and
+            progressive content loading for uninterrupted access.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h4>Touch-First Interactions</h4>
+          <p>Every gesture, button, and navigation element was optimized for thumb-friendly, one-handed use, supporting
+            genuine on-the-go learning.</p>
+        </div>
+      </div>
 
+      <!-- Design Principles + Image -->
+      <div class="cs-split">
+        <div>
+          <h3 class="cs-section__title" style="font-size:1.5rem">Our Design Principles</h3>
+          <p class="cs-section__text">
+            Our core design system revolved around human-centered simplicity and emotional connection.
+            We translated psychological insights and user behavior into a modular, rewarding, and deeply personal
+            experience.
+          </p>
+          <div style="margin-top:1.25rem">
+            <div style="margin-bottom:1.25rem">
+              <h4 class="cs-section__subtitle" style="font-size:1.05rem">1. Respect Cognitive Load</h4>
+              <p class="cs-card__text">A clean visual hierarchy and progressive disclosure helped users stay focused in
+                high-distraction environments.</p>
+            </div>
+            <div style="margin-bottom:1.25rem">
+              <h4 class="cs-section__subtitle" style="font-size:1.05rem">2. Celebrate Small Wins</h4>
+              <p class="cs-card__text">Micro-rewards like streaks, badges, and milestone pop-ups encouraged consistency
+                and built learner confidence.</p>
+            </div>
+            <div style="margin-bottom:1.25rem">
+              <h4 class="cs-section__subtitle" style="font-size:1.05rem">3. Visual Learning First</h4>
+              <p class="cs-card__text">Abstract or technical concepts were transformed into visual storytelling and
+                real-world analogies for quick comprehension.</p>
+            </div>
+            <div style="margin-bottom:1.25rem">
+              <h4 class="cs-section__subtitle" style="font-size:1.05rem">4. Career Context Always</h4>
+              <p class="cs-card__text">Skill tags and outcome dashboards continuously reinforced relevance to learners'
+                professional goals.</p>
+            </div>
+            <div>
+              <h4 class="cs-section__subtitle" style="font-size:1.05rem">5. Community-Driven Motivation</h4>
+              <p class="cs-card__text">Peer validation and achievement sharing turned solitary study into social growth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cs-card" style="padding:1.5rem">
+          <img src="img/gla/gla-mobile.png" alt="Mobile Design Preview" style="border-radius:12px;margin-bottom:1rem">
+          <p class="cs-card__text" style="font-size:0.85rem">
+            The mobile learning interface prioritized readability, progress visibility, and motivation —
+            built to help learners grow anytime, anywhere.
+          </p>
+        </div>
+      </div>
 
+      <!-- In Essence -->
+      <div style="margin-top:3rem">
+        <h3 class="cs-section__title" style="font-size:1.3rem">In Essence</h3>
+        <p class="cs-section__text">
+          Our design philosophy revolved around one guiding belief to empower learners to grow their careers anytime,
+          anywhere,
+          with focus, flexibility, and confidence.
+          The result was a mobile-first ecosystem that turned ambition into action and curiosity into capability.
+        </p>
+      </div>
+    </section>
 
+    <!-- ===== THE LEARNING ECOSYSTEM ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">The Learning Ecosystem</h2>
+      <p class="cs-section__text">
+        Each learning tier was designed with a clear purpose — to guide learners from exploration to career
+        transformation through structured, outcome-driven experiences.
+      </p>
 
-    
+      <div class="cs-grid cs-grid--2">
+        <div class="cs-card">
+          <h3 class="cs-section__subtitle" style="font-size:1.1rem">Free Courses — The Gateway Experience</h3>
+          <p class="cs-card__text" style="margin-bottom:0.5rem">A frictionless entry point that builds trust and
+            inspires continued learning.</p>
+          <ul class="cs-list">
+            <li>Career milestone celebrations</li>
+            <li>Peer learning community</li>
+            <li>Skill assessments & certificates (add-on)</li>
+          </ul>
+          <p class="cs-card__text" style="margin-top:0.75rem;font-size:0.825rem">Designed to feel substantial — not
+            "lite." Clear progression cues and subtle upgrade prompts improved retention.</p>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-section__subtitle" style="font-size:1.1rem">Premium Courses — The Professional Developer</h3>
+          <p class="cs-card__text" style="margin-bottom:0.5rem">For motivated learners ready to invest in deeper
+            specialization and career acceleration.</p>
+          <ul class="cs-list">
+            <li>Project-based learning with mentor support</li>
+            <li>Interview prep & placement guidance</li>
+            <li>Advanced analytics & networking</li>
+          </ul>
+          <p class="cs-card__text" style="margin-top:0.75rem;font-size:0.825rem">Delivered with premium visual polish,
+            adaptive tracking, and mentor-led workflows.</p>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-section__subtitle" style="font-size:1.1rem">University Programs — The Career Transformer</h3>
+          <p class="cs-card__text" style="margin-bottom:0.5rem">Comprehensive academic programs for learners making
+            major professional shifts.</p>
+          <ul class="cs-list">
+            <li>Structured multi-course learning paths</li>
+            <li>Internships & academic milestones</li>
+            <li>Career counseling & alumni network</li>
+          </ul>
+          <p class="cs-card__text" style="margin-top:0.75rem;font-size:0.825rem">Balanced academic rigor with career
+            relevance; supported multi-stakeholder coordination.</p>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-section__subtitle" style="font-size:1.1rem">Pro Courses — The Career Accelerator</h3>
+          <p class="cs-card__text" style="margin-bottom:0.5rem">An AI-powered advancement layer for professionals
+            seeking measurable growth.</p>
+          <ul class="cs-list">
+            <li>AI-personalized learning & coding exercises</li>
+            <li>Portfolio projects & mock interviews</li>
+            <li>Smart resume builder & job-readiness dashboard</li>
+          </ul>
+          <p class="cs-card__text" style="margin-top:0.75rem;font-size:0.825rem">Modular, adaptive, and
+            performance-driven — built for speed, outcomes, and employability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VISUAL DESIGN ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">
+        Visual Design: <span style="color:var(--green)">Where Function Meets Emotion</span>
+      </h2>
+      <p class="cs-section__text">
+        Designing for Great Learning Academy meant striking a balance between trust and motivation — creating an
+        interface that feels professional yet human, structured yet inspiring.
+        The visual system evolved to embody both the rigor of career-focused learning and the warmth of personal growth.
+      </p>
+
+      <!-- Design System Evolution -->
+      <div class="cs-split" style="margin-bottom:3rem">
+        <div>
+          <h3 class="cs-section__subtitle">Design System Evolution</h3>
+          <p class="cs-section__text">
+            To ensure visual consistency across the platform, we developed a scalable design system grounded in
+            accessibility, clarity, and emotional resonance.
+          </p>
+          <ul class="cs-list">
+            <li><strong>Color Palette:</strong> Guided by psychology to drive emotion and engagement</li>
+            <li><strong>Typography:</strong> Legible and hierarchical, optimized for mobile readability</li>
+            <li><strong>Iconography:</strong> Minimal and functional, reinforcing intuitive navigation</li>
+            <li><strong>Component Library:</strong> Modular elements ensuring design consistency and rapid iteration
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="img/gla/design-system.jpg" alt="Design System Overview"
+            style="width:100%;border-radius:12px;border:1px solid var(--lightest-navy)">
+        </div>
+      </div>
+
+      <!-- Design Language -->
+      <div class="cs-split">
+        <div>
+          <img src="img/gla/design-system-1.jpg" alt="Typography and Color Samples"
+            style="width:100%;border-radius:12px;border:1px solid var(--lightest-navy)">
+        </div>
+        <div class="cs-accent-box" style="border-left-width:2px;padding-left:1.5rem">
+          <h3 style="font-size:1.35rem;margin-bottom:0.5rem">Design Language</h3>
+          <p style="font-style:normal;margin-bottom:1.25rem">Our visual language was guided by a simple philosophy:
+            <strong style="color:var(--lightest-slate)">"Empower learners through design that feels achievable, not
+              intimidating."</strong>
+            It had to balance credibility for professionals with friendliness for beginners.
+          </p>
+          <div class="cs-grid cs-grid--2" style="gap:1.5rem">
+            <div>
+              <h4 style="font-size:1rem;font-weight:600;color:var(--lightest-slate);margin-bottom:0.5rem">Color
+                Psychology</h4>
+              <ul class="cs-list">
+                <li><strong>Primary Blue:</strong> Evokes trust, focus, and stability</li>
+                <li><strong>Success Green:</strong> Symbolizes growth, progress, and achievement</li>
+                <li><strong>Warning Orange:</strong> Used sparingly for motivational alerts</li>
+                <li><strong>Neutral Grays:</strong> Maintain calm, distraction-free focus</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size:1rem;font-weight:600;color:var(--lightest-slate);margin-bottom:0.5rem">Typography
+                Hierarchy</h4>
+              <ul class="cs-list">
+                <li><strong>Primary Typeface:</strong> Modern sans-serif with professional clarity</li>
+                <li><strong>Hierarchy:</strong> Structured rhythm for headers and body text</li>
+                <li><strong>Readability:</strong> Tuned for small screens and consistent contrast</li>
+                <li><strong>Microcopy:</strong> Supportive and human, designed to reassure learners</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HIGH-FIDELITY DESIGNS ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">High-Fidelity Designs</h2>
+      <p class="cs-section__text">
+        Translating insights into pixel-perfect interfaces, from Great Learning Academy to Great Learning Pro — every
+        screen was crafted for clarity, flow, and engagement.
+      </p>
+
+      <!-- GLA Free -->
+      <div style="margin-bottom:3rem">
+        <h3 class="cs-section__subtitle"
+          style="border-left:2px solid var(--green);padding-left:0.75rem;margin-bottom:1.25rem">Great Learning Academy
+          (Free)</h3>
+        <div class="cs-img-grid cs-img-grid--3">
+          <img src="img/gla/1.jpg" alt="GLA Screen 1">
+          <img src="img/gla/2.jpg" alt="GLA Screen 2">
+          <img src="img/gla/3.jpg" alt="GLA Screen 3">
+          <img src="img/gla/4.jpg" alt="GLA Screen 4">
+          <img src="img/gla/5.jpg" alt="GLA Screen 5">
+          <img src="img/gla/6.jpg" alt="GLA Screen 6">
+          <img src="img/gla/7.jpg" alt="GLA Screen 7">
+        </div>
+      </div>
+
+      <!-- GL Pro -->
+      <div>
+        <h3 class="cs-section__subtitle"
+          style="border-left:2px solid var(--green);padding-left:0.75rem;margin-bottom:1.25rem">Great Learning Pro</h3>
+        <div class="cs-img-grid cs-img-grid--3">
+          <img src="img/glapro/1.jpg" alt="GL Pro Screen 1">
+          <img src="img/glapro/2.jpg" alt="GL Pro Screen 2">
+          <img src="img/glapro/3.jpg" alt="GL Pro Screen 3">
+          <img src="img/glapro/4.jpg" alt="GL Pro Screen 4">
+          <img src="img/glapro/5.jpg" alt="GL Pro Screen 5">
+          <img src="img/glapro/6.jpg" alt="GL Pro Screen 6">
+          <img src="img/glapro/7.jpg" alt="GL Pro Screen 7">
+          <img src="img/glapro/8.jpg" alt="GL Pro Screen 8">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IMPACT & REFLECTION ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Impact & Reflection</h2>
+      <p class="cs-section__text">
+        Great Learning Academy Pro evolved from a learning platform into an AI-powered career acceleration ecosystem.
+        By focusing on measurable career outcomes over course completion, we created a premium experience that delivers
+        tangible professional growth.
+      </p>
+
+      <div class="cs-split" style="margin-bottom:2rem">
+        <div>
+          <p class="cs-section__text">
+            AI personalization—from skill gap analysis to interview preparation—transformed learning into a guided
+            career journey, adapting to each user's goals and pace.
+          </p>
+          <div class="cs-accent-box">
+            <h3>Key Insight</h3>
+            <p>Effective AI in education amplifies human decisions — it doesn't replace them.</p>
+          </div>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-card__title" style="font-size:1.25rem">Key Takeaways</h3>
+          <ul class="cs-list">
+            <li><strong>User research drives clarity.</strong> The mobile-learning vs. laptop-practice insight defined
+              our strategy.</li>
+            <li><strong>Design for emotion.</strong> Confidence and motivation are as vital as usability.</li>
+            <li><strong>Performance = Experience.</strong> Smooth interactions sustain learning momentum.</li>
+            <li><strong>Think ecosystem.</strong> Mobile and desktop must complement, not compete.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="cs-section__text">
+        This project went beyond improving an app — it democratized professional education for over
+        <span style="color:var(--green);font-weight:500">1.6 million learners.</span>
+        The result is a mobile learning experience that builds confidence, maintains motivation,
+        and bridges the gap between aspiration and achievement — laying the foundation for future
+        <span style="color:var(--green);font-weight:500">AI-powered career transformation.</span>
+      </p>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="text-center py-16 px-6">
-    <p class="text-sm">
-      &copy; 2024 B. Sivarami Reddy. All rights reserved.
-    </p>
+  <footer class="cs-footer">
+    <p class="cs-footer__text">&copy; 2024 B. Sivarami Reddy. All rights reserved.</p>
   </footer>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WF03MQCYHW');
-</script>
+  <!-- Shared JS (spotlight, smooth scroll, GA) -->
+  <script src="js/script.js" defer></script>
 </body>
+
 </html>
