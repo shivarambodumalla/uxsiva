@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon | B. Sivarami Reddy</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--navy);
+        }
+
+        .coming-soon-container {
+            max-width: 600px;
+        }
+
+        .animation-placeholder {
+            width: 100%;
+            height: 300px;
+            background: rgba(100, 255, 218, 0.05);
+            border: 1px dashed var(--green);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: var(--green);
+            font-family: var(--font-mono);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animation Styles */
+        svg {
+            width: 100%;
+            height: 100%;
+            max-width: 843px;
+            max-height: 501px;
+        }
+
+        .svg-path {
+            stroke: var(--green);
+            stroke-opacity: 0.1;
+            stroke-width: 1.2;
+            fill: none;
+            animation: pathPulse 3s ease-in-out infinite;
+        }
+
+        .svg-path:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .svg-path:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .svg-path:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .svg-path:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes pathPulse {
+
+            0%,
+            100% {
+                stroke-opacity: 0.1;
+                stroke-width: 1.2;
+            }
+
+            50% {
+                stroke-opacity: 0.3;
+                stroke-width: 1.5;
+            }
+        }
+
+        .svg-circle {
+            fill: var(--green);
+        }
+
+        h1 {
+            color: var(--lightest-slate);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--slate);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 1.75rem;
+            border: 1px solid var(--green);
+            border-radius: 4px;
+            color: var(--green);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coming-soon-container">
+        <!-- Placeholder for Lottie/Video Animation -->
+        <div class="animation-placeholder !border-0" style="border:none;">
+            <svg viewBox="0 0 843 501" fill="none" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet">
+                <path class="svg-path path-1" id="path1"
+                    d="M41.3813 150.167C46.9546 129.672 62.8168 112.867 86.864 100.054C110.913 87.2398 143.095 78.45 181.178 73.9744C257.34 65.0236 356.975 73.3425 462.018 101.077C567.062 128.812 657.57 170.697 718.987 215.972C749.696 238.611 773.106 262.079 787.431 285.024C801.755 307.969 806.965 330.337 801.392 350.833C795.819 371.328 779.956 388.134 755.908 400.947C731.86 413.76 699.678 422.551 661.596 427.026C585.433 435.977 485.797 427.658 380.754 399.923C275.711 372.189 185.203 330.304 123.787 285.028C93.0767 262.389 69.6665 238.921 55.3417 215.976C41.0177 193.032 35.808 170.662 41.3813 150.167Z" />
+                <path class="svg-path path-2" id="path2"
+                    d="M29.4998 216.715C31.3765 195.578 44.0359 176.313 65.4602 159.58C86.8855 142.846 117.03 128.684 153.746 117.76C227.174 95.9128 326.762 87.0566 435.097 96.3961C543.432 105.736 639.946 131.498 708.408 165.577C742.641 182.617 769.832 201.722 787.982 221.868C806.132 242.013 815.205 263.151 813.328 284.288C811.451 305.425 798.792 324.689 777.367 341.422C755.942 358.156 725.798 372.319 689.082 383.243C615.654 405.09 516.067 413.946 407.732 404.606C299.397 395.267 202.882 369.505 134.42 335.426C100.187 318.385 72.9961 299.28 54.8453 279.134C36.6955 258.989 27.6233 237.852 29.4998 216.715Z" />
+                <path class="svg-path path-3" id="path3"
+                    d="M29.4723 284.288C27.5955 263.151 36.6677 242.013 54.8177 221.868C72.9685 201.722 100.159 182.617 134.392 165.577C202.854 131.497 299.369 105.735 407.704 96.396C516.039 87.0566 615.627 95.9128 689.054 117.76C725.77 128.684 755.915 142.846 777.34 159.58C798.764 176.313 811.424 195.578 813.3 216.715C815.177 237.852 806.105 258.99 787.955 279.134C769.804 299.28 742.613 318.385 708.38 335.426C639.918 369.505 543.404 395.267 435.069 404.606C326.734 413.946 227.146 405.09 153.718 383.243C117.002 372.319 86.8578 358.156 65.4326 341.422C44.0085 324.689 31.3491 305.425 29.4723 284.288Z" />
+                <path class="svg-path path-4" id="path4"
+                    d="M41.3986 350.832C35.8255 330.337 41.0354 307.968 55.3593 285.024C69.6841 262.079 93.0943 238.611 123.804 215.972C185.221 170.696 275.729 128.811 380.772 101.077C485.815 73.3423 585.451 65.0232 661.613 73.9741C699.696 78.4497 731.877 87.2398 755.926 100.053C779.973 112.867 795.836 129.671 801.41 150.167C806.983 170.662 801.772 193.031 787.448 215.976C773.123 238.921 749.714 262.389 719.004 285.028C657.588 330.304 567.079 372.189 462.036 399.923C356.993 427.658 257.357 435.977 181.195 427.026C143.112 422.55 110.93 413.76 86.8816 400.947C62.8342 388.133 46.9719 371.328 41.3986 350.832Z" />
+
+                <circle class="svg-circle circle-1" r="4.87591" />
+                <circle class="svg-circle circle-2" r="4.87591" />
+                <circle class="svg-circle circle-3" r="4.87591" />
+                <circle class="svg-circle circle-4" r="4.87591" />
+                <circle class="svg-circle circle-5" r="4.87591" />
+                <circle class="svg-circle circle-6" r="4.87591" />
+                <circle class="svg-circle circle-7" r="4.87591" />
+            </svg>
+        </div>
+
+        <h1>Case Study Coming Soon</h1>
+        <p>I'm currently documenting this project. It highlights my work in automation, AI integration, and complex
+            system design. Check back shortly!</p>
+
+        <a href="index.html#projects" class="btn">Back to Projects</a>
+    </div>
+
+    <script>
+        const circles = document.querySelectorAll('.svg-circle');
+        const paths = document.querySelectorAll('.svg-path');
+
+        // Each circle follows a specific path with different speeds and delays
+        const pathMapping = [
+            { circle: 0, path: 0, speed: 18, startOffset: 0, delay: 0 },
+            { circle: 1, path: 1, speed: 20, startOffset: 0, delay: 0.3 },
+            { circle: 2, path: 2, speed: 22, startOffset: 0, delay: 0.6 },
+            { circle: 3, path: 3, speed: 19, startOffset: 0, delay: 0.9 },
+            { circle: 4, path: 0, speed: 21, startOffset: 50, delay: 1.2 },
+            { circle: 5, path: 1, speed: 23, startOffset: 50, delay: 1.5 },
+            { circle: 6, path: 2, speed: 17, startOffset: 50, delay: 1.8 }
+        ];
+
+        // Easing function for smooth motion
+        function easeInOutSine(t) {
+            return -(Math.cos(Math.PI * t) - 1) / 2;
+        }
+
+        function animateCircle(circle, pathData, speed, startOffset, delay) {
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', pathData);
+            const totalLength = path.getTotalLength();
+
+            let startTime = null;
+            const delayMs = delay * 1000;
+
+            function animate(timestamp) {
+                if (!startTime) startTime = timestamp - delayMs;
+                const elapsed = timestamp - startTime;
+
+                // Calculate progress with easing
+                const rawProgress = (elapsed / (speed * 1000)) % 1;
+                const easedProgress = easeInOutSine(rawProgress);
+
+                let offset = (startOffset + easedProgress * 100) % 100;
+
+                // Get point on path
+                const point = path.getPointAtLength((offset / 100) * totalLength);
+
+                circle.setAttribute('cx', point.x);
+                circle.setAttribute('cy', point.y);
+
+                requestAnimationFrame(animate);
+            }
+
+            // Start with delay
+            setTimeout(() => {
+                requestAnimationFrame(animate);
+            }, delayMs);
+        }
+
+        pathMapping.forEach((mapping) => {
+            const circle = circles[mapping.circle];
+            const path = paths[mapping.path];
+            const pathData = path.getAttribute('d');
+
+            animateCircle(circle, pathData, mapping.speed, mapping.startOffset, mapping.delay);
+        });
+    </script>
+</body>
+
+</html>
