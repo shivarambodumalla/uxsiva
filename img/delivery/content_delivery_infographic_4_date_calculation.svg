@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#0a192f"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+    Automatic Date Calculation Logic
+  </text>
+  <text x="500" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8892b0">
+    System calculates all delivery dates automatically - no manual work needed
+  </text>
+  
+  <!-- Input 1: Start Date -->
+  <g transform="translate(80, 100)">
+    <rect width="240" height="100" fill="#112240" stroke="#64ffda" stroke-width="2" rx="8"/>
+    <text x="120" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64ffda">
+      INPUT 1
+    </text>
+    <text x="120" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+      📅 Content Start Date
+    </text>
+    <rect x="40" y="65" width="160" height="25" fill="rgba(100, 255, 218, 0.1)" rx="4"/>
+    <text x="120" y="82" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#64ffda">
+      Monday, Oct 7, 2024
+    </text>
+  </g>
+  
+  <!-- Plus sign 1 -->
+  <text x="350" y="160" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#64ffda">+</text>
+  
+  <!-- Input 2: Delivery Durations -->
+  <g transform="translate(390, 100)">
+    <rect width="240" height="100" fill="#112240" stroke="#64ffda" stroke-width="2" rx="8"/>
+    <text x="120" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64ffda">
+      INPUT 2
+    </text>
+    <text x="120" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+      ⏱️ Delivery Durations
+    </text>
+    <rect x="20" y="65" width="200" height="25" fill="rgba(100, 255, 218, 0.1)" rx="4"/>
+    <text x="120" y="82" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#a8b2d1">
+      Week 1: 1 week, Week 2: 1 week
+    </text>
+  </g>
+  
+  <!-- Plus sign 2 -->
+  <text x="660" y="160" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#64ffda">+</text>
+  
+  <!-- Input 3: Break Weeks -->
+  <g transform="translate(700, 100)">
+    <rect width="240" height="100" fill="#112240" stroke="#64ffda" stroke-width="2" rx="8"/>
+    <text x="120" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64ffda">
+      INPUT 3
+    </text>
+    <text x="120" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+      🏖️ Break Weeks
+    </text>
+    <rect x="40" y="65" width="160" height="25" fill="rgba(100, 255, 218, 0.1)" rx="4"/>
+    <text x="120" y="82" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#a8b2d1">
+      Diwali: Oct 21-27
+    </text>
+  </g>
+  
+  <!-- Vertical line down -->
+  <line x1="500" y1="210" x2="500" y2="270" stroke="#64ffda" stroke-width="3"/>
+  
+  <!-- Equals sign -->
+  <rect x="480" y="235" width="40" height="30" fill="#0a192f"/>
+  <text x="500" y="257" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#64ffda">=</text>
+  
+  <!-- Processing box -->
+  <rect x="250" y="280" width="500" height="60" fill="rgba(100, 255, 218, 0.1)" stroke="#64ffda" stroke-width="2" rx="6"/>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#64ffda">
+    ⚙️ System Calculates Timeline
+  </text>
+  <text x="500" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8892b0">
+    Automatic date calculation for all deliveries
+  </text>
+  
+  <!-- Vertical line down -->
+  <line x1="500" y1="350" x2="500" y2="410" stroke="#64ffda" stroke-width="3"/>
+  
+  <!-- Output: Auto-calculated Timeline -->
+  <rect x="80" y="420" width="840" height="210" fill="#112240" stroke="#64ffda" stroke-width="3" rx="8"/>
+  
+  <text x="500" y="450" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#64ffda">
+    OUTPUT: Auto-Calculated Timeline
+  </text>
+  
+  <!-- Week 1 timeline -->
+  <g transform="translate(100, 470)">
+    <rect width="240" height="50" fill="rgba(100, 255, 218, 0.1)" stroke="#233554" stroke-width="1" rx="4"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#ccd6f6">
+      📅 Week 1
+    </text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Release: Thu Oct 3
+    </text>
+    <text x="140" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Due: Sun Oct 13
+    </text>
+  </g>
+  
+  <!-- Week 2 timeline -->
+  <g transform="translate(360, 470)">
+    <rect width="240" height="50" fill="rgba(100, 255, 218, 0.1)" stroke="#233554" stroke-width="1" rx="4"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#ccd6f6">
+      📅 Week 2
+    </text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Release: Thu Oct 10
+    </text>
+    <text x="140" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Due: Sun Oct 20
+    </text>
+  </g>
+  
+  <!-- Break Week -->
+  <g transform="translate(620, 470)">
+    <rect width="240" height="50" fill="rgba(255, 215, 0, 0.1)" stroke="#ffd700" stroke-width="1" rx="4"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#ffd700">
+      🏖️ Break Week
+    </text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Diwali: Oct 21 - Oct 27
+    </text>
+  </g>
+  
+  <!-- Week 3 timeline (auto-adjusted) -->
+  <g transform="translate(100, 540)">
+    <rect width="240" height="50" fill="rgba(100, 255, 218, 0.1)" stroke="#233554" stroke-width="1" rx="4"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#ccd6f6">
+      📅 Week 3
+    </text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="11" fill="#64ffda">
+      Release: Thu Oct 31
+    </text>
+    <text x="140" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Due: Sun Nov 10
+    </text>
+    <text x="200" y="20" font-family="Arial, sans-serif" font-size="9" fill="#64ffda">✓ Auto-adjusted</text>
+  </g>
+  
+  <!-- Week 4 timeline (auto-adjusted) -->
+  <g transform="translate(360, 540)">
+    <rect width="240" height="50" fill="rgba(100, 255, 218, 0.1)" stroke="#233554" stroke-width="1" rx="4"/>
+    <text x="10" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#ccd6f6">
+      📅 Week 4
+    </text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="11" fill="#64ffda">
+      Release: Thu Nov 7
+    </text>
+    <text x="140" y="37" font-family="Arial, sans-serif" font-size="11" fill="#8892b0">
+      Due: Sun Nov 17
+    </text>
+    <text x="200" y="20" font-family="Arial, sans-serif" font-size="9" fill="#64ffda">✓ Auto-adjusted</text>
+  </g>
+  
+  <!-- Key benefit callout -->
+  <g transform="translate(620, 540)">
+    <rect width="240" height="50" fill="rgba(255, 107, 107, 0.1)" stroke="#ff6b6b" stroke-width="1" rx="4"/>
+    <text x="120" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#ff6b6b">
+      OLD: 2 hours manual work
+    </text>
+    <text x="120" y="37" font-family="Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#64ffda">
+      NEW: 1 click, instant ⚡
+    </text>
+  </g>
+</svg>
