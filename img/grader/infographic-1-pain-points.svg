@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a192f"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+    Top 5 Pain Points from Evaluator Survey
+  </text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8892b0">
+    Survey of 50+ evaluators (Q4 2025)
+  </text>
+
+  <!-- Bar 1: Navigation - 71% -->
+  <rect x="220" y="100" width="426" height="40" fill="#ff6b6b" rx="4"/>
+  <text x="230" y="125" font-family="Arial, sans-serif" font-size="14" fill="#e6f1ff" font-weight="500">
+    Poor navigation for large cohorts
+  </text>
+  <text x="630" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e6f1ff">
+    71%
+  </text>
+
+  <!-- Bar 2: Slow loads - 68% -->
+  <rect x="220" y="155" width="408" height="40" fill="#ff8585" rx="4"/>
+  <text x="230" y="180" font-family="Arial, sans-serif" font-size="14" fill="#e6f1ff" font-weight="500">
+    Slow submission loads (3-8 sec)
+  </text>
+  <text x="610" y="180" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e6f1ff">
+    68%
+  </text>
+
+  <!-- Bar 3: Data loss - 54% -->
+  <rect x="220" y="210" width="324" height="40" fill="#ffb347" rx="4"/>
+  <text x="230" y="235" font-family="Arial, sans-serif" font-size="14" fill="#0a192f" font-weight="500">
+    Data loss (no autosave)
+  </text>
+  <text x="528" y="235" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0a192f">
+    54%
+  </text>
+
+  <!-- Bar 4: File preview - 48% -->
+  <rect x="220" y="265" width="288" height="40" fill="#ffd700" rx="4"/>
+  <text x="230" y="290" font-family="Arial, sans-serif" font-size="14" fill="#0a192f" font-weight="500">
+    Can't preview PPT/Jupyter files
+  </text>
+  <text x="492" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0a192f">
+    48%
+  </text>
+
+  <!-- Bar 5: No mobile - 35% -->
+  <rect x="220" y="320" width="210" height="40" fill="#64ffda" rx="4"/>
+  <text x="230" y="345" font-family="Arial, sans-serif" font-size="14" fill="#0a192f" font-weight="500">
+    No mobile support
+  </text>
+  <text x="414" y="345" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0a192f">
+    35%
+  </text>
+
+  <!-- Scale reference line -->
+  <line x1="220" y1="375" x2="820" y2="375" stroke="#233554" stroke-width="2"/>
+
+  <!-- Scale labels -->
+  <text x="220" y="392" font-family="Arial, sans-serif" font-size="11" fill="#8892b0" text-anchor="middle">0%</text>
+  <text x="370" y="392" font-family="Arial, sans-serif" font-size="11" fill="#8892b0" text-anchor="middle">25%</text>
+  <text x="520" y="392" font-family="Arial, sans-serif" font-size="11" fill="#8892b0" text-anchor="middle">50%</text>
+  <text x="670" y="392" font-family="Arial, sans-serif" font-size="11" fill="#8892b0" text-anchor="middle">75%</text>
+  <text x="820" y="392" font-family="Arial, sans-serif" font-size="11" fill="#8892b0" text-anchor="middle">100%</text>
+</svg>

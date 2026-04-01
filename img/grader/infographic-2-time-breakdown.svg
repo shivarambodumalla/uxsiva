@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a192f"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ccd6f6">
+    Where Evaluator Time Goes
+  </text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#8892b0">
+    Only 30% spent on actual grading work
+  </text>
+
+  <!-- Pie Chart (centered at 280, 270) -->
+  <!-- Slice 1: Navigation 35% (Red) - starts at top (0°), goes 126° -->
+  <path d="M 280 270 L 280 150 A 120 120 0 0 1 377.4 211.8 Z" fill="#ff6b6b"/>
+
+  <!-- Slice 2: Actual Grading 30% (Green) - starts at 126°, goes 108° -->
+  <path d="M 280 270 L 377.4 211.8 A 120 120 0 0 1 349.3 364.6 Z" fill="#64ffda"/>
+
+  <!-- Slice 3: Waiting 25% (Orange) - starts at 234°, goes 90° -->
+  <path d="M 280 270 L 349.3 364.6 A 120 120 0 0 1 160 270 Z" fill="#ffb347"/>
+
+  <!-- Slice 4: Manual Workarounds 10% (Yellow) - starts at 324°, goes 36° -->
+  <path d="M 280 270 L 160 270 A 120 120 0 0 1 280 150 Z" fill="#ffd700"/>
+
+  <!-- Center circle for donut effect -->
+  <circle cx="280" cy="270" r="50" fill="#0a192f"/>
+  <text x="280" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ccd6f6" dy="5">Only</text>
+  <text x="280" y="285" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#64ffda" dy="5">30%</text>
+  <text x="280" y="305" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8892b0" dy="5">productive</text>
+
+  <!-- Legend -->
+  <!-- Navigation -->
+  <rect x="480" y="130" width="20" height="20" fill="#ff6b6b" rx="3"/>
+  <text x="510" y="145" font-family="Arial, sans-serif" font-size="16" fill="#ccd6f6" font-weight="500">Navigation</text>
+  <text x="720" y="145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ff6b6b" text-anchor="end">35%</text>
+  <text x="510" y="165" font-family="Arial, sans-serif" font-size="13" fill="#8892b0">Switching students, finding files, searching</text>
+
+  <!-- Actual Grading -->
+  <rect x="480" y="200" width="20" height="20" fill="#64ffda" rx="3"/>
+  <text x="510" y="215" font-family="Arial, sans-serif" font-size="16" fill="#ccd6f6" font-weight="500">Actual Grading</text>
+  <text x="720" y="215" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#64ffda" text-anchor="end">30%</text>
+  <text x="510" y="235" font-family="Arial, sans-serif" font-size="13" fill="#8892b0">Reviewing work, applying rubric, feedback</text>
+
+  <!-- Waiting -->
+  <rect x="480" y="270" width="20" height="20" fill="#ffb347" rx="3"/>
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="16" fill="#ccd6f6" font-weight="500">Waiting</text>
+  <text x="720" y="285" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffb347" text-anchor="end">25%</text>
+  <text x="510" y="305" font-family="Arial, sans-serif" font-size="13" fill="#8892b0">Page loads, file previews, saving</text>
+
+  <!-- Manual Workarounds -->
+  <rect x="480" y="340" width="20" height="20" fill="#ffd700" rx="3"/>
+  <text x="510" y="355" font-family="Arial, sans-serif" font-size="16" fill="#ccd6f6" font-weight="500">Manual Workarounds</text>
+  <text x="720" y="355" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffd700" text-anchor="end">10%</text>
+  <text x="510" y="375" font-family="Arial, sans-serif" font-size="13" fill="#8892b0">Excel tracking, screenshots, copy-paste</text>
+
+  <!-- Insight box -->
+  <rect x="50" y="410" width="700" height="60" fill="#112240" stroke="#233554" stroke-width="2" rx="6"/>
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#64ffda">Key Insight</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a8b2d1">70% of evaluator time wasted on non-grading tasks — this is what we needed to fix</text>
+</svg>
