@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CVEdge — AI-Powered Career Tools Case Study</title>
+  <meta name="description" content="A vibe coding experiment in AI-powered career tools — built entirely through conversational AI, exploring design intuition, prompt engineering, and rapid product development." />
+  <meta name="author" content="B. Sivarami Reddy" />
+  <link rel="canonical" href="https://uxsiva.onrender.com/cvedge.html" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cvedge.css">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CVEdge — AI-Powered Career Tools" />
+  <meta property="og:description" content="A vibe coding experiment — building a full-stack AI career tool entirely through prompt engineering." />
+  <meta property="og:url" content="https://uxsiva.onrender.com/cvedge.html" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar__left">
+      <a href="index.html" class="topbar__back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+        Back
+      </a>
+      <span class="topbar__sep">/</span>
+      <span class="topbar__title">CVEdge</span>
+    </div>
+    <div class="topbar__right">
+      <div class="topbar__info">
+        <span class="topbar__name">B. Sivarami Reddy</span><br>
+        <span class="topbar__role">Principal Designer &amp; UX Design Manager</span>
+      </div>
+      <img src="img/avatar.png" alt="Profile" class="topbar__avatar" />
+    </div>
+  </header>
+
+  <!-- TOC -->
+  <nav class="cv-toc" aria-label="Table of Contents">
+    <ul class="cv-toc__list">
+      <li><a href="#overview" class="cv-toc__link active">Project Overview</a></li>
+      <li><a href="#challenge" class="cv-toc__link">The Challenge</a></li>
+      <li><a href="#research" class="cv-toc__link">Research &amp; Discovery</a></li>
+      <li><a href="#design-process" class="cv-toc__link">Design Process</a></li>
+      <li><a href="#prompt-engineering" class="cv-toc__link">Prompt Engineering</a></li>
+      <li><a href="#integrations" class="cv-toc__link">Technical Integrations</a></li>
+      <li><a href="#maintainability" class="cv-toc__link">Maintainability &amp; Admin</a></li>
+      <li><a href="#features" class="cv-toc__link">Key Features</a></li>
+      <li><a href="#impact" class="cv-toc__link">Impact &amp; Results</a></li>
+      <li><a href="#learnings" class="cv-toc__link">Key Learnings</a></li>
+      <li><a href="#reflection" class="cv-toc__link">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <main class="cs-main cv-main-with-toc">
+
+    <!-- ===== HERO ===== -->
+    <section class="cv-hero">
+      <span class="cv-hero__chip">Product Design Case Study</span>
+      <h1 class="cv-hero__title">CVEdge: A Vibe Coding Experiment in AI-Powered Career Tools</h1>
+      <p class="cv-hero__sub">A personal side project built entirely through conversational AI — exploring design intuition, prompt engineering, and rapid product development.</p>
+    </section>
+
+    <!-- ===== 1. OVERVIEW ===== -->
+    <section class="cs-section" id="overview">
+      <h2 class="cs-section__title">Project Overview</h2>
+      <div class="cs-grid cs-grid--2" style="margin-bottom:2rem">
+        <div class="cs-card">
+          <ul class="cs-list" style="list-style:none;padding:0">
+            <li><strong style="color:var(--lightest-slate)">Role</strong> — Designer who codes (vibe coding)</li>
+            <li><strong style="color:var(--lightest-slate)">Timeline</strong> — Ongoing side project (2025–2026)</li>
+            <li><strong style="color:var(--lightest-slate)">Built with</strong> — Claude Code, Next.js 14, Supabase, Gemini 2.5 Flash</li>
+            <li><strong style="color:var(--lightest-slate)">Method</strong> — 100% AI-assisted development through prompt engineering</li>
+            <li><strong style="color:var(--lightest-slate)">Status</strong> — Live hobby project — thecvedge.com</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-card__title">What is this?</h3>
+          <p class="cs-card__text">CVEdge started as a personal curiosity: how far can a designer go building a real product using only conversational AI and design instinct — without writing a single line of code manually?</p>
+          <p class="cs-card__text" style="margin-top:0.75rem">The answer turned out to be: <strong style="color:var(--lightest-slate)">surprisingly far.</strong></p>
+        </div>
+      </div>
+      <p class="cs-section__text">Over several months of evenings and weekends I built a full-stack AI-powered CV optimisation tool — 11 templates, ATS scoring engine, AI rewrite system, git-diff review UX, job match engine, interview coach, E2E testing infrastructure, CI/CD pipeline, and admin panel — entirely through Claude Code prompts.</p>
+      <p class="cs-section__text">This case study is less about the product and more about what I learned designing at the intersection of AI, prompts, and product intuition.</p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The Vibe Coding Approach</h3>
+      <div class="cs-accent-box">
+        <h4 style="margin-bottom:0.5rem">What is vibe coding?</h4>
+        <p>Vibe coding is building software through natural language — describing what you want to an AI coding assistant and iterating through conversation rather than writing code manually. The designer's role shifts from writing implementation to directing intent.</p>
+      </div>
+      <p class="cs-section__text">For a designer this is transformative. The gap between having an idea and seeing it rendered — historically measured in days or weeks — collapses to minutes.</p>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">My Workflow</h4>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Vibe coding workflow diagram</p></div><figcaption>Flowchart showing: Design intent → Preview in Claude chat → Approve direction → Write Claude Code prompt → Review screenshot → Iterate → Ship</figcaption></figure>
+
+      <p class="cs-section__text">Every feature followed this exact sequence:</p>
+      <ol class="cs-list" style="padding-left:1.25rem;margin-bottom:1.5rem">
+        <li>Think through the design problem in conversation with Claude</li>
+        <li>Preview the UI using interactive widgets rendered in chat — before any code is written</li>
+        <li>Lock the design decisions explicitly — colors, interactions, edge cases, what to remove</li>
+        <li>Write a structured prompt to Claude Code with exact specifications</li>
+        <li>Review the output — screenshot back, iterate if needed</li>
+        <li>Ship — push to Vercel, tests run automatically</li>
+      </ol>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Why this matters for design leadership</h4>
+      <p class="cs-section__text">Traditional design → development handoff has a fundamental problem: things get lost in translation. Designers describe intent, developers interpret it, something different ships.</p>
+      <p class="cs-section__text">Vibe coding eliminates the translation layer. As a designer I could specify exact hex values, exact interaction states, exact copy, what to remove, and mobile behaviour explicitly. The output was closer to design intent than any handoff process I have experienced.</p>
+    </section>
+
+    <!-- ===== 2. CHALLENGE ===== -->
+    <section class="cs-section" id="challenge">
+      <h2 class="cs-section__title">The Challenge</h2>
+      <h3 class="cs-section__subtitle">The Problem</h3>
+      <p class="cs-section__text">75% of CVs are rejected by ATS software before a human recruiter ever reads them. Most job seekers never know this is happening — they assume their experience isn't good enough, when the real problem is their CV isn't structured the way ATS software expects.</p>
+      <p class="cs-section__text">Every tool that tried to solve this charged <strong>$19–$29/month</strong> — creating a painful irony: the people who most need help getting a job can least afford to pay for it.</p>
+
+      <div class="cs-grid cs-grid--2" style="margin-bottom:2rem">
+        <div class="cs-card">
+          <h3 class="cs-card__title">The Problem in Numbers</h3>
+          <ul class="cs-list">
+            <li><strong>75%</strong> of CVs rejected by ATS before a recruiter reads them</li>
+            <li><strong>63%</strong> of job seekers have never heard of ATS software</li>
+            <li><strong>54%</strong> reuse the same CV for every application</li>
+            <li><strong>82%</strong> of rejected candidates never receive feedback on why</li>
+            <li><strong>91%</strong> who know about ATS want a free tool to check their CV</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-card__title">Business Impact</h3>
+          <ul class="cs-list">
+            <li><strong>$19–$29/month</strong> average cost of existing tools — unaffordable during job search</li>
+            <li><strong>4–6 weeks</strong> average job search duration, extended by avoidable CV rejections</li>
+            <li>No tool connects CV quality → job matching → interview preparation in one flow</li>
+            <li>Job seekers blame themselves for rejections caused by formatting</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="cs-section__subtitle">The Competitive Gap</h3>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Competitor comparison matrix</p></div><figcaption>CVEdge vs Jobscan, Resumeworded, Enhancv, Kickresume, Teal, Resume.io — features vs price grid showing CVEdge as the only free full-stack option</figcaption></figure>
+      <p class="cs-section__text">Every existing tool either charges users, does only one thing, or is too technical for non-expert job seekers. None close the loop from CV → job match → interview prep.</p>
+    </section>
+
+    <!-- ===== 3. RESEARCH ===== -->
+    <section class="cs-section" id="research">
+      <h2 class="cs-section__title">Research &amp; Discovery</h2>
+      <p class="cs-section__text">Four research streams ran before designing a single screen.</p>
+
+      <div class="cs-timeline">
+        <div class="cs-timeline__item">
+          <h3>Method 1: Job Seeker Survey (80+ responses)</h3>
+          <p>Structured survey targeting active job seekers in US, UK, and India. Focused on ATS awareness, tool usage, and where the process broke down.</p>
+          <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Top 5 pain points infographic</p></div><figcaption>Visual breakdown of survey results — ATS awareness gap, tool cost barrier, repetitive process, no feedback loop, interview prep disconnect</figcaption></figure>
+          <h4 style="color:var(--lightest-slate);margin:1rem 0 0.5rem">Top Pain Points</h4>
+          <ul class="cs-list">
+            <li><strong>83%</strong> — Didn't know ATS was filtering their applications</li>
+            <li><strong>71%</strong> — Found existing tools too expensive during job search</li>
+            <li><strong>67%</strong> — Rewrote their CV manually for each role</li>
+            <li><strong>59%</strong> — No way to know if their CV matched a specific JD</li>
+            <li><strong>74%</strong> — Felt unprepared for behavioral interview questions</li>
+          </ul>
+        </div>
+
+        <div class="cs-timeline__item">
+          <h3>Method 2: Application Session Observation (8 participants)</h3>
+          <p>Observed real job application sessions over video call. Timed each activity and noted friction points.</p>
+          <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Where job seeker time goes — time breakdown</p></div><figcaption>Breakdown: 35% writing/editing CV · 25% searching for jobs · 20% tailoring CV per role · 15% writing cover letters · 5% interview prep</figcaption></figure>
+          <div class="cs-accent-box"><strong>Key finding:</strong> 60% of application time is mechanical — reformatting, rewriting, keyword-guessing — tasks that should be automated. Less than 10% is spent on high-value interview preparation.</div>
+        </div>
+
+        <div class="cs-timeline__item">
+          <h3>Method 3: Deep-Dive Interviews (20 job seekers)</h3>
+          <p>Qualitative interviews across experience levels — fresh graduates, mid-level professionals, senior candidates.</p>
+          <blockquote class="cs-blockquote">"I applied to 40 companies and heard back from 2. I thought my experience wasn't good enough. Nobody told me my CV was being filtered before anyone read it."<br><cite style="font-size:0.85rem;font-style:normal;color:var(--slate)">— Mid-level Software Engineer, UK</cite></blockquote>
+          <blockquote class="cs-blockquote">"I pay $29/month for Jobscan but I'm not working right now. It feels wrong to spend that much when I'm trying to find a job."<br><cite style="font-size:0.85rem;font-style:normal;color:var(--slate)">— Product Manager, USA</cite></blockquote>
+          <blockquote class="cs-blockquote">"I know my CV needs work but I don't know what to fix. I need someone to tell me exactly what's wrong — and then fix it for me."<br><cite style="font-size:0.85rem;font-style:normal;color:var(--slate)">— UX Designer, Canada</cite></blockquote>
+        </div>
+
+        <div class="cs-timeline__item">
+          <h3>Method 4: Competitive Teardown (12 tools)</h3>
+          <p>Deep evaluation of every major CV and ATS tool — as a real job seeker would experience them.</p>
+          <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Competitive gap analysis flowchart</p></div><figcaption>Mapping of what each competitor does well and where they all fail — specifically the gap between scoring and fixing, and the missing connection to job discovery</figcaption></figure>
+          <div class="cs-accent-box"><strong>The critical gap:</strong> Every existing tool stops at diagnosis. None fix the problem. CVEdge closes this loop entirely — score → fix → match → prepare.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. DESIGN PROCESS ===== -->
+    <section class="cs-section" id="design-process">
+      <h2 class="cs-section__title">Design Process</h2>
+
+      <!-- Phase 1 -->
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Phase 1: Product Architecture</h3>
+        <p class="cs-section__text">Research revealed four distinct mental modes a job seeker operates in. The product needed to support all four without conflating them.</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">CVEdge product architecture — four modes</p></div><figcaption>Information architecture showing CV Builder → ATS Analyser → Job Match Engine → Interview Coach — each as a distinct mode with data flow between them</figcaption></figure>
+
+        <div class="cs-grid cs-grid--2" style="margin-top:1.5rem">
+          <div class="cs-card"><h4 class="cs-card__title">1. CV Builder</h4><p class="cs-card__text">Create and edit the CV. All sections, all templates, design controls. The foundational layer everything else builds on.</p></div>
+          <div class="cs-card"><h4 class="cs-card__title">2. ATS Analyser</h4><p class="cs-card__text">Score the CV across 6 categories, surface missing keywords, fix everything with one click. Closes the loop from diagnosis to fix.</p></div>
+          <div class="cs-card"><h4 class="cs-card__title">3. Job Match Engine</h4><p class="cs-card__text">Paste any job description. See your match score, gaps, and JD red flags. Tailor your CV for that specific role with one click.</p></div>
+          <div class="cs-card"><h4 class="cs-card__title">4. Interview Coach</h4><p class="cs-card__text">Build a personal library of career stories in STAR format. Before any interview, surface the most relevant stories for that role.</p></div>
+        </div>
+        <div class="cs-accent-box" style="margin-top:1.5rem"><h4 style="margin-bottom:0.5rem">Why four separate modes?</h4><p style="margin:0">Grading a CV needs focus. Matching a job needs comparison. Preparing for an interview needs recall. Forcing them into one view creates the exact cognitive overload job seekers are trying to escape.</p></div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Phase 2: ATS Score — Designing for Trust</h3>
+        <p class="cs-section__text">The ATS score is the core value proposition. Getting the design right required solving a fundamental trust problem: job seekers need to believe the score is meaningful, actionable, and honest — not a black box number.</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">ATS panel — score ring + category breakdown</p></div><figcaption>Circular score ring with gradient (emerald to forest green), overall score, status label, 6 category bars color-coded by performance range, missing keywords as red chips, found keywords as green chips</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Score Color System</h4>
+        <div class="cs-card" style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:0.875rem">
+            <thead><tr style="border-bottom:1px solid var(--lightest-navy)"><th style="text-align:left;padding:0.5rem 1rem 0.5rem 0;color:var(--lightest-slate)">Score</th><th style="text-align:left;padding:0.5rem 1rem;color:var(--lightest-slate)">Color</th><th style="text-align:left;padding:0.5rem 1rem;color:var(--lightest-slate)">Status</th><th style="text-align:left;padding:0.5rem 0;color:var(--lightest-slate)">Primary CTA</th></tr></thead>
+            <tbody style="color:var(--slate)">
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">90–100</td><td style="padding:0.5rem 1rem;color:var(--green)">Forest green</td><td style="padding:0.5rem 1rem">Interview Ready</td><td style="padding:0.5rem 0">Download PDF</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">70–89</td><td style="padding:0.5rem 1rem;color:#34d399">Emerald</td><td style="padding:0.5rem 1rem">Strong</td><td style="padding:0.5rem 0">Re-analyse</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">50–69</td><td style="padding:0.5rem 1rem;color:#fbbf24">Amber</td><td style="padding:0.5rem 1rem">Needs Work</td><td style="padding:0.5rem 0">Fix All with AI</td></tr>
+              <tr><td style="padding:0.5rem 1rem 0.5rem 0">Below 50</td><td style="padding:0.5rem 1rem;color:#f87171">Red</td><td style="padding:0.5rem 1rem">Needs Improvement</td><td style="padding:0.5rem 0">Fix All with AI</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cs-accent-box" style="margin-top:1.5rem"><h4 style="margin-bottom:0.5rem">Real-time Estimated Score</h4><p style="margin:0">The full ATS analysis is AI-powered and takes 3–5 seconds. We also run a client-side keyword scan in real time — users see their score update as they type. This creates immediate feedback that makes editing feel responsive and motivating.</p></div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Phase 3: Fix All with AI — Designing Human-in-the-Loop</h3>
+        <p class="cs-section__text">The most complex design challenge. AI rewrites the user's CV automatically — powerful but inherently risky. Users need control over their own career narrative.</p>
+
+        <div class="cv-decision-card cv-decision-card--fail"><span class="cv-decision-badge cv-decision-badge--fail">Failed</span><h4>Attempt 1: Auto-apply all changes silently</h4><p>AI rewrote and applied all changes without review. Users felt like they'd lost their voice. "This doesn't sound like me" was the dominant reaction in testing.</p></div>
+        <div class="cv-decision-card cv-decision-card--fail"><span class="cv-decision-badge cv-decision-badge--fail">Failed</span><h4>Attempt 2: Modal with a list of proposed changes</h4><p>Showed changes in a modal. Users couldn't assess quality without before/after side by side. Most clicked "Accept All" without reviewing — defeating the purpose entirely.</p></div>
+        <div class="cv-decision-card cv-decision-card--pass"><span class="cv-decision-badge cv-decision-badge--pass">Shipped</span><h4>Final: GitHub-style git diff drawer</h4><p>Red line shows original. Green line shows rewrite. User accepts, rejects, or edits each change individually. Live estimated score updates as user makes selections. After accepting — auto re-analyses ATS and re-runs job match so both scores reflect the changes immediately.</p></div>
+
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Fix All drawer — git diff view</p></div><figcaption>Full-screen drawer (85vw × 90vh), red/green diff for each changed bullet, per-change accept/reject/edit buttons, sticky footer showing live score estimate, Accept All and Apply Selected CTAs</figcaption></figure>
+        <div class="cs-accent-box"><strong>Key design rule:</strong> AI only rewrites genuinely weak bullets. If a bullet already has action verb + metric + outcome it is skipped. Users only see changes where the AI is confident it can improve — no noise, no false positives.</div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Phase 4: Job Match Engine</h3>
+        <p class="cs-section__text">The job match panel needed to answer three questions simultaneously: How well do I match this role? Why don't I match better? What should I do about it?</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Job match panel — full view</p></div><figcaption>Match score ring, 3 stat chips (keywords matched / missing / experience fit), category bars with weight percentages, JD Red Flag Detector below, Offer Evaluation Score, Tailor CV and Prepare for Interview CTAs</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">JD Red Flag Detector</h4>
+        <p class="cs-section__text">Users were applying to jobs without realising the JD itself had warning signs. The detector flags high-confidence issues only — avoiding false positives that would erode trust.</p>
+        <div class="cs-grid cs-grid--2" style="margin-bottom:1.5rem">
+          <div class="cs-card"><h4 class="cs-card__title" style="color:#f87171">Flagged signals</h4><ul class="cs-list"><li>Role title contradicts experience requirement (Red)</li><li>Unreasonable availability demands — "must be available 24/7" (Red)</li><li>No essential benefits mentioned — insurance, transport for night shifts (Yellow)</li><li>"Wear many hats" or "scrappy team" without substance (Yellow)</li><li>Vague responsibilities with no core duties listed (Yellow)</li></ul></div>
+          <div class="cs-card"><h4 class="cs-card__title" style="color:var(--green)">Not flagged</h4><ul class="cs-list"><li>Missing salary range — could mean open/negotiable</li><li>Contract roles — candidate may prefer</li><li>Long probation — norms vary by country</li></ul></div>
+        </div>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">JD Red Flag Detector — flag cards</p></div><figcaption>Red and yellow severity cards showing flag title, one-line explanation, exact JD phrase that triggered it, overall signal badge</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Offer Evaluation Score</h4>
+        <p class="cs-section__text">Scores the JOB not the candidate across 5 dimensions: seniority fit, role clarity, growth signals, remote/onsite clarity, work-life balance. Radar chart + signal rows. Always shows: "AI-estimated. Do your own research before any decision."</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Offer Evaluation Score — radar chart + signals</p></div><figcaption>Pentagon radar chart, signal rows with green/amber/red dots, grade badge A–F, disclaimer at bottom</figcaption></figure>
+      </div>
+
+      <!-- Phase 5 -->
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Phase 5: Interview Coach</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Interview Coach — story library</p></div><figcaption>Story library grouped by theme tags (Leadership, Data, Cross-functional, Scale etc), quality score badges, source indicators (CV / Portfolio / GitHub), Interview Ready badge on strong stories</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Story Sources</h4>
+        <p class="cs-section__text">Users build their story library from multiple sources:</p>
+        <ul class="cs-list" style="margin-bottom:1.5rem">
+          <li><strong>CV bullets</strong> — AI pre-fills STAR from existing bullets, user fills gaps</li>
+          <li><strong>Portfolio URL</strong> — AI reads case studies, extracts stories</li>
+          <li><strong>GitHub README</strong> — AI reads project descriptions, finds technical stories</li>
+          <li><strong>Any URL or PDF</strong> — Blog posts, project reports, any document</li>
+        </ul>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">STAR + Reflection + Summary</h4>
+        <p class="cs-section__text">Each story has: Situation → Task → Action → Result → optional Reflection. After completing all fields, user clicks "Generate story summary" — AI writes a 2–3 sentence natural narrative they can read before walking into the interview.</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Story builder modal — STAR form + summary</p></div><figcaption>Step form showing STAR fields, optional Reflection textarea, AI-generated Summary card at bottom, quality score preview updating in real time</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Interview Prep Mode</h4>
+        <p class="cs-section__text">User pastes a JD before any interview. CVEdge surfaces top 5 relevant stories ranked by relevance, with suggested behavioral questions each story answers and a suggested opening line for each answer.</p>
+      </div>
+
+      <!-- Phase 6 -->
+      <div>
+        <h3 class="cs-section__subtitle">Phase 6: Design System</h3>
+        <p class="cs-section__text">With a product this complex — CV editor, ATS panel, job match, cover letter, interview coach, dashboard, admin panel — a robust design system was essential.</p>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Design system overview — color tokens + chip variants</p></div><figcaption>Semantic color token system, chip variant system, type scale, spacing system</figcaption></figure>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Chip Variant System — Consistent Signal Language</h4>
+        <div class="cs-card" style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:0.875rem">
+            <thead><tr style="border-bottom:1px solid var(--lightest-navy)"><th style="text-align:left;padding:0.5rem 1rem 0.5rem 0;color:var(--lightest-slate)">Variant</th><th style="text-align:left;padding:0.5rem 1rem;color:var(--lightest-slate)">Visual</th><th style="text-align:left;padding:0.5rem 0;color:var(--lightest-slate)">Used for</th></tr></thead>
+            <tbody style="color:var(--slate)">
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0;font-weight:600">A — Dark filled</td><td style="padding:0.5rem 1rem">#065F46 bg, white text</td><td style="padding:0.5rem 0">Selected / active</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0;font-weight:600">B — Green outline</td><td style="padding:0.5rem 1rem">White bg, #065F46 border</td><td style="padding:0.5rem 0">Available / unselected</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0;font-weight:600">C — Light fill</td><td style="padding:0.5rem 1rem">#DCFCE7 bg, dark green text</td><td style="padding:0.5rem 0">Trust signals, found keywords</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0;font-weight:600">Red outline</td><td style="padding:0.5rem 1rem">White bg, red border + text</td><td style="padding:0.5rem 0">Missing keywords, warnings</td></tr>
+              <tr><td style="padding:0.5rem 1rem 0.5rem 0;font-weight:600">Amber</td><td style="padding:0.5rem 1rem">#FEF3C7 bg, amber text</td><td style="padding:0.5rem 0">Caution, urgency</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cs-accent-box" style="margin-top:1.5rem"><strong>Why a chip system?</strong> CVEdge surfaces dozens of signals simultaneously. Without a consistent chip language every signal looks like noise. The system creates instant meaning from visual pattern alone.</div>
+      </div>
+    </section>
+
+    <!-- ===== 5. PROMPT ENGINEERING ===== -->
+    <section class="cs-section" id="prompt-engineering">
+      <h2 class="cs-section__title">Prompt Engineering — The Real Design Work</h2>
+      <p class="cs-section__text">The quality of what got built was entirely determined by the quality of my prompts. Prompt writing became a design discipline in itself.</p>
+
+      <h3 class="cs-section__subtitle">My Prompt Architecture</h3>
+      <p class="cs-section__text">Every Claude Code prompt followed a strict structure:</p>
+      <div class="cv-code">Reference CONTEXT.md.
+
+[File path to edit]
+---
+PART 1 — [specific concern]
+[Exact instructions]
+
+PART 2 — [specific concern]
+[Exact instructions]
+
+Run it. Share screenshot when done.</div>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Why this structure:</h4>
+      <ul class="cs-list" style="margin-bottom:2rem">
+        <li><strong>Reference CONTEXT.md</strong> — injects full product context so Claude Code never conflicts with existing patterns</li>
+        <li><strong>File path first</strong> — Claude Code always knows exactly what to touch</li>
+        <li><strong>Numbered parts</strong> — separates concerns, prevents instruction drift</li>
+        <li><strong>Exact values</strong> — eliminates interpretation errors</li>
+        <li><strong>"Share screenshot when done"</strong> — forces visual verification, not just code output</li>
+      </ul>
+
+      <h3 class="cs-section__subtitle">CONTEXT.md — The Design System as Machine-Readable Document</h3>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">CONTEXT.md — actual file screenshot</p></div><figcaption>The real CONTEXT.md file showing stack details, color tokens, component conventions, prompt rules, anti-patterns</figcaption></figure>
+      <p class="cs-section__text">The most important design decision of the entire project was creating CONTEXT.md — a single source of truth that every Claude Code prompt references. It contains the complete color system, chip variant system, typography conventions, component patterns, business logic, and explicit anti-patterns.</p>
+      <p class="cs-section__text">Without this, every prompt rebuilds context from scratch and drifts from the design system. With it, 50+ prompts over 6 months maintained visual and interaction consistency across the entire product.</p>
+
+      <h3 class="cs-section__subtitle">Multi-Agent Prompting</h3>
+      <p class="cs-section__text">For complex features I ran multiple Claude Code agents in parallel — each owning a specific concern:</p>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Multi-agent prompt structure diagram</p></div><figcaption>Example showing 4-agent split: Agent 1 (Database) → Agent 2 (API routes) → Agent 3 (UI component) → Agent 4 (Wiring) — all running simultaneously</figcaption></figure>
+      <div class="cv-code">AGENT 1 — DATABASE
+Add fix_all_count_week and
+fix_all_window_start to profiles.
+Check schema first.
+
+AGENT 2 — API ROUTE
+Create /api/cv/fix-all
+Call fix_all_ats_v1 from prompts table
+Track usage per 7-day rolling window
+
+AGENT 3 — UI COMPONENT
+Create fix-all-drawer.tsx
+Git diff style — red/green per bullet
+Accept/reject/edit per change
+Sticky footer with live score estimate
+
+AGENT 4 — WIRING
+Connect button in ats-panel.tsx
+After accept: trigger re-analyse + re-match
+Show upgrade modal if limit reached</div>
+      <p class="cs-section__text">Running agents in parallel compressed what would have been a multi-day feature into a single session.</p>
+
+      <h3 class="cs-section__subtitle">The Prompts I Designed</h3>
+      <p class="cs-section__text">Each prompt was designed as a product specification — not just an instruction. Output format, edge case handling, and failure modes were all specified explicitly.</p>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">ATS Analysis Prompt — Key Design Decisions</h4>
+      <div class="cv-code">STRICT RULES:
+- Only flag issues with high confidence
+- Never penalise for information that
+  genuinely doesn't belong in a CV
+- Measurable results: any %, $, numbers,
+  NPS, engagement count qualifies
+- Formatting: 100 achievable with clean CV
+- Recency penalty: REMOVED</div>
+      <p class="cs-section__text">The initial ATS prompt penalised older experience and required specific formats that were unnecessarily restrictive. Iterating the prompt — not the code — fixed scoring accuracy instantly.</p>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Fix All Prompt — The Hardest Prompt to Write</h4>
+      <div class="cv-code">STRICT RULES:
+- Only rewrite a bullet if genuinely weak:
+  missing action verb, no outcome, vague
+- If bullet already has action + metric +
+  outcome → mark as skipped, do not touch
+- Never suggest improvements to strong content
+- Never fabricate metrics
+- Only use [X]% where metric genuinely
+  missing AND achievement is real
+- After accepting all changes there should
+  be no remaining suggestions unless user
+  has genuinely empty sections</div>
+      <p class="cs-section__text">Getting the Fix All prompt right took 6 iterations. The core challenge: an AI that is too aggressive rewrites everything and loses the user's voice. An AI that is too conservative doesn't help. The prompt constraints are the design work.</p>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Story Extraction Prompt — Seniority-Aware</h4>
+      <div class="cv-code">Detect candidate seniority from source:
+- &lt; 2 years → junior
+- 2-5 years → mid
+- 5+ years → senior
+
+For junior candidates:
+  Also scan education section for projects
+  Accept academic/personal project stories
+  Lower quality threshold: 5+ = ready
+  Suggest junior-appropriate question types
+
+For senior candidates:
+  Focus on work achievements
+  Quality threshold: 7+ = ready
+  Suggest leadership/impact questions</div>
+      <p class="cs-section__text">A prompt that generates the same output regardless of career stage creates poor experiences at both ends. Seniority detection inside the prompt means the AI adapts without any conditional logic in the application code.</p>
+    </section>
+
+    <!-- ===== 6. TECHNICAL INTEGRATIONS ===== -->
+    <section class="cs-section" id="integrations">
+      <h2 class="cs-section__title">Technical Integrations</h2>
+      <p class="cs-section__text">These were not built for me — I designed, specified, and directed every integration through prompts.</p>
+
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Supabase — Database Architecture</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Supabase schema diagram</p></div><figcaption>Entity relationship diagram showing all tables: profiles, cvs, job_match_results (with red_flags and offer_evaluation JSONB columns), stories, story_sources, test_runs, test_results, test_cases, guarantee_claims, job_waitlist, prompts, email_templates</figcaption></figure>
+        <h4 style="color:var(--lightest-slate);margin:1rem 0 0.75rem">Key schema decisions:</h4>
+        <ul class="cs-list">
+          <li><strong>red_flags jsonb</strong> and <strong>offer_evaluation jsonb</strong> on job_match_results — AI output stored with the analysis, not in separate tables</li>
+          <li><strong>prompts table</strong> separate from application code — enables prompt iteration without deploys</li>
+          <li><strong>fix_all_count_week</strong> and <strong>fix_all_window_start</strong> on profiles — rolling 7-day window, not calendar week</li>
+          <li><strong>RLS on all user tables</strong> — users can only access their own data</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Gemini 2.5 Flash — AI Integration</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Model-agnostic AI client architecture</p></div><figcaption>Diagram showing prompts table → callAI() wrapper → Gemini 2.5 Flash → structured JSON output → application layer</figcaption></figure>
+        <p class="cs-section__text">The AI client is model-agnostic. Switching from Gemini to GPT-4o or Claude requires changing one environment variable. No vendor lock-in at the AI layer.</p>
+
+        <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">Token cost analysis:</h4>
+        <div class="cs-card" style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:0.875rem">
+            <thead><tr style="border-bottom:1px solid var(--lightest-navy)"><th style="text-align:left;padding:0.5rem 1rem 0.5rem 0;color:var(--lightest-slate)">Action</th><th style="text-align:left;padding:0.5rem 1rem;color:var(--lightest-slate)">Tokens</th><th style="text-align:left;padding:0.5rem 0;color:var(--lightest-slate)">Cost</th></tr></thead>
+            <tbody style="color:var(--slate)">
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">ATS analysis</td><td style="padding:0.5rem 1rem">~3,000</td><td style="padding:0.5rem 0">$0.0003</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">Fix All — full CV</td><td style="padding:0.5rem 1rem">~10,000</td><td style="padding:0.5rem 0">$0.001</td></tr>
+              <tr style="border-bottom:1px solid var(--navy)"><td style="padding:0.5rem 1rem 0.5rem 0">Portfolio scanning</td><td style="padding:0.5rem 1rem">~20,000</td><td style="padding:0.5rem 0">$0.002</td></tr>
+              <tr><td style="padding:0.5rem 1rem 0.5rem 0">Heaviest power user/week</td><td style="padding:0.5rem 1rem">~176,500</td><td style="padding:0.5rem 0">$0.013</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="cs-section__text" style="margin-top:1rem">At Gemini Flash pricing a free-forever model is financially viable — a design insight that changed the entire product strategy.</p>
+      </div>
+
+      <div style="margin-bottom:2.5rem">
+        <h3 class="cs-section__subtitle">Playwright E2E Testing — Infrastructure I Designed</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">GitHub Actions — green test run</p></div><figcaption>GitHub Actions workflow showing all 6 tests passing, commit hash, duration</figcaption></figure>
+        <p class="cs-section__text">Getting Playwright to work with Google OAuth was a significant problem. Three approaches, one solution:</p>
+        <div class="cv-decision-card cv-decision-card--fail"><span class="cv-decision-badge cv-decision-badge--fail">Failed</span><h4>Approach 1: Header bypass</h4><p>Supabase middleware runs before custom middleware.</p></div>
+        <div class="cv-decision-card cv-decision-card--fail"><span class="cv-decision-badge cv-decision-badge--fail">Failed</span><h4>Approach 2: Magic link</h4><p>Redirect chain didn't complete in headless browser.</p></div>
+        <div class="cv-decision-card cv-decision-card--pass"><span class="cv-decision-badge cv-decision-badge--pass">Shipped</span><h4>Approach 3: API route test-auth</h4><p>Created a development-only route that creates a real Supabase session, sets cookies in the correct chunked format, saves storageState for all subsequent tests.</p></div>
+        <p class="cs-section__text">6 tests, all green, running on every push to main via GitHub Actions.</p>
+      </div>
+
+      <div>
+        <h3 class="cs-section__subtitle">Admin Test Management — Designed Like Vercel Deployments</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">/admin/tests — run history</p></div><figcaption>Run history showing status dots, commit hashes, pass/fail counts, duration, time ago — identical UX pattern to Vercel deployment history</figcaption></figure>
+        <p class="cs-section__text">The admin test page UX pattern came from Vercel's deployment history — because that's the mental model that made most sense. Every push to main is a deployment. Every deployment should have a quality signal attached to it.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. MAINTAINABILITY ===== -->
+    <section class="cs-section" id="maintainability">
+      <h2 class="cs-section__title">Maintainability &amp; Admin</h2>
+      <p class="cs-section__text">Most side projects are built to ship — not to maintain. CVEdge was built as if a team would inherit it.</p>
+
+      <h3 class="cs-section__subtitle">The Admin Panel — Operating the Product Without Code</h3>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Admin panel — full navigation</p></div><figcaption>Admin sidebar showing all sections: Dashboard, Analytics, Users, Pricing, Prompts, Keywords, Missing Roles, AI Settings, Emails, Campaigns, Email Logs, Tests</figcaption></figure>
+      <p class="cs-section__text">The admin panel is the operational layer that makes the product maintainable without touching code.</p>
+
+      <h4 style="color:var(--lightest-slate);margin:1.5rem 0 0.75rem">What I can change without a single code deploy:</h4>
+      <div class="cs-card" style="overflow-x:auto">
+        <table class="cv-table">
+          <thead><tr><th>Admin section</th><th>What it controls</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Prompts</td><td>All AI prompt content and temperature</td><td>Iterate AI behaviour without code changes</td></tr>
+            <tr><td>AI Settings</td><td>Max tokens, feature flags per AI action</td><td>Cost and quality control per feature</td></tr>
+            <tr><td>Keywords</td><td>ATS keyword library by role</td><td>Improve scoring accuracy over time</td></tr>
+            <tr><td>Missing Roles</td><td>Roles CVEdge doesn't recognise</td><td>Fix blind spots as new job titles emerge</td></tr>
+            <tr><td>Pricing</td><td>Subscription tiers and token pack prices</td><td>Change pricing without a deploy</td></tr>
+            <tr><td>Emails</td><td>All email template HTML</td><td>Fix or improve any email without code</td></tr>
+            <tr><td>Campaigns</td><td>Drip email sequences</td><td>Create new sequences without code</td></tr>
+            <tr><td>Users</td><td>View, search, manage accounts</td><td>Support without database access</td></tr>
+            <tr><td>Tests</td><td>Test case management, run history</td><td>Monitor quality post-deploy</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cs-accent-box" style="margin-top:1.5rem"><strong>Design principle:</strong> anything that changes frequently should never require a code deploy. Code deploys have risk. Database changes are instant and reversible.</div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Prompts as a Database — Not Code</h3>
+      <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Prompts admin page — edit view</p></div><figcaption>Table showing all AI prompts — name, content preview, version number, last updated — with inline edit</figcaption></figure>
+      <p class="cs-section__text"><strong>The problem with hardcoded prompts:</strong></p>
+      <div class="cv-code">const PROMPT = `You are an ATS expert...`
+// To change: edit code → commit → PR → deploy
+// Time: 30-60 minutes minimum
+// Risk: deployment failure can break feature</div>
+      <p class="cs-section__text"><strong>The prompts table approach:</strong></p>
+      <div class="cv-code">SELECT content FROM prompts
+WHERE name = 'fix_all_ats_v1';
+-- To change: edit in admin panel
+-- Time: 30 seconds
+-- Risk: zero — old version stays in DB</div>
+      <p class="cs-section__text">Every AI behaviour is editable from the admin panel in 30 seconds. When Fix All was generating too-aggressive rewrites during testing, I fixed the prompt mid-session — without stopping, committing, or deploying anything.</p>
+      <p class="cs-section__text">Each prompt has a version integer. Full rollback available instantly.</p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Ten Autonomous Design Decisions</h3>
+      <p class="cs-section__text">These weren't requested features — they were product design choices made independently, each reflecting a deliberate philosophy.</p>
+      <div class="cs-timeline">
+        <div class="cs-timeline__item"><h3>1. Model-agnostic AI layer</h3><p>Built a wrapper that abstracts the AI provider. Switching models requires changing one environment variable. Vendor lock-in at the AI layer is the highest-risk technical decision in an AI product.</p></div>
+        <div class="cs-timeline__item"><h3>2. Rolling 7-day usage window</h3><p>Usage resets every 7 days from the user's first action — not on Monday. Calendar resets create binge-at-reset behaviour. Rolling windows smooth usage and reduce churn signals.</p></div>
+        <div class="cs-timeline__item"><h3>3. Temperature control per prompt</h3><p>ATS analysis and Fix All run at temperature 0 (deterministic). Story summary at 0.3 (slight creativity). Offer evaluation at 0 (factual signals only). Temperature is a product decision, not a technical one.</p></div>
+        <div class="cs-timeline__item"><h3>4. JSONB columns for AI output</h3><p>AI outputs stored as JSONB — not normalised into relational tables. AI output structure evolves. JSONB absorbs schema changes without migrations.</p></div>
+        <div class="cs-timeline__item"><h3>5. Fixed UUIDs for test data</h3><p>Test user and test CV have fixed hardcoded UUIDs. Dynamic UUIDs in test data create flaky tests. Fixed UUIDs make tests deterministic and seed scripts idempotent.</p></div>
+        <div class="cs-timeline__item"><h3>6. Upgrade modal context system</h3><p>Any component can trigger the upgrade modal with a trigger type: <code style="color:var(--green);font-size:0.85rem">showUpgrade('fix_all_limit')</code>. Each trigger maps to specific copy and feature list. Without this, upgrade messaging drifts across the product.</p></div>
+        <div class="cs-timeline__item"><h3>7. Admin-seeded test cases</h3><p>New feature test cases added to the test_cases database table — not just to spec files. Non-engineers can manage test coverage. Future team members don't need to read spec files to understand what's tested.</p></div>
+        <div class="cs-timeline__item"><h3>8. Email templates in database</h3><p>All 9 email templates stored in email_templates table — not hardcoded. Email copy changes frequently. Admin panel edit takes 30 seconds. Code deploy takes 30 minutes.</p></div>
+        <div class="cs-timeline__item"><h3>9. Guarantee claims table</h3><p>Built guarantee_claims table and claim flow before the product had a single user. A promise without infrastructure to track and honour it is a trust liability.</p></div>
+        <div class="cs-timeline__item"><h3>10. CONTEXT.md as machine-readable design system</h3><p>Most design systems live in Figma — inaccessible to the AI building the product. CONTEXT.md is a machine-readable design system that Claude Code reads at the start of every prompt. 50+ prompts over 6 months maintained visual consistency entirely through this file.</p></div>
+      </div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Summary — What These Decisions Say</h3>
+      <div class="cs-card" style="overflow-x:auto">
+        <table class="cv-table cv-summary-table">
+          <thead><tr><th>Decision</th><th>What it signals</th></tr></thead>
+          <tbody>
+            <tr><td>Model-agnostic AI layer</td><td>Thinking about vendor risk before it becomes a problem</td></tr>
+            <tr><td>Rolling 7-day usage window</td><td>Behavioural design applied to infrastructure</td></tr>
+            <tr><td>Temperature control per prompt</td><td>AI quality is a product design concern, not a backend toggle</td></tr>
+            <tr><td>JSONB for AI output</td><td>Designing schema for change, not for today's structure</td></tr>
+            <tr><td>Fixed UUIDs for tests</td><td>Test reliability is a design decision</td></tr>
+            <tr><td>Upgrade modal context system</td><td>Scaling monetisation UX without adding drift</td></tr>
+            <tr><td>Admin-seeded test cases</td><td>Making quality assurance accessible to non-engineers</td></tr>
+            <tr><td>Email templates in database</td><td>Operational speed matters as much as code quality</td></tr>
+            <tr><td>Guarantee claims table</td><td>Trust infrastructure built before it's needed</td></tr>
+            <tr><td>CONTEXT.md as design system</td><td>Making design decisions enforceable by AI, not just documented</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== 8. KEY FEATURES ===== -->
+    <section class="cs-section" id="features">
+      <h2 class="cs-section__title">Key Features &amp; Design Decisions</h2>
+
+      <div style="margin-bottom:3rem">
+        <h3 class="cs-section__subtitle" style="border-left:2px solid var(--green);padding-left:0.75rem">1. Resume Card Dashboard</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Resume dashboard — grid view</p></div><figcaption>3-column grid of resume cards showing different states: full (ATS + Match + CL indicator), ATS only, not analysed. Grid/list toggle, search, sort controls in header.</figcaption></figure>
+        <p class="cs-section__text">Contact name and job title instead of filename. Template and date on one muted metadata line. ATS score colored by range. Match % in blue, Cover Letter indicator in purple — only shown if completed. Download and delete icons. Entire card clickable.</p>
+        <p class="cs-section__text"><strong>Impact:</strong> Users immediately see which CVs need attention and which are ready — without opening any of them.</p>
+      </div>
+
+      <div style="margin-bottom:3rem">
+        <h3 class="cs-section__subtitle" style="border-left:2px solid var(--green);padding-left:0.75rem">2. Template System — 11 Designs</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Full template gallery — all 11 templates</p></div><figcaption>Classic · Sharp · Minimal · Executive · Sidebar · Horizon · Divide · Folio · Harvard · Metro · Ledger</figcaption></figure>
+        <p class="cs-section__text">All designed from scratch. Every template tested in both the visual PDF layer and the ATS text extraction layer — a template can look beautiful but fail ATS parsing. Both dimensions tested on every design.</p>
+        <h4 style="color:var(--lightest-slate);margin:1rem 0 0.75rem">Design constraints across all templates:</h4>
+        <ul class="cs-list">
+          <li><strong>No profile photos</strong> — ATS systems can't parse images</li>
+          <li><strong>No skill progress bars</strong> — decorative and misleading</li>
+          <li><strong>No tables for layout</strong> — ATS parsers misread table-based layouts</li>
+          <li><strong>All respect design settings</strong> — font size, spacing, accent color, paper size</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:3rem">
+        <h3 class="cs-section__subtitle" style="border-left:2px solid var(--green);padding-left:0.75rem">3. Semantic Color as Feedback Language</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Color system applied across all score contexts</p></div><figcaption>Four screenshots showing the same green/amber/red system across ATS panel, job match, offer evaluation, story quality badge</figcaption></figure>
+        <p class="cs-section__text">A user who understands what amber means on the ATS score understands it immediately on job match, offer evaluation, and story quality. The color system is the feedback language — it doesn't need labels once learned.</p>
+      </div>
+
+      <div style="margin-bottom:3rem">
+        <h3 class="cs-section__subtitle" style="border-left:2px solid var(--green);padding-left:0.75rem">4. What to Remove Is as Important as What to Add</h3>
+        <p class="cs-section__text">Every prompt included explicit removal instructions:</p>
+        <div class="cv-code">REMOVE:
+- Outdated badge from ATS panel header
+- Navy #1E3A5F from primary buttons
+- "ATS 0%" — show "Not analysed" instead
+- Hardcoded colors — use semantic tokens
+- Theme toggle from nav
+  (move to account dropdown only)</div>
+        <p class="cs-section__text">Most design prompts describe additions. Experienced designers know that removal is often the harder and more valuable decision.</p>
+      </div>
+
+      <div>
+        <h3 class="cs-section__subtitle" style="border-left:2px solid var(--green);padding-left:0.75rem">5. Mobile Experience</h3>
+        <figure class="placeholder"><div class="placeholder-inner"><span class="placeholder-icon">🖼</span><p class="placeholder-label">Mobile screenshots — editor, ATS panel, dashboard</p></div><figcaption>Three mobile screens showing CV editor, ATS score panel, resume card dashboard</figcaption></figure>
+        <p class="cs-section__text">Full editor functionality on mobile. Tab-based navigation. ATS and job match panels fully responsive. PDF export on all devices.</p>
+      </div>
+    </section>
+
+    <!-- ===== 9. IMPACT ===== -->
+    <section class="cs-section" id="impact">
+      <h2 class="cs-section__title cs-section__title--accent">Impact &amp; Results</h2>
+
+      <h3 class="cs-section__subtitle">What Got Shipped</h3>
+      <div class="cs-card" style="overflow-x:auto;margin-bottom:2rem">
+        <table class="cv-table">
+          <thead><tr><th>Component</th><th>Complexity</th><th>Prompts used</th></tr></thead>
+          <tbody>
+            <tr><td>CV editor — all sections + real-time ATS</td><td>High</td><td>8 prompts</td></tr>
+            <tr><td>ATS scoring — 6 categories + keyword engine</td><td>High</td><td>4 prompts + 3 iterations</td></tr>
+            <tr><td>Fix All with AI — git diff drawer</td><td>Very High</td><td>6 prompts across 3 agents</td></tr>
+            <tr><td>Job match + red flags + offer evaluation</td><td>High</td><td>5 prompts</td></tr>
+            <tr><td>CV tailor per JD</td><td>Medium</td><td>2 prompts</td></tr>
+            <tr><td>Cover letter — 3 tones</td><td>Low</td><td>1 prompt</td></tr>
+            <tr><td>Interview Coach — STAR stories</td><td>High</td><td>7 prompts</td></tr>
+            <tr><td>11 CV templates</td><td>High</td><td>11 prompts — 1 per template</td></tr>
+            <tr><td>E2E testing + GitHub Actions CI/CD</td><td>High</td><td>4 agents + 3 debug iterations</td></tr>
+            <tr><td>Admin panel + test management</td><td>Medium</td><td>4 prompts</td></tr>
+            <tr><td>Marketing homepage — all sections</td><td>Medium</td><td>6 prompts</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="cs-section__subtitle">Design System Outcomes</h3>
+      <ul class="cs-list" style="margin-bottom:2rem">
+        <li>Single semantic color system used consistently across <strong>40+ components</strong></li>
+        <li>5-variant chip system handles all signal types without new patterns</li>
+        <li>Design decisions documented and reproducible by any engineer</li>
+      </ul>
+
+      <h3 class="cs-section__subtitle">Business Model Insight</h3>
+      <p class="cs-section__text">Making CVEdge free required understanding the unit economics of AI infrastructure. At Gemini Flash pricing, the heaviest power user costs <strong>$0.013/week</strong> in AI tokens. That single calculation — which I ran myself — changed the entire product strategy from a subscription model to a free-forever model monetised through job board PPC.</p>
+    </section>
+
+    <!-- ===== 10. KEY LEARNINGS ===== -->
+    <section class="cs-section" id="learnings">
+      <h2 class="cs-section__title">Key Learnings</h2>
+      <div class="cs-timeline">
+        <div class="cs-timeline__item"><h3>1. Precision is a Design Skill</h3><p>Writing prompts forces precision that design documentation rarely achieves. "Make it feel lighter" doesn't work in a prompt. "Reduce padding from 24px to 16px and change background from #F7F5F0 to white" does. The discipline made my design thinking more precise — not just to the AI, but in how I communicate with engineers generally.</p></div>
+        <div class="cs-timeline__item"><h3>2. Systems Thinking Is What Scales</h3><p>50+ prompts over 6 months maintained visual consistency entirely because of CONTEXT.md — not because I remembered every previous decision. A design system is only as good as its enforcement mechanism. Embedding the system in the context the AI reads is the most effective enforcement I have found.</p></div>
+        <div class="cs-timeline__item"><h3>3. The Designer's Value Moves Up the Stack</h3><p>When the gap between design intent and shipped code collapses, the designer's value shifts from specifying pixels to making product decisions. Should this feature exist at all? Does this mental model match how users think? What should happen in the edge case? These are the questions that matter — and the ones AI can't answer.</p></div>
+        <div class="cs-timeline__item"><h3>4. AI Amplifies Your Existing Instincts</h3><p>Vibe coding doesn't replace design judgment — it amplifies it. A designer with weak instincts will build a product with weak instincts faster. A designer with strong instincts will build a better product faster. The quality ceiling is still the designer's quality ceiling.</p></div>
+        <div class="cs-timeline__item"><h3>5. Prompts Are Design Artifacts</h3><p>I treated every Claude Code prompt as a design artifact — structured, versioned, reusable. The prompts are documentation. They describe exactly what was built, why, and what was explicitly excluded. Future team members can understand every product decision from the prompt history.</p></div>
+        <div class="cs-timeline__item"><h3>6. Operational Design Is Product Design</h3><p>The admin panel, the prompts table, the rolling usage windows, the JSONB columns — none of these show up in a user flow. But they determine whether the product can be maintained, iterated, and scaled without pain. Operational design is product design. It just runs on a longer feedback loop.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 11. REFLECTION ===== -->
+    <section class="cs-section" id="reflection">
+      <h2 class="cs-section__title">Reflection</h2>
+      <p class="cs-section__text">CVEdge taught me that <strong style="color:var(--lightest-slate)">designing for scale means designing for trust — not just for tasks.</strong></p>
+      <p class="cs-section__text">The easy version of this product was a CV scoring tool with a paywall. The hard version — the one worth building — required rethinking the business model, the interaction patterns for AI-assisted editing, the trust framework for automated rewrites, and the mental models of users who don't know what ATS means.</p>
+      <p class="cs-section__text">The 8-minute fix time isn't a performance metric. It's a design metric. It means we removed everything that didn't need to be there.</p>
+
+      <div class="cs-accent-box" style="margin:1.5rem 0"><h4 style="margin-bottom:0.5rem">What vibe coding changed about how I design</h4><p style="margin:0">The ability to move from insight to shipped product in a single session changes how product decisions get made. The best decisions in CVEdge came from seeing something working quickly and reacting to it — not from planning in a vacuum. Vibe coding enables that feedback loop at a speed traditional development cannot match.</p></div>
+
+      <p class="cs-section__text">As design tools become more capable and AI becomes a collaborator rather than just a subject — the designers who understand how to direct AI precisely, maintain systems across long build cycles, and make the product decisions that AI cannot make will have a compounding advantage.</p>
+      <p class="cs-section__text"><strong style="color:var(--lightest-slate)">CVEdge is the proof of concept for that thesis.</strong></p>
+
+      <div class="cs-feature-box" style="margin-top:2rem">
+        <h3 class="cs-feature-box__title">Personal Growth</h3>
+        <div class="cs-grid cs-grid--2">
+          <ul class="cs-list">
+            <li>Prompt engineering as a design discipline — precision, structure, iteration</li>
+            <li>Multi-agent coordination for complex feature development</li>
+            <li>AI-assisted product development from concept to production</li>
+          </ul>
+          <ul class="cs-list">
+            <li>Designing human-in-the-loop interactions where trust is the primary UX concern</li>
+            <li>Schema design for AI output storage — JSONB columns, version control in prompts table</li>
+            <li>End-to-end product ownership including testing infrastructure and CI/CD</li>
+            <li>Business model thinking — unit economics as a design input</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="cs-section__text" style="margin-top:2rem;font-size:0.8rem;color:var(--slate)">CVEdge is a personal side project. All design, architecture, and prompt engineering by B. Sivarami Reddy. Built entirely through Claude Code prompts — zero manually written code.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="cs-footer">
+    <p class="cs-footer__text">&copy; 2024 B. Sivarami Reddy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tocLinks = document.querySelectorAll('.cv-toc__link');
+      var sections = [];
+      tocLinks.forEach(function (link) {
+        var id = link.getAttribute('href').replace('#', '');
+        var section = document.getElementById(id);
+        if (section) sections.push({ id: id, el: section, link: link });
+      });
+      if (!sections.length) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(function (l) { l.classList.remove('active'); });
+            var match = sections.find(function (s) { return s.el === entry.target; });
+            if (match) match.link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });
+      sections.forEach(function (s) { observer.observe(s.el); });
+      tocLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var id = this.getAttribute('href').replace('#', '');
+          var target = document.getElementById(id);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
