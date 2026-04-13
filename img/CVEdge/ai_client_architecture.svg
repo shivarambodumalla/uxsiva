@@ -1,0 +1,156 @@
+<svg viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Arial, sans-serif">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Model-agnostic AI client architecture</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Diagram showing prompts table to callAI wrapper to Gemini 2.5 Flash to structured JSON output to application layer</desc>
+
+<defs>
+  <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0.5 L7,3 L0,5.5 L1.5,3 Z" fill="#64ffda"/>
+  </marker>
+  <marker id="ag" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0.5 L7,3 L0,5.5 L1.5,3 Z" fill="#8892b0"/>
+  </marker>
+  <marker id="am" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0.5 L7,3 L0,5.5 L1.5,3 Z" fill="#ffb347"/>
+  </marker>
+</defs>
+
+<rect width="960" height="520" fill="#0a192f" style="fill:rgb(10, 25, 47);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Title -->
+<text x="480" y="36" text-anchor="middle" font-size="19" font-weight="bold" fill="#ccd6f6" style="fill:rgb(204, 214, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:19px;font-weight:700;text-anchor:middle;dominant-baseline:auto">Model-agnostic AI client architecture</text>
+<text x="480" y="58" text-anchor="middle" font-size="12" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Switching AI providers requires changing one environment variable — no feature code changes</text>
+
+<!-- ═══════════════════════════ -->
+<!-- ROW 1: Prompts table (left) → callAI() wrapper (centre) -->
+<!-- ═══════════════════════════ -->
+
+<!-- PROMPTS TABLE -->
+<rect x="60" y="90" width="220" height="160" rx="8" fill="#112240" stroke="#64ffda" stroke-width="1.5" style="fill:rgb(17, 34, 64);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="60" y="90" width="220" height="6" rx="4" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="170" y="116" text-anchor="middle" font-size="10" font-weight="bold" fill="#64ffda" letter-spacing="0.8" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:middle;dominant-baseline:auto">SUPABASE</text>
+<text x="170" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#ccd6f6" style="fill:rgb(204, 214, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:13px;font-weight:700;text-anchor:middle;dominant-baseline:auto">prompts table</text>
+
+<!-- Table rows -->
+<rect x="76" y="142" width="188" height="18" rx="3" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="86" y="155" font-size="10" font-weight="bold" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:start;dominant-baseline:auto">name</text>
+<text x="200" y="155" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">fix_all_ats_v1</text>
+
+<rect x="76" y="164" width="188" height="18" rx="3" fill="#1a2a40" style="fill:rgb(26, 42, 64);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="86" y="177" font-size="10" font-weight="bold" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:start;dominant-baseline:auto">content</text>
+<text x="200" y="177" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">You are an ATS…</text>
+
+<rect x="76" y="186" width="188" height="18" rx="3" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="86" y="199" font-size="10" font-weight="bold" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:start;dominant-baseline:auto">temperature</text>
+<text x="200" y="199" font-size="10" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">0</text>
+
+<rect x="76" y="208" width="188" height="18" rx="3" fill="#1a2a40" style="fill:rgb(26, 42, 64);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="86" y="221" font-size="10" font-weight="bold" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:start;dominant-baseline:auto">version</text>
+<text x="200" y="221" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">3</text>
+
+<!-- Arrow: prompts → callAI -->
+<line x1="282" y1="170" x2="338" y2="170" stroke="#64ffda" stroke-width="1.5" marker-end="url(#a)" style="fill:rgb(0, 0, 0);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="310" y="162" text-anchor="middle" font-size="9" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">fetch</text>
+
+<!-- CALL AI WRAPPER -->
+<rect x="340" y="90" width="280" height="160" rx="8" fill="#112240" stroke="#64ffda" stroke-width="2" style="fill:rgb(17, 34, 64);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="340" y="90" width="280" height="6" rx="4" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="480" y="116" text-anchor="middle" font-size="10" font-weight="bold" fill="#64ffda" letter-spacing="0.8" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:700;text-anchor:middle;dominant-baseline:auto">lib/ai/client.ts</text>
+<text x="480" y="134" text-anchor="middle" font-size="14" font-weight="bold" fill="#ccd6f6" style="fill:rgb(204, 214, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:14px;font-weight:700;text-anchor:middle;dominant-baseline:auto">callAI() wrapper</text>
+
+<!-- Code block -->
+<rect x="358" y="144" width="244" height="88" rx="6" fill="#0a192f" style="fill:rgb(10, 25, 47);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="370" y="162" font-size="10" fill="#64ffda" font-family="monospace" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">const provider =</text>
+<text x="370" y="176" font-size="10" fill="#a8b2d1" font-family="monospace" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">  process.env.AI_PROVIDER</text>
+<text x="370" y="192" font-size="10" fill="#8892b0" font-family="monospace" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">// 'gemini' | 'openai'</text>
+<text x="370" y="208" font-size="10" fill="#8892b0" font-family="monospace" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">// | 'claude'</text>
+<text x="370" y="222" font-size="10" fill="#64ffda" font-family="monospace" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">→ routes to provider</text>
+
+<!-- Arrow: callAI → providers -->
+<line x1="622" y1="170" x2="672" y2="170" stroke="#64ffda" stroke-width="1.5" marker-end="url(#a)" style="fill:rgb(0, 0, 0);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="647" y="162" text-anchor="middle" font-size="9" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">call</text>
+
+<!-- ═══════════════════════════ -->
+<!-- PROVIDERS STACK (right) -->
+<!-- ═══════════════════════════ -->
+
+<!-- Gemini — ACTIVE -->
+<rect x="674" y="90" width="226" height="52" rx="8" fill="#064c3c" stroke="#64ffda" stroke-width="2" style="fill:rgb(6, 76, 60);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="694" y="112" font-size="13" font-weight="bold" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:13px;font-weight:700;text-anchor:start;dominant-baseline:auto">Gemini 2.5 Flash</text>
+<text x="694" y="128" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">Active · $0.075/1M tokens</text>
+<rect x="848" y="100" width="40" height="18" rx="9" fill="#065F46" style="fill:rgb(6, 95, 70);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="868" y="113" text-anchor="middle" font-size="9" font-weight="bold" fill="white" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:700;text-anchor:middle;dominant-baseline:auto">LIVE</text>
+
+<!-- GPT-4o -->
+<rect x="674" y="152" width="226" height="44" rx="8" fill="#1a2a40" stroke="#233554" stroke-width="1" style="fill:rgb(26, 42, 64);stroke:rgb(35, 53, 84);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="694" y="171" font-size="12" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">GPT-4o</text>
+<text x="694" y="187" font-size="10" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">Swap: AI_PROVIDER=openai</text>
+
+<!-- Claude -->
+<rect x="674" y="206" width="226" height="44" rx="8" fill="#1a2a40" stroke="#233554" stroke-width="1" style="fill:rgb(26, 42, 64);stroke:rgb(35, 53, 84);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="694" y="225" font-size="12" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">Claude 3.5 Sonnet</text>
+<text x="694" y="241" font-size="10" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">Swap: AI_PROVIDER=claude</text>
+
+<!-- Brace / OR label -->
+<text x="664" y="195" text-anchor="middle" font-size="18" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:18px;font-weight:400;text-anchor:middle;dominant-baseline:auto">⎫</text>
+<text x="657" y="198" font-size="9" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">or</text>
+
+<!-- ═══════════════════════════ -->
+<!-- ROW 2: JSON output → Application layer -->
+<!-- ═══════════════════════════ -->
+
+<!-- Arrow down from callAI wrapper -->
+<line x1="480" y1="252" x2="480" y2="290" stroke="#64ffda" stroke-width="1.5" marker-end="url(#a)" style="fill:rgb(0, 0, 0);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="496" y="276" font-size="9" fill="#64ffda" style="fill:rgb(100, 255, 218);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">JSON</text>
+
+<!-- STRUCTURED JSON OUTPUT -->
+<rect x="200" y="292" width="560" height="88" rx="8" fill="#112240" stroke="#ffb347" stroke-width="1.5" style="fill:rgb(17, 34, 64);stroke:rgb(255, 179, 71);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="200" y="292" width="560" height="6" rx="4" fill="#ffb347" style="fill:rgb(255, 179, 71);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="480" y="316" text-anchor="middle" font-size="13" font-weight="bold" fill="#ccd6f6" style="fill:rgb(204, 214, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:13px;font-weight:700;text-anchor:middle;dominant-baseline:auto">Structured JSON output</text>
+
+<!-- JSON example -->
+<rect x="220" y="326" width="240" height="44" rx="6" fill="#0a192f" style="fill:rgb(10, 25, 47);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="232" y="342" font-size="10" fill="#ffb347" font-family="monospace" style="fill:rgb(255, 179, 71);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">// Fix All response</text>
+<text x="232" y="356" font-size="10" fill="#a8b2d1" font-family="monospace" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">{ summary, experience,</text>
+<text x="232" y="370" font-size="10" fill="#a8b2d1" font-family="monospace" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">  skills_to_add, score }</text>
+
+<rect x="480" y="326" width="260" height="44" rx="6" fill="#0a192f" style="fill:rgb(10, 25, 47);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="492" y="342" font-size="10" fill="#ffb347" font-family="monospace" style="fill:rgb(255, 179, 71);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">// ATS analysis response</text>
+<text x="492" y="356" font-size="10" fill="#a8b2d1" font-family="monospace" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">{ score, categories,</text>
+<text x="492" y="370" font-size="10" fill="#a8b2d1" font-family="monospace" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">  keywords, issues }</text>
+
+<!-- Arrow down to app layer -->
+<line x1="480" y1="382" x2="480" y2="412" stroke="#64ffda" stroke-width="1.5" marker-end="url(#a)" style="fill:rgb(0, 0, 0);stroke:rgb(100, 255, 218);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- APPLICATION LAYER -->
+<rect x="60" y="414" width="840" height="68" rx="8" fill="#112240" stroke="#8892b0" stroke-width="1" style="fill:rgb(17, 34, 64);stroke:rgb(136, 146, 176);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<rect x="60" y="414" width="840" height="6" rx="4" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="480" y="438" text-anchor="middle" font-size="13" font-weight="bold" fill="#ccd6f6" style="fill:rgb(204, 214, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:13px;font-weight:700;text-anchor:middle;dominant-baseline:auto">Application layer — feature components</text>
+
+<!-- Feature boxes -->
+<rect x="80" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="138" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">ATS Panel</text>
+
+<rect x="204" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="262" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Fix All Drawer</text>
+
+<rect x="328" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="386" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Job Match Panel</text>
+
+<rect x="452" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="510" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Cover Letter</text>
+
+<rect x="576" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="634" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Interview Coach</text>
+
+<rect x="700" y="448" width="116" height="24" rx="5" fill="#233554" style="fill:rgb(35, 53, 84);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="758" y="464" text-anchor="middle" font-size="10" fill="#a8b2d1" style="fill:rgb(168, 178, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Offer Evaluation</text>
+
+<!-- ═══════════════════════════ -->
+<!-- KEY INSIGHT BANNER -->
+<!-- ═══════════════════════════ -->
+<rect x="60" y="496" width="840" height="0" rx="0" fill="none" style="fill:none;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Bottom note -->
+<text x="480" y="506" text-anchor="middle" font-size="11" fill="#8892b0" style="fill:rgb(136, 146, 176);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Temperature 0 = deterministic scoring · Temperature 0.3 = natural language generation · All prompts versioned in DB</text>
+
+</svg>
