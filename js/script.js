@@ -2,7 +2,6 @@
 (function () {
     const spotlight = document.querySelector('.spotlight');
     if (!spotlight) return;
-
     document.addEventListener('mousemove', (e) => {
         spotlight.style.setProperty('--mouse-x', e.clientX + 'px');
         spotlight.style.setProperty('--mouse-y', e.clientY + 'px');
@@ -11,8 +10,8 @@
 
 /* ===== SCROLL-SPY NAVIGATION ===== */
 (function () {
-    const sections = document.querySelectorAll('.section[id]');
-    const navLinks = document.querySelectorAll('.nav__link');
+    const sections = document.querySelectorAll('main .section[id]');
+    const navLinks = document.querySelectorAll('.topnav__links a');
 
     if (!sections.length || !navLinks.length) return;
 
@@ -39,7 +38,7 @@
     sections.forEach((section) => observer.observe(section));
 })();
 
-/* ===== SMOOTH SCROLL FOR NAV LINKS ===== */
+/* ===== SMOOTH SCROLL FOR ANCHOR LINKS ===== */
 (function () {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {

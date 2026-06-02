@@ -43,684 +43,509 @@
 </head>
 
 <body>
-    <!-- Cursor Spotlight -->
     <div class="spotlight" aria-hidden="true"></div>
-
     <a href="#content" class="skip-link">Skip to Content</a>
 
-    <div class="page-wrapper" id="content">
-        <!-- ===== LEFT SIDEBAR ===== -->
-        <header class="sidebar">
-            <div>
-                <!-- <img class="sidebar__profile-pic" src="img/sivaramireddy.jpeg" alt="B. Sivarami Reddy" /> -->
-                <h1 class="sidebar__name"><a href="/">B. Sivarami Reddy</a></h1>
-                <!-- <h2 class="sidebar__title">Principal Designer &amp; UX Design Manager</h2> -->
-                <h3 class="sidebar__title">Design Leader · IC + Team Builder · <br /> 0→1 Product Expert</h3>
-                <p class="sidebar__tagline">I design meaningful, user-focused digital experiences guided by the belief
-                    that form follows function.</p>
+    <!-- ===== TOP NAVIGATION ===== -->
+    <header class="topnav">
+        <a href="/" class="topnav__logo">B. Sivarami Reddy</a>
+        <nav class="topnav__nav" aria-label="Main navigation">
+            <ul class="topnav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+        <a href="mailto:ux.siva@gmail.com" class="topnav__cta">Hire me</a>
+    </header>
 
-                <nav class="nav" aria-label="In-page jump links">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link active" href="#about">About</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#certifications">Certifications</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#expertise">Skills</a></li>
-                    </ul>
-                </nav>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero__inner">
+            <p class="hero__greeting">Available for work</p>
+            <h1 class="hero__headline">I design it. Code it. Ship it. <em>Then I stay to see if it worked.</em></h1>
+            <div class="hero__chips">
+                <span class="chip">10 years</span>
+                <span class="chip">3 products from 0&rarr;1</span>
+                <span class="chip">Team of 8</span>
+                <span class="chip">&#8377;50Cr impact</span>
+                <span class="chip">Bengaluru, India</span>
+            </div>
+            <div class="hero__ctas">
+                <a href="#projects" class="btn btn--primary">See my work</a>
+                <a href="mailto:ux.siva@gmail.com" class="btn btn--ghost">Say hello &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <main id="content">
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="section about">
+            <div class="section__label">About</div>
+            <p>
+                Most product designers hand off specs and move on. I stay until it ships — and then I check the numbers.
+            </p>
+            <p>
+                Over 10 years at <a href="https://www.greatlearning.in/" target="_blank" rel="noopener noreferrer">Great Learning</a>, I built three products from scratch: an LMS that serves 50K+ users daily, a CRM that replaced LeadSquared for 500+ salespeople, and an ops dashboard that saves &#8377;15 crore a year. Along the way I grew the design team from just me to eight people, built a design system from the ground up, and shipped React prototypes that went straight to production.
+            </p>
+            <p>
+                I'm equally at home in a Figma file, a GitHub pull request, or a strategy deck. I write AI prompts, run usability tests, manage designers, and present to the CEO &mdash; sometimes in the same week. I thrive in the early-stage chaos where you need to design, code, hire, and scale all at once.
+            </p>
+            <p>
+                <strong>Currently looking for:</strong> Head of Design or Design Lead at a growth-stage startup (Series&nbsp;A&ndash;B) where building the product and the team happen at the same time.
+            </p>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="section">
+            <div class="section__label">Work</div>
+            <div class="card-group projects-group">
+
+                <!-- GlaideGrader -->
+                <a href="speedgrader.html" class="card card--project">
+                    <img class="card__image" src="img/grader/4.png" alt="GlaideGrader AI-Powered Grading Platform" loading="lazy" style="object-fit:cover;object-position:top left" />
+                    <div>
+                        <h3 class="card__title">
+                            GlaideGrader: AI-Powered Grading Platform
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Redesigned Great Learning's evaluator grading experience with AI quality checks, mobile
+                            support, and analytics &mdash; replacing Canvas LMS SpeedGrader across 200+ evaluators.<br><br>
+                            <strong>Impact:</strong> 45% faster grading, 95% satisfaction (from 62%), &#8377;15L annual savings<br>
+                            <strong>Role:</strong> Lead IC Designer | AI + Mobile UX
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">AI/ML</li>
+                            <li class="tag">EdTech</li>
+                            <li class="tag">Evaluator Tools</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Content Delivery Automation -->
+                <a href="content-delivery.html" class="card card--project">
+                    <img class="card__image" src="img/delivery/[web] Batch Delivery Planning 0.jpg" alt="Content Delivery Automation" loading="lazy" style="object-fit:contain;background:var(--bg-alt)" />
+                    <div>
+                        <h3 class="card__title">
+                            Content Delivery Automation
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Designed week-based delivery automation that eliminated 1 full day of manual PM work per
+                            week. Academic Ops creates a master plan once &mdash; it syncs automatically to all 500+ program
+                            managers with smart conflict resolution.<br><br>
+                            <strong>Impact:</strong> 1 day &rarr; 0 hrs/week, &#8377;1.2Cr+ annual savings, 340 &rarr; 0 support tickets<br>
+                            <strong>Role:</strong> Lead IC Designer | Workflow Automation
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Automation</li>
+                            <li class="tag">Workflow Design</li>
+                            <li class="tag">Enterprise Tool</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Jedi Dashboard -->
+                <a href="Jedi.html" class="card card--project">
+                    <img class="card__image" src="img/jedi-2.jpg" alt="Jedi Dashboard" loading="lazy" />
+                    <div>
+                        <h3 class="card__title">
+                            Jedi Dashboard
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Created internal operations dashboard that increased team productivity 50-80% through
+                            automation. Designed and prototyped data visualization using React.<br><br>
+                            <strong>Impact:</strong> &#8377;15cr annual savings through reduced manual work<br>
+                            <strong>Role:</strong> IC Designer | React prototyping
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Dashboard</li>
+                            <li class="tag">Operations</li>
+                            <li class="tag">Automation</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Shine -->
+                <a href="shine.html" class="card card--project">
+                    <img class="card__image" src="img/shine-2.jpg" alt="GL Shine CRM" loading="lazy" />
+                    <div>
+                        <h3 class="card__title">
+                            GL Shine CRM
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Built sales CRM from 0&rarr;1, replacing LeadSquared and boosting task compliance 28%. Led
+                            end-to-end UX while managing 2 designers. Delivered migration in 4 months across 500+
+                            sales users.<br><br>
+                            <strong>Impact:</strong> &#8377;15cr annual savings<br>
+                            <strong>Role:</strong> Lead Designer | Product collaboration
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Sales CRM</li>
+                            <li class="tag">Compliance</li>
+                            <li class="tag">Desktop App</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- CV Review -->
+                <a href="cvreview.html" class="card card--project">
+                    <img class="card__image" src="img/cv-1.jpg" alt="AI Enabled CV Review" loading="lazy" />
+                    <div>
+                        <h3 class="card__title">
+                            AI Enabled CV Review
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Built AI-powered resume review tool using prompt engineering to validate student CVs and
+                            provide feedback. Designed validation logic and confidence scoring.<br><br>
+                            <strong>Impact:</strong> 70% reduction in manual review time<br>
+                            <strong>Role:</strong> AI Product Designer | Prompt Engineer
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">AI/ML</li>
+                            <li class="tag">UX Research</li>
+                            <li class="tag">Career Services</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- GLA Mobile App -->
+                <a href="gla.html" class="card card--project">
+                    <img class="card__image" style="height:auto;border:none;object-fit:contain;"
+                        src="img/GLA-app-mock.png" alt="Great Learning Academy Mobile App" loading="lazy" />
+                    <div>
+                        <h3 class="card__title">
+                            Great Learning Academy's Mobile App
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Designed mobile learning app from 0&rarr;1 for Great Learning Academy. Led user research,
+                            created design system, and worked with dev team on React Native implementation.<br><br>
+                            <strong>Result:</strong> 4.5&#9733; app store rating, 100K+ downloads<br>
+                            <strong>Role:</strong> IC Designer | Mobile UX
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">UX Design</li>
+                            <li class="tag">Mobile App</li>
+                            <li class="tag">Figma</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Olympus LMS -->
+                <a href="olympus.html" class="card card--project">
+                    <img class="card__image" src="img/olympus-2.jpg" alt="Olympus LMS Enhancement" loading="lazy" />
+                    <div>
+                        <h3 class="card__title">
+                            Olympus LMS Enhancement
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            Redesigned learning platform serving 50K+ daily users, improving engagement 32% and
+                            achieving 5&#9733; satisfaction. Led research, prototyped key features in React, and shipped
+                            across web and mobile.<br><br>
+                            <strong>Impact:</strong> 35% faster release cycles, &#8377;20cr retained revenue<br>
+                            <strong>Role:</strong> Lead Designer | IC + Management
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">LMS</li>
+                            <li class="tag">EdTech</li>
+                            <li class="tag">Web &amp; Mobile</li>
+                        </ul>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section id="experience" class="section">
+            <div class="section__label">Experience</div>
+            <div class="card-group">
+
+                <div class="card">
+                    <div class="card__date">2018 &ndash; Present</div>
+                    <div>
+                        <h3 class="card__title">Principal Designer &middot; Great Learning</h3>
+                        <p class="card__subtitle">Bengaluru, India</p>
+                        <p class="card__description">
+                            Led UX for Olympus, Shine &amp; Jedi, improving engagement by 32% and achieving 5-star
+                            learner satisfaction. Scaled and mentored the founding design team. Founded a design
+                            system cutting UI inconsistencies by 60% and release cycles by 35%. Directed UX
+                            migration from LeadSquared, boosting task compliance by 28%. Drove measurable business
+                            impact of &#8377;50 crore annual savings and 50&ndash;80% higher team productivity.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Figma</li>
+                            <li class="tag">Design Systems</li>
+                            <li class="tag">UX Strategy</li>
+                            <li class="tag">ReactJS</li>
+                            <li class="tag">User Research</li>
+                            <li class="tag">Team Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__date">2017 &ndash; 2018</div>
+                    <div>
+                        <h3 class="card__title">UX Designer &middot; Pentaur Technology</h3>
+                        <p class="card__subtitle">Bengaluru, India</p>
+                        <p class="card__description">
+                            Developed cross-platform email campaigns for Visa and Northern Trust with 100%
+                            compatibility. Built responsive apps with 95% accessibility compliance across Android
+                            and iOS. Increased engagement by 20% on Marketo and improved UX for Nurture Co.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">HTML/CSS</li>
+                            <li class="tag">Email Design</li>
+                            <li class="tag">Marketo</li>
+                            <li class="tag">Responsive Design</li>
+                            <li class="tag">Accessibility</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__date">2015 &ndash; 2017</div>
+                    <div>
+                        <h3 class="card__title">Frontend Engineer &middot; Tyre Discounters</h3>
+                        <p class="card__subtitle">Bengaluru, India</p>
+                        <p class="card__description">
+                            Revamped a 15-year-old legacy system, improving usability and engagement within 6 months
+                            and boosting sales. Designed and delivered the TyreMarket website from 0&ndash;1 and multiple
+                            WordPress apps, reducing iteration cycles by 20%.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">WordPress</li>
+                            <li class="tag">HTML/CSS</li>
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__date">2013 &ndash; 2014</div>
+                    <div>
+                        <h3 class="card__title">Web Designer &middot; Dotline Technologies</h3>
+                        <p class="card__subtitle">Bengaluru, India</p>
+                        <p class="card__description">
+                            Designed responsive web layouts improving load speed by 30% and overall accessibility
+                            across devices.
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">Web Design</li>
+                            <li class="tag">HTML/CSS</li>
+                            <li class="tag">Responsive Layouts</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
-            <ul class="social" aria-label="Social media">
-                <li>
-                    <a class="social__link" href="https://linkedin.com/in/b-sivarami-reddy-483152148" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
-                        </svg>
-                    </a>
+            <a class="resume-link" href="Sivarami-Reddy-Resume.pdf" target="_blank">
+                View Full R&eacute;sum&eacute;
+                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+            </a>
+        </section>
+
+        <!-- ===== CERTIFICATIONS ===== -->
+        <section id="certifications" class="section">
+            <div class="section__label">Certifications</div>
+
+            <div class="cert-highlight">
+                <img class="cert-highlight__logo" src="img/hfi.png" alt="HFI" loading="lazy" />
+                <div class="cert-highlight__body">
+                    <h3>Certified User Experience Analyst (CXA&trade;)</h3>
+                    <p>Human Factors International (HFI) &middot; Jul 2025</p>
+                </div>
+                <a class="cert-highlight__link"
+                    href="https://www.credly.com/badges/3da25665-79b2-4d14-9296-df2a510d634b/public_url"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
+                    Verify
+                </a>
+            </div>
+
+            <div class="cert-highlight">
+                <img class="cert-highlight__logo" src="img/w3c.png" alt="W3C" loading="lazy" />
+                <div class="cert-highlight__body">
+                    <h3>W3Cx: Introduction to Web Accessibility</h3>
+                    <p>World Wide Web Consortium (W3C) via edX &middot; Jun 2025</p>
+                </div>
+                <a class="cert-highlight__link"
+                    href="https://courses.edx.org/certificates/863eebb93de44710ab86dae9c24e0619"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
+                    Verify
+                </a>
+            </div>
+
+            <div class="cert-highlight">
+                <img class="cert-highlight__logo" src="img/idf.jpeg" alt="IxDF" loading="lazy" />
+                <div class="cert-highlight__body">
+                    <h3>Human&ndash;Computer Interaction (HCI)</h3>
+                    <p>Interaction Design Foundation &middot; Sep 2017</p>
+                </div>
+                <a class="cert-highlight__link"
+                    href="https://www.interaction-design.org/sivarami-reddy/certificate/course/NwgZFnPH7?r=sivarami-reddy"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
+                    Verify
+                </a>
+            </div>
+
+            <ul class="cert-compact-list">
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">How to Create Intuitive Products</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/c4aad99d-3f06-41a4-b526-957f8e55bf6c" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
                 </li>
-                <li>
-                    <a class="social__link" href="mailto:ux.siva@gmail.com" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="16" x="2" y="4" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </svg>
-                    </a>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">Qualitative Research Methods</span><span class="cert-compact-item__org">&middot; UoA</span></span>
+                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/T48JCK6KRL55" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
                 </li>
-                <li>
-                    <a class="social__link" href="tel:9900014642" aria-label="Phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
-                    </a>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">Quantitative Methods</span><span class="cert-compact-item__org">&middot; UoA</span></span>
+                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/QTV4BNUU6V8M" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">Social Psychology</span><span class="cert-compact-item__org">&middot; Wesleyan</span></span>
+                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/F5ST39N3RZBE" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">User Research: Methods &amp; Best Practices</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/sivarami-reddy/certificate/course/Nrm0Dc4s4?r=sivarami-reddy" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">AI for Designers</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/46520d16-3ca8-4407-aaa4-354640344d3d" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">Conducting Usability Testing</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/2b177cf6-1c04-4459-b92a-e855d0d4c6bd" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">Perception &amp; Memory in HCI and UX</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/b977436e-10b2-435d-9835-b7d7eea884d1" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">The Brain and Technology</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/798a9903-0312-42ec-ae02-06854fb9f9ba" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">UI Design Patterns for Successful Software</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/42121cff-0a7d-4514-97e9-cd5c51627c1f" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
+                </li>
+                <li class="cert-compact-item">
+                    <span><span class="cert-compact-item__name">UX Management: Strategy and Tactics</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
+                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/PLk5Nz0lQ" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
                 </li>
             </ul>
-        </header>
 
-        <!-- ===== RIGHT CONTENT ===== -->
-        <main class="content">
+        </section>
 
-            <!-- ===== ABOUT ===== -->
-            <section id="about" class="section about">
-                <div class="section__label">About</div>
-                <p>
-                    I'm a design leader who codes and ships AI-powered products. Over 10 years at <a
-                        href="https://www.greatlearning.in/" target="_blank" rel="noopener noreferrer">Great
-                        Learning</a>, I built 3 products from 0→1 (Olympus LMS, Shine CRM, Jedi Dashboard) while growing
-                    the design team from 0→8 designers. I design AI automation tools through prompt engineering (Grader,
-                    QC Checker, Speed Grader, Resume Builder) and ship React prototypes using AI-assisted coding.
-                </p>
-                <p>
-                    Currently seeking: <strong>Head of Design or Design Lead</strong> roles at growth-stage startups
-                    (Series A-B) where I can do both IC work and team building.
-                </p>
-                <p>
-                    I'm equally comfortable designing in Figma, coding in React, writing AI validation prompts, managing
-                    designers, or presenting strategy to executives. I thrive in early-stage chaos where you need to
-                    design, code, hire, and scale simultaneously.
-                </p>
-                <p>
-                    <strong style="color: var(--lightest-slate)">Impact:</strong> 5★ learner satisfaction, ₹50cr annual
-                    business savings, 32% engagement improvement, 70% reduction in manual work through AI automation.
-                </p>
-            </section>
-
-
-
-            <!-- ===== PROJECTS ===== -->
-            <section id="projects" class="section">
-                <div class="section__label">Projects</div>
-                <div class="card-group projects-group">
-
-                    <!-- CVEdge -->
-                    <a href="cvedge.html" class="card card--project">
-                        <img class="card__image" src="img/CVEdge/13.png" alt="CVEdge AI-Powered Career Tools" loading="lazy" style="object-fit:cover;object-position:top left" />
-                        <div>
-                            <h3 class="card__title">
-                                CVEdge: AI-Powered Career Tools
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                A vibe coding experiment — built a full-stack AI-powered CV optimisation tool entirely
-                                through conversational AI. 11 templates, ATS scoring, AI rewrite, job match engine,
-                                interview coach, and admin panel.
-                                <br><br>
-                                <strong>Impact:</strong> Free-forever model at $0.013/week per power user<br>
-                                <strong>Role:</strong> Designer who codes | Prompt Engineering
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Vibe Coding</li>
-                                <li class="tag">Prompt Engineering</li>
-                                <li class="tag">Next.js</li>
-                                <li class="tag">AI/ML</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <!-- GlaideGrader -->
-                    <a href="speedgrader.html" class="card card--project">
-                        <img class="card__image" src="img/grader/4.png" alt="GlaideGrader AI-Powered Grading Platform" loading="lazy" style="object-fit:cover;object-position:top left" />
-                        <div>
-                            <h3 class="card__title">
-                                GlaideGrader: AI-Powered Grading Platform
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Redesigned Great Learning's evaluator grading experience with AI quality checks, mobile
-                                support, and analytics — replacing Canvas LMS SpeedGrader across 200+ evaluators.
-                                <br><br>
-                                <strong>Impact:</strong> 45% faster grading, 95% satisfaction (from 62%), ₹15L annual savings<br>
-                                <strong>Role:</strong> Lead IC Designer | AI + Mobile UX
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">AI/ML</li>
-                                <li class="tag">EdTech</li>
-                                <li class="tag">Evaluator Tools</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <!-- Content Delivery Automation -->
-                    <a href="content-delivery.html" class="card card--project">
-                        <img class="card__image" src="img/delivery/[web] Batch Delivery Planning 0.jpg" alt="Content Delivery Automation" loading="lazy" style="object-fit:contain;background:var(--light-navy)" />
-                        <div>
-                            <h3 class="card__title">
-                                Content Delivery Automation
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Designed week-based delivery automation that eliminated 1 full day of manual PM work per
-                                week. Academic Ops creates a master plan once — it syncs automatically to all 500+ program
-                                managers with smart conflict resolution.
-                                <br><br>
-                                <strong>Impact:</strong> 1 day → 0 hrs/week, ₹1.2Cr+ annual savings, 340 → 0 support tickets<br>
-                                <strong>Role:</strong> Lead IC Designer | Workflow Automation
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Automation</li>
-                                <li class="tag">Workflow Design</li>
-                                <li class="tag">Enterprise Tool</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <!-- Jedi Dashboard -->
-                    <a href="Jedi.html" class="card card--project">
-                        <img class="card__image" src="img/jedi-2.jpg" alt="Jedi Dashboard" loading="lazy" />
-                        <div>
-                            <h3 class="card__title">
-                                Jedi Dashboard
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Created internal operations dashboard that increased team productivity 50-80% through
-                                automation. Designed and prototyped data visualization using React.
-                                <br><br>
-                                <strong>Impact:</strong> ₹15cr annual savings through reduced manual work<br>
-                                <strong>Role:</strong> IC Designer | React prototyping
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Dashboard</li>
-                                <li class="tag">Operations</li>
-                                <li class="tag">Automation</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <!-- Shine -->
-                    <a href="shine.html" class="card card--project">
-                        <img class="card__image" src="img/shine-2.jpg" alt="GL Shine CRM" loading="lazy" />
-                        <div>
-                            <h3 class="card__title">
-                                GL Shine CRM
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Built sales CRM from 0→1, replacing LeadSquared and boosting task compliance 28%. Led
-                                end-to-end UX while managing 2 designers. Delivered migration in 4 months across 500+
-                                sales users.
-                                <br><br>
-                                <strong>Impact:</strong> ₹15cr annual savings<br>
-                                <strong>Role:</strong> Lead Designer | Product collaboration
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Sales CRM</li>
-                                <li class="tag">Compliance</li>
-                                <li class="tag">Desktop App</li>
-                            </ul>
-                        </div>
-                    </a>
-
-
-                    <!-- GLA Mobile App -->
-                    <a href="gla.html" class="card card--project">
-                        <img class="card__image h-auto border-0" style="height: auto;border: none;"
-                            src="img/GLA-app-mock.png" alt="Great Learning Academy Mobile App" loading="lazy" />
-                        <div>
-                            <h3 class="card__title">
-                                Great Learning Academy's Mobile App
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Designed mobile learning app from 0→1 for Great Learning Academy. Led user research,
-                                created design system, and worked with dev team on React Native implementation.
-                                <br><br>
-                                <strong>Result:</strong> 4.5★ app store rating, 100K+ downloads<br>
-                                <strong>Role:</strong> IC Designer | Mobile UX
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">UX Design</li>
-                                <li class="tag">Mobile App</li>
-                                <li class="tag">Figma</li>
-                            </ul>
-                        </div>
-                    </a>
-
-                    <!-- Olympus LMS -->
-                    <a href="olympus.html" class="card card--project">
-                        <img class="card__image" src="img/olympus-2.jpg" alt="Olympus LMS Enhancement" loading="lazy" />
-                        <div>
-                            <h3 class="card__title">
-                                Olympus LMS Enhancement
-                                <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg></span>
-                            </h3>
-                            <p class="card__description">
-                                Redesigned learning platform serving 50K+ daily users, improving engagement 32% and
-                                achieving 5★ satisfaction. Led research, prototyped key features in React, and shipped
-                                across web and mobile.
-                                <br><br>
-                                <strong>Impact:</strong> 35% faster release cycles, ₹20cr retained revenue<br>
-                                <strong>Role:</strong> Lead Designer | IC + Management
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">LMS</li>
-                                <li class="tag">EdTech</li>
-                                <li class="tag">Web & Mobile</li>
-                            </ul>
-                        </div>
-                    </a>
-
-
+        <!-- ===== SKILLS & EXPERTISE ===== -->
+        <section id="expertise" class="section">
+            <div class="section__label">Skills &amp; Expertise</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Leadership &amp; Product</h3>
+                    <ul class="skill-list">
+                        <li>Team Building (0&rarr;8 designers)</li>
+                        <li>Product Ownership &amp; Requirements Gathering</li>
+                        <li>Stakeholder Management</li>
+                        <li>UX Strategy &amp; Product Roadmap</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Design Operations</li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- ===== EXPERIENCE ===== -->
-            <section id="experience" class="section">
-                <div class="section__label">Experience</div>
-                <div class="card-group">
-
-                    <!-- Great Learning -->
-                    <div class="card">
-                        <div class="card__date">2018 - Present</div>
-                        <div>
-                            <h3 class="card__title">
-                                Principal Designer · Great Learning
-                            </h3>
-                            <p class="card__subtitle">Bengaluru, India</p>
-                            <p class="card__description">
-                                Led UX for Olympus, Shine & Jedi, improving engagement by 32% and achieving 5-star
-                                learner satisfaction. Scaled and mentored the founding design team. Founded a design
-                                system cutting UI inconsistencies by 60% and release cycles by 35%. Directed UX
-                                migration from LeadSquared, boosting task compliance by 28%. Drove measurable business
-                                impact of ₹50 crore annual savings and 50–80% higher team productivity.
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Figma</li>
-                                <li class="tag">Design Systems</li>
-                                <li class="tag">UX Strategy</li>
-                                <li class="tag">ReactJS</li>
-                                <li class="tag">User Research</li>
-                                <li class="tag">Team Leadership</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Pentaur -->
-                    <div class="card">
-                        <div class="card__date">2017 — 2018</div>
-                        <div>
-                            <h3 class="card__title">
-                                UX Designer · Pentaur Technology
-                            </h3>
-                            <p class="card__subtitle">Bengaluru, India</p>
-                            <p class="card__description">
-                                Developed cross-platform email campaigns for Visa and Northern Trust with 100%
-                                compatibility. Built responsive apps with 95% accessibility compliance across Android
-                                and iOS. Increased engagement by 20% on Marketo and improved UX for Nurture Co.
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">HTML/CSS</li>
-                                <li class="tag">Email Design</li>
-                                <li class="tag">Marketo</li>
-                                <li class="tag">Responsive Design</li>
-                                <li class="tag">Accessibility</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Tyre Discounters -->
-                    <div class="card">
-                        <div class="card__date">2015 — 2017</div>
-                        <div>
-                            <h3 class="card__title">
-                                Frontend Engineer · Tyre Discounters
-                            </h3>
-                            <p class="card__subtitle">Bengaluru, India</p>
-                            <p class="card__description">
-                                Revamped a 15-year-old legacy system, improving usability and engagement within 6 months
-                                and boosting sales. Designed and delivered the TyreMarket website from 0–1 and multiple
-                                WordPress apps, reducing iteration cycles by 20%.
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">WordPress</li>
-                                <li class="tag">HTML/CSS</li>
-                                <li class="tag">JavaScript</li>
-                                <li class="tag">UX Design</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Dotline -->
-                    <div class="card">
-                        <div class="card__date">2013 — 2014</div>
-                        <div>
-                            <h3 class="card__title">
-                                Web Designer · Dotline Technologies
-                            </h3>
-                            <p class="card__subtitle">Bengaluru, India</p>
-                            <p class="card__description">
-                                Designed responsive web layouts improving load speed by 30% and overall accessibility
-                                across devices.
-                            </p>
-                            <ul class="tags">
-                                <li class="tag">Web Design</li>
-                                <li class="tag">HTML/CSS</li>
-                                <li class="tag">Responsive Layouts</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                <div class="skill-category">
+                    <h3 class="skill-category__title">AI &amp; Automation</h3>
+                    <ul class="skill-list">
+                        <li>Prompt Engineering</li>
+                        <li>AI Product Design</li>
+                        <li>Validation Logic &amp; Confidence Scoring</li>
+                        <li>Input/Output Testing</li>
+                    </ul>
                 </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">IC Skills</h3>
+                    <ul class="skill-list">
+                        <li>Prototyping &amp; Design Systems</li>
+                        <li>Interaction Design &amp; UI/UX</li>
+                        <li>Usability Testing &amp; User Research</li>
+                        <li>React, JavaScript, HTML/CSS</li>
+                        <li>Figma, Accessibility (WCAG)</li>
+                        <li>AI Prompt Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Tools</h3>
+                    <ul class="skill-list">
+                        <li>Figma, Figma Make, FigJam, Miro</li>
+                        <li>GitHub Copilot, ChatGPT</li>
+                        <li>Adobe Suite, Sketch</li>
+                        <li>Balsamiq, InVision, PenPot</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Domains</h3>
+                    <ul class="skill-list">
+                        <li>EdTech SaaS &amp; LMS Platforms</li>
+                        <li>AI-Powered Products</li>
+                        <li>B2B Enterprise</li>
+                        <li>0&rarr;1 Product Development</li>
+                        <li>Automation &amp; QC</li>
+                        <li>E-commerce</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                <a class="resume-link" href="Sivarami-Reddy-Resume.pdf" target="_blank">
-                    View Full Résumé
-                    <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                clip-rule="evenodd" />
-                        </svg></span>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p class="footer__text">
+            Designed &amp; built by <a href="/">B. Sivarami Reddy</a> &nbsp;&middot;&nbsp;
+            12.97&deg;&thinsp;N &middot; 77.59&deg;&thinsp;E &nbsp;&middot;&nbsp;
+            <a href="Sivarami-Reddy-Resume.pdf" target="_blank">R&eacute;sum&eacute;</a>
+        </p>
+        <ul class="social" aria-label="Social media">
+            <li>
+                <a class="social__link" href="https://linkedin.com/in/b-sivarami-reddy-483152148" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                    </svg>
                 </a>
-            </section>
-
-            <!-- ===== CERTIFICATIONS ===== -->
-            <section id="certifications" class="section">
-                <div class="section__label">Certifications</div>
-
-                <!-- Highlighted: HFI CXA -->
-                <div class="cert-highlight">
-                    <img class="cert-highlight__logo" src="img/hfi.png" alt="HFI" loading="lazy" />
-                    <div class="cert-highlight__body">
-                        <h3>Certified User Experience Analyst (CXA™)</h3>
-                        <p>Human Factors International (HFI) · Jul 2025</p>
-                    </div>
-                    <a class="cert-highlight__link"
-                        href="https://www.credly.com/badges/3da25665-79b2-4d14-9296-df2a510d634b/public_url"
-                        target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                        </svg>
-                        Verify
-                    </a>
-                </div>
-
-                <!-- Highlighted: W3C -->
-                <div class="cert-highlight">
-                    <img class="cert-highlight__logo" src="img/w3c.png" alt="W3C" loading="lazy" />
-                    <div class="cert-highlight__body">
-                        <h3>W3Cx: Introduction to Web Accessibility</h3>
-                        <p>World Wide Web Consortium (W3C) via edX · Jun 2025</p>
-                    </div>
-                    <a class="cert-highlight__link"
-                        href="https://courses.edx.org/certificates/863eebb93de44710ab86dae9c24e0619" target="_blank"
-                        rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                        </svg>
-                        Verify
-                    </a>
-                </div>
-
-                <!-- Highlighted: HCI -->
-                <div class="cert-highlight">
-                    <img class="cert-highlight__logo" src="img/idf.jpeg" alt="IxDF" loading="lazy" />
-                    <div class="cert-highlight__body">
-                        <h3>Human–Computer Interaction (HCI)</h3>
-                        <p>Interaction Design Foundation · Sep 2017</p>
-                    </div>
-                    <a class="cert-highlight__link"
-                        href="https://www.interaction-design.org/sivarami-reddy/certificate/course/NwgZFnPH7?r=sivarami-reddy"
-                        target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                        </svg>
-                        Verify
-                    </a>
-                </div>
-
-                <!-- Compact list: Other certifications -->
-                <ul class="cert-compact-list">
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">How to Create Intuitive Products</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/c4aad99d-3f06-41a4-b526-957f8e55bf6c"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">Qualitative Research Methods</span><span
-                                class="cert-compact-item__org">· UoA</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.coursera.org/account/accomplishments/certificate/T48JCK6KRL55"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">Quantitative Methods</span><span
-                                class="cert-compact-item__org">· UoA</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.coursera.org/account/accomplishments/certificate/QTV4BNUU6V8M"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">Social Psychology</span><span
-                                class="cert-compact-item__org">· Wesleyan</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.coursera.org/account/accomplishments/certificate/F5ST39N3RZBE"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">User Research: Methods &amp; Best
-                                Practices</span><span class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/sivarami-reddy/certificate/course/Nrm0Dc4s4?r=sivarami-reddy"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">AI for Designers</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/46520d16-3ca8-4407-aaa4-354640344d3d"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">Conducting Usability Testing</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/2b177cf6-1c04-4459-b92a-e855d0d4c6bd"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">Perception &amp; Memory in HCI and UX</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/b977436e-10b2-435d-9835-b7d7eea884d1"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">The Brain and Technology</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/798a9903-0312-42ec-ae02-06854fb9f9ba"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">UI Design Patterns for Successful
-                                Software</span><span class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/42121cff-0a7d-4514-97e9-cd5c51627c1f"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                    <li class="cert-compact-item">
-                        <span><span class="cert-compact-item__name">UX Management: Strategy and Tactics</span><span
-                                class="cert-compact-item__org">· IxDF</span></span>
-                        <a class="cert-compact-item__link"
-                            href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/PLk5Nz0lQ"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path
-                                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" />
-                            </svg>
-                            Verify
-                        </a>
-                    </li>
-                </ul>
-
-            </section>
-
-            <!-- ===== SKILLS & EXPERTISE ===== -->
-            <section id="expertise" class="section">
-                <div class="section__label">Skills & Expertise</div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-category__title">Leadership & Product</h3>
-                        <ul class="skill-list">
-                            <li>Team Building (0→8 designers)</li>
-                            <li>Product Ownership & Requirements Gathering</li>
-                            <li>Stakeholder Management</li>
-                            <li>UX Strategy & Product Roadmap</li>
-                            <li>Cross-functional Collaboration</li>
-                            <li>Design Operations</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category__title">AI & Automation</h3>
-                        <ul class="skill-list">
-                            <li>Prompt Engineering</li>
-                            <li>AI Product Design</li>
-                            <li>Validation Logic & Confidence Scoring</li>
-                            <li>Input/Output Testing</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category__title">IC Skills</h3>
-                        <ul class="skill-list">
-                            <li>Prototyping & Design Systems</li>
-                            <li>Interaction Design & UI/UX</li>
-                            <li>Usability Testing & User Research</li>
-                            <li>React, JavaScript, HTML/CSS</li>
-                            <li>Figma, Accessibility (WCAG)</li>
-                            <li>AI Prompt Design</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category__title">Tools</h3>
-                        <ul class="skill-list">
-                            <li>Figma, Figma Make, FigJam, Miro</li>
-                            <li>GitHub Copilot, ChatGPT</li>
-                            <li>Adobe Suite, Sketch</li>
-                            <li>Balsamiq, InVision, PenPot</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category__title">Domains</h3>
-                        <ul class="skill-list">
-                            <li>EdTech SaaS & LMS Platforms</li>
-                            <li>AI-Powered Products</li>
-                            <li>B2B Enterprise</li>
-                            <li>0→1 Product Development</li>
-                            <li>Automation & QC</li>
-                            <li>E-commerce</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-    </div>
-
-
+            </li>
+            <li>
+                <a class="social__link" href="mailto:ux.siva@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="social__link" href="tel:9900014642" aria-label="Phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
