@@ -38,7 +38,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
 
     <!-- Fonts & Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -49,7 +51,7 @@
     <!-- ===== TOP NAVIGATION ===== -->
     <header class="topnav">
         <a href="/" class="topnav__logo">B. Sivarami Reddy</a>
-        <nav class="topnav__nav" aria-label="Main navigation">
+        <nav class="topnav__nav" id="primary-nav" aria-label="Main navigation">
             <ul class="topnav__links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Work</a></li>
@@ -58,32 +60,152 @@
             </ul>
         </nav>
         <a href="mailto:ux.siva@gmail.com" class="topnav__cta">Hire me</a>
+        <button class="topnav__toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
     <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="hero__inner">
-            <p class="hero__greeting">Available for work</p>
-            <h1 class="hero__headline">I design it. Code it. Ship it. <em>Then I stay to see if it worked.</em></h1>
-            <div class="hero__chips">
-                <span class="chip">10 years</span>
-                <span class="chip">3 products from 0&rarr;1</span>
-                <span class="chip">Team of 8</span>
-                <span class="chip">&#8377;50Cr impact</span>
-                <span class="chip">Bengaluru, India</span>
+            <div class="hero__content">
+                <p class="hero__greeting">Available for new opportunities</p>
+                <h1 class="hero__headline">I build <span class="gradient">products,</span><br>not just <span class="hero__underline">prototypes.</span></h1>
+
+                <p class="hero__subtitle">I help teams define the product, design the experience, build production-ready front ends with AI, and improve them using real customer feedback.</p>
+                <p class="hero__subtitle hero__subtitle--muted">Product strategy. UX. AI workflows. Front-end engineering. I work across the product lifecycle to help teams ship faster without compromising quality.</p>
+
+                <div class="hero__chips">
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--violet">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+                        </span>Product Strategy
+                    </span>
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--green">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l1.7 6.8L20.5 11l-6.8 1.7L12 19.5l-1.7-6.8L3.5 11l6.8-1.7z"/></svg>
+                        </span>AI Products
+                    </span>
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--violet">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                        </span>Product Owner
+                    </span>
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                        </span>Design Systems
+                    </span>
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--violet">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 8 4 12 8 16"/><polyline points="16 8 20 12 16 16"/><line x1="13" y1="6" x2="11" y2="18"/></svg>
+                        </span>Front-End
+                    </span>
+                    <span class="chip">
+                        <span class="chip__ico chip__ico--amber">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2l1.3 5L17 8.3 12.3 9.6 11 15l-1.3-5.4L5 8.3 9.7 7z"/><path d="M18 13l.7 2.6L21 16.3l-2.3.7L18 20l-.7-3-2.3-.7 2.3-.7z"/></svg>
+                        </span>Prompt Engineering
+                    </span>
+                </div>
+
+                <div class="hero__ctas">
+                    <a href="#projects" class="btn btn--primary">See my work
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg>
+                    </a>
+                    <a href="mailto:ux.siva@gmail.com" class="btn btn--ghost">Say hello
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+                    </a>
+                </div>
             </div>
-            <div class="hero__ctas">
-                <a href="#projects" class="btn btn--primary">See my work</a>
-                <a href="mailto:ux.siva@gmail.com" class="btn btn--ghost">Say hello &rarr;</a>
+
+            <div class="hero__visual" aria-hidden="true">
+                <div class="viz">
+                    <div class="viz__glow"></div>
+                    <div class="viz__dots"></div>
+
+                    <!-- code editor card -->
+                    <div class="viz__code">
+                        <span class="viz__code-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 5 12 9 16"/><polyline points="15 8 19 12 15 16"/></svg>
+                        </span>
+                        <span class="ln" style="width:42%;background:#8b5cf6"></span>
+                        <span class="ln ln--in" style="width:58%;background:#22d3ee"></span>
+                        <span class="ln ln--in" style="width:34%;background:#34d399"></span>
+                        <span class="ln" style="width:50%;background:#a78bfa"></span>
+                        <span class="ln ln--in" style="width:64%;background:#34d399"></span>
+                        <span class="ln ln--in" style="width:40%;background:#22d3ee"></span>
+                        <span class="ln" style="width:30%;background:#475569"></span>
+                        <span class="ln ln--in" style="width:54%;background:#8b5cf6"></span>
+                    </div>
+
+                    <!-- dashboard card -->
+                    <div class="viz__dash">
+                        <div class="viz__side">
+                            <span class="viz__side-ico is-active">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg>
+                            </span>
+                            <span class="viz__side-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16" y2="16"/></svg>
+                            </span>
+                            <span class="viz__side-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="4"/></svg>
+                            </span>
+                            <span class="viz__side-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                            </span>
+                        </div>
+                        <div class="viz__main">
+                            <div class="viz__topbar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="viz__panel viz__line">
+                                <svg viewBox="0 0 220 70" preserveAspectRatio="none">
+                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 215 30 220 26" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="viz__row">
+                                <div class="viz__panel viz__donut">
+                                    <svg viewBox="0 0 60 60">
+                                        <circle cx="30" cy="30" r="22" fill="none" stroke="#e8e6f5" stroke-width="8"/>
+                                        <circle cx="30" cy="30" r="22" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="38.7" transform="rotate(-90 30 30)"/>
+                                    </svg>
+                                    <span class="viz__donut-val">72%</span>
+                                </div>
+                                <div class="viz__panel viz__bars">
+                                    <span style="height:38%"></span>
+                                    <span style="height:62%"></span>
+                                    <span style="height:48%"></span>
+                                    <span style="height:80%"></span>
+                                    <span style="height:58%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI badge -->
+                    <div class="viz__ai">
+                        AI<span class="viz__ai-spark">✦</span>
+                    </div>
+
+                    <!-- annotation -->
+                    <div class="viz__note">
+                        <svg class="viz__note-arrow" viewBox="0 0 70 60" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M66 8 C 40 6 12 16 6 40"/>
+                            <path d="M6 40 L 2 30 M6 40 L 16 38"/>
+                        </svg>
+                        <span class="viz__note-text">From strategy<br>to impact</span>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <main id="content">
 
         <!-- ===== ABOUT ===== -->
         <section id="about" class="section about">
-            <div class="section__label">About</div>
+            <h2 class="section__label">About</h2>
             <p>
                 Most product designers hand off specs and move on. I stay until it ships — and then I check the numbers.
             </p>
@@ -100,12 +222,12 @@
 
         <!-- ===== PROJECTS ===== -->
         <section id="projects" class="section">
-            <div class="section__label">Work</div>
+            <h2 class="section__label">Work</h2>
             <div class="card-group projects-group">
 
                 <!-- GlaideGrader -->
                 <a href="speedgrader.html" class="card card--project">
-                    <img class="card__image" src="img/grader/4.png" alt="GlaideGrader AI-Powered Grading Platform" loading="lazy" style="object-fit:cover;object-position:top left" />
+                    <img class="card__image" src="img/grader/4.png" alt="GlaideGrader AI-Powered Grading Platform" loading="lazy" width="160" height="106" style="object-fit:cover;object-position:top left" />
                     <div>
                         <h3 class="card__title">
                             GlaideGrader: AI-Powered Grading Platform
@@ -150,7 +272,7 @@
 
                 <!-- Jedi Dashboard -->
                 <a href="Jedi.html" class="card card--project">
-                    <img class="card__image" src="img/jedi-2.jpg" alt="Jedi Dashboard" loading="lazy" />
+                    <img class="card__image" src="img/jedi-2.jpg" alt="Jedi Dashboard" loading="lazy" width="160" height="106" />
                     <div>
                         <h3 class="card__title">
                             Jedi Dashboard
@@ -172,7 +294,7 @@
 
                 <!-- Shine -->
                 <a href="shine.html" class="card card--project">
-                    <img class="card__image" src="img/shine-2.jpg" alt="GL Shine CRM" loading="lazy" />
+                    <img class="card__image" src="img/shine-2.jpg" alt="GL Shine CRM" loading="lazy" width="160" height="106" />
                     <div>
                         <h3 class="card__title">
                             GL Shine CRM
@@ -195,7 +317,7 @@
 
                 <!-- CV Review -->
                 <a href="cvreview.html" class="card card--project">
-                    <img class="card__image" src="img/cv-1.jpg" alt="AI Enabled CV Review" loading="lazy" />
+                    <img class="card__image" src="img/cv-1.jpg" alt="AI Enabled CV Review" loading="lazy" width="160" height="106" />
                     <div>
                         <h3 class="card__title">
                             AI Enabled CV Review
@@ -240,7 +362,7 @@
 
                 <!-- Olympus LMS -->
                 <a href="olympus.html" class="card card--project">
-                    <img class="card__image" src="img/olympus-2.jpg" alt="Olympus LMS Enhancement" loading="lazy" />
+                    <img class="card__image" src="img/olympus-2.jpg" alt="Olympus LMS Enhancement" loading="lazy" width="160" height="106" />
                     <div>
                         <h3 class="card__title">
                             Olympus LMS Enhancement
@@ -266,7 +388,7 @@
 
         <!-- ===== EXPERIENCE ===== -->
         <section id="experience" class="section">
-            <div class="section__label">Experience</div>
+            <h2 class="section__label">Experience</h2>
             <div class="card-group">
 
                 <div class="card">
@@ -358,7 +480,7 @@
 
         <!-- ===== CERTIFICATIONS ===== -->
         <section id="certifications" class="section">
-            <div class="section__label">Certifications</div>
+            <h2 class="section__label">Certifications</h2>
 
             <div class="cert-highlight">
                 <img class="cert-highlight__logo" src="img/hfi.png" alt="HFI" loading="lazy" />
@@ -453,7 +575,7 @@
 
         <!-- ===== SKILLS & EXPERTISE ===== -->
         <section id="expertise" class="section">
-            <div class="section__label">Skills &amp; Expertise</div>
+            <h2 class="section__label">Skills &amp; Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3 class="skill-category__title">Leadership &amp; Product</h3>

@@ -8,6 +8,28 @@
     });
 })();
 
+/* ===== MOBILE NAV TOGGLE ===== */
+(function () {
+    const toggle = document.querySelector('.topnav__toggle');
+    const nav = document.getElementById('primary-nav');
+    if (!toggle || !nav) return;
+
+    const setOpen = (open) => {
+        nav.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+
+    toggle.addEventListener('click', () => {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    // Close the menu after tapping a link
+    nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setOpen(false));
+    });
+})();
+
 /* ===== SCROLL-SPY NAVIGATION ===== */
 (function () {
     const sections = document.querySelectorAll('main .section[id]');
