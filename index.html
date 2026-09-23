@@ -126,17 +126,25 @@
 
                     <!-- code editor card -->
                     <div class="viz__code">
-                        <span class="viz__code-badge">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 5 12 9 16"/><polyline points="15 8 19 12 15 16"/></svg>
+                        <div class="viz__code-bar">
+                            <span class="viz__lights"><i></i><i></i><i></i></span>
+                            <span class="viz__tab">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 5 12 9 16"/><polyline points="15 8 19 12 15 16"/></svg>
+                                ActivationCard.tsx
+                            </span>
+                        </div>
+<pre class="viz__src"><span class="tk-kw">export function</span> <span class="tk-fn">ActivationCard</span><span class="tk-pun">() {</span>
+  <span class="tk-kw">const</span> { rate, delta } = <span class="tk-fn">useMetric</span><span class="tk-pun">()</span>
+  <span class="tk-kw">return</span> (
+    <span class="tk-pun">&lt;</span><span class="tk-tag">Card</span> <span class="tk-attr">title</span>=<span class="tk-str">"Activation"</span><span class="tk-pun">&gt;</span>
+      <span class="tk-pun">&lt;</span><span class="tk-tag">Stat</span> <span class="tk-attr">value</span>={rate} <span class="tk-attr">trend</span>={delta} <span class="tk-pun">/&gt;</span>
+    <span class="tk-pun">&lt;/</span><span class="tk-tag">Card</span><span class="tk-pun">&gt;</span>
+  )
+}</pre>
+                        <span class="viz__status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"/></svg>
+                            Shipped to production
                         </span>
-                        <span class="ln" style="width:42%;background:#8b5cf6"></span>
-                        <span class="ln ln--in" style="width:58%;background:#22d3ee"></span>
-                        <span class="ln ln--in" style="width:34%;background:#34d399"></span>
-                        <span class="ln" style="width:50%;background:#a78bfa"></span>
-                        <span class="ln ln--in" style="width:64%;background:#34d399"></span>
-                        <span class="ln ln--in" style="width:40%;background:#22d3ee"></span>
-                        <span class="ln" style="width:30%;background:#475569"></span>
-                        <span class="ln ln--in" style="width:54%;background:#8b5cf6"></span>
                     </div>
 
                     <!-- dashboard card -->
@@ -156,36 +164,52 @@
                             </span>
                         </div>
                         <div class="viz__main">
-                            <div class="viz__topbar">
-                                <span></span><span></span><span></span>
+                            <div class="viz__head">
+                                <div class="viz__stat">
+                                    <span class="viz__label">Activation rate</span>
+                                    <span class="viz__value">72%</span>
+                                </div>
+                                <span class="viz__delta">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 16 10 10 14 14 20 8"/><polyline points="14 8 20 8 20 14"/></svg>
+                                    18%
+                                </span>
                             </div>
                             <div class="viz__panel viz__line">
+                                <span class="viz__panel-label">Weekly active users</span>
                                 <svg viewBox="0 0 220 70" preserveAspectRatio="none">
-                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 215 30 220 26" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="vizArea" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+                                            <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 208 30 214 26 L 214 70 L 0 70 Z" fill="url(#vizArea)"/>
+                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 208 30 214 26" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
                             <div class="viz__row">
                                 <div class="viz__panel viz__donut">
-                                    <svg viewBox="0 0 60 60">
-                                        <circle cx="30" cy="30" r="22" fill="none" stroke="#e8e6f5" stroke-width="8"/>
-                                        <circle cx="30" cy="30" r="22" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="38.7" transform="rotate(-90 30 30)"/>
-                                    </svg>
-                                    <span class="viz__donut-val">72%</span>
+                                    <span class="viz__panel-label">Task success</span>
+                                    <span class="viz__ring">
+                                        <svg viewBox="0 0 60 60">
+                                            <circle cx="30" cy="30" r="22" fill="none" stroke="#e8e6f5" stroke-width="8"/>
+                                            <circle cx="30" cy="30" r="22" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="19.3" transform="rotate(-90 30 30)"/>
+                                        </svg>
+                                        <span class="viz__donut-val">86%</span>
+                                    </span>
                                 </div>
                                 <div class="viz__panel viz__bars">
-                                    <span style="height:38%"></span>
-                                    <span style="height:62%"></span>
-                                    <span style="height:48%"></span>
-                                    <span style="height:80%"></span>
-                                    <span style="height:58%"></span>
+                                    <span class="viz__panel-label">Releases</span>
+                                    <span class="viz__bars-track">
+                                        <span style="height:38%"></span>
+                                        <span style="height:62%"></span>
+                                        <span style="height:48%"></span>
+                                        <span style="height:70%"></span>
+                                        <span style="height:100%"></span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- AI badge -->
-                    <div class="viz__ai">
-                        AI<span class="viz__ai-spark">✦</span>
                     </div>
 
                     <!-- annotation -->
@@ -225,6 +249,29 @@
         <section id="projects" class="section">
             <h2 class="section__label">Work</h2>
             <div class="card-group projects-group">
+
+                <!-- Assisty -->
+                <a href="assisty.html" class="card card--project">
+                    <img class="card__image" src="img/assisty/dashboard.jpg" alt="Assisty grading assistant dashboard" loading="lazy" width="160" height="106" style="object-fit:cover;object-position:top left" />
+                    <div>
+                        <h3 class="card__title">
+                            Assisty: Making AI Grading Accountable
+                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
+                        </h3>
+                        <p class="card__description">
+                            A grading assistant that drafts a rubric from marked scripts, grades the cohort against it,
+                            and hands back every score with its evidence. Audited the live product, found one root cause,
+                            rebuilt the system around two human gates, and shipped the production front end myself.<br><br>
+                            <strong>Impact:</strong> 785 commits, 51k lines of TypeScript, 375 &rarr; 6 typography roles, ratchets that fail the build<br>
+                            <strong>Role:</strong> Principal UX Designer (IC) | Research &rarr; production code
+                        </p>
+                        <ul class="tags">
+                            <li class="tag">AI/ML</li>
+                            <li class="tag">Design Engineering</li>
+                            <li class="tag">Design Systems</li>
+                        </ul>
+                    </div>
+                </a>
 
                 <!-- GlaideGrader -->
                 <a href="speedgrader.html" class="card card--project">

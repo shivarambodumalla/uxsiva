@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assisty — Making AI Grading Accountable | B. Sivarami Reddy</title>
+  <meta name="description"
+    content="A grading assistant that drafts a rubric from marked scripts, grades the cohort against it, and hands back every score with its evidence — researched, defined and shipped in code by one designer at Great Learning." />
+  <meta name="keywords" content="AI Grading, Product Design, Design Engineer, Design System, React, TypeScript, Great Learning, Human-in-the-loop, EdTech" />
+  <meta name="author" content="B. Sivarami Reddy" />
+  <link rel="canonical" href="https://uxsiva.onrender.com/assisty.html" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Assisty — Making AI Grading Accountable" />
+  <meta property="og:description"
+    content="Double diamond over a live AI grading product: audit what shipped, find one root cause, rebuild around explicit human authority, enforce it with checks that fail the build." />
+  <meta property="og:image" content="https://uxsiva.onrender.com/img/assisty/login.jpg" />
+  <meta property="og:url" content="https://uxsiva.onrender.com/assisty.html" />
+  <meta property="og:site_name" content="B. Sivarami Reddy Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Assisty — Making AI Grading Accountable" />
+  <meta name="twitter:description"
+    content="785 commits, 51k lines of TypeScript, 375 typography decisions reduced to 6 roles — a case study in designing in code." />
+  <meta name="twitter:image" content="https://uxsiva.onrender.com/img/assisty/login.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+
+  <!-- Cursor Spotlight Overlay -->
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar__left">
+      <a href="index.html" class="topbar__back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back
+      </a>
+      <span class="topbar__sep">/</span>
+      <span class="topbar__title">Assisty</span>
+    </div>
+    <div class="topbar__right">
+      <div class="topbar__info">
+        <span class="topbar__name">B. Sivarami Reddy</span><br>
+        <span class="topbar__role">Principal Designer &amp; UX Design Manager</span>
+      </div>
+      <img src="img/avatar.png" alt="Profile" class="topbar__avatar" />
+    </div>
+  </header>
+
+  <main class="cs-main">
+
+    <!-- ===== HERO ===== -->
+    <section class="cs-hero">
+      <p class="cs-phase">Double Diamond · Great Learning · 2025–2026</p>
+      <h1 class="cs-hero__title">Assisty: Making AI Grading Accountable</h1>
+      <p class="cs-hero__subtitle">
+        A grading assistant that drafts a rubric from scripts an educator has already marked, grades the cohort
+        against it, and hands back every score with the evidence it was drawn from — researched, defined and
+        shipped in code by one designer.
+      </p>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Project Overview</h2>
+
+      <div class="cs-grid cs-grid--2" style="margin-bottom:2rem">
+        <div class="cs-card">
+          <ul class="cs-list" style="list-style:none;padding:0">
+            <li><strong>Role</strong> — Principal UX Designer (IC)</li>
+            <li><strong>Company</strong> — Great Learning</li>
+            <li><strong>Timeline</strong> — 13 months (Sep 2025 – Sep 2026)</li>
+            <li><strong>Team</strong> — 1 Designer (research → shipped frontend), backend &amp; platform engineering</li>
+            <li><strong>Tools</strong> — Figma, user shadowing, code audits, React/TypeScript, Claude Code</li>
+            <li><strong>Constraint</strong> — Existing APIs. No backend contract to renegotiate.</li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="cs-card__title">The Problem</h3>
+          <p class="cs-card__text">Assisty shipped a working grading product in year one — then read as flat,
+            inconsistent and hard to trust. Educators wouldn't publish a grade they couldn't account for to a
+            student who challenged it, and they skipped the dashboard entirely.</p>
+          <h3 class="cs-card__title" style="margin-top:1rem">The Solution</h3>
+          <p class="cs-card__text">A double diamond run over the live product: audit and measure what shipped,
+            converge on one root cause, rebuild the system and the grading workflow around explicit human
+            authority, then enforce it with checks that fail the build.</p>
+        </div>
+      </div>
+
+      <div class="cs-feature-box">
+        <h3 class="cs-feature-box__title">By the Numbers</h3>
+        <div class="cs-grid cs-grid--3">
+          <div class="cs-timeline__item">
+            <div class="cs-stat">785 commits</div>
+            <p>Across 13 months, 353 of them in the July 2026 redesign sprint</p>
+          </div>
+          <div class="cs-timeline__item">
+            <div class="cs-stat">51k lines</div>
+            <p>Of TypeScript across 410 files, shipped as the production frontend</p>
+          </div>
+          <div class="cs-timeline__item">
+            <div class="cs-stat">423 files</div>
+            <p>Audited utility by utility to find why the UI read as flat</p>
+          </div>
+          <div class="cs-timeline__item">
+            <div class="cs-stat">375 → 6</div>
+            <p>Independent typography decisions reduced to six named roles</p>
+          </div>
+          <div class="cs-timeline__item">
+            <div class="cs-stat">383 → 101</div>
+            <p>Off-scale spacing values, with a ratchet that fails the build if it rises</p>
+          </div>
+          <div class="cs-timeline__item">
+            <div class="cs-stat">2 → 0</div>
+            <p>Component libraries shipping at once; the linter now errors on the old one</p>
+          </div>
+        </div>
+        <p style="margin-top:1.25rem;font-size:0.85rem;color:var(--text-3)">
+          Figures measured from the production repository, September 2026. Adoption and time-saved metrics sit
+          with the programme team and are not included here.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SHAPE OF THE WORK ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">The Shape of the Work</h2>
+      <p class="cs-section__text">
+        Two diamonds. The first widens to find out what is actually wrong and narrows to a single sentence. The
+        second widens into a system and a redesign, then narrows to something a build check can hold in place.
+        The second diamond didn't start until the first had produced that sentence.
+      </p>
+      <div class="cs-grid cs-grid--4" style="margin-top:1.5rem">
+        <div class="cs-card">
+          <p class="cs-phase" style="margin-bottom:0.4rem">01 · Discover</p>
+          <h4 class="cs-card__title">Audit what shipped</h4>
+          <p class="cs-card__text">423 files · every utility counted · educators shadowed at the start of a day.</p>
+        </div>
+        <div class="cs-card">
+          <p class="cs-phase" style="margin-bottom:0.4rem">02 · Define</p>
+          <h4 class="cs-card__title">One root cause</h4>
+          <p class="cs-card__text">No typography primitive = 375 lone decisions. And: the model may draft, never publish.</p>
+        </div>
+        <div class="cs-card">
+          <p class="cs-phase" style="margin-bottom:0.4rem">03 · Develop</p>
+          <h4 class="cs-card__title">System + redesign</h4>
+          <p class="cs-card__text">Tokens · Text primitive · design briefs · a grading workflow with two human gates.</p>
+        </div>
+        <div class="cs-card">
+          <p class="cs-phase" style="margin-bottom:0.4rem">04 · Deliver</p>
+          <h4 class="cs-card__title">Enforced</h4>
+          <p class="cs-card__text">Ratchets on pre-commit. The count can only go down.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THE CHALLENGE ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">The Challenge</h2>
+      <p class="cs-section__text">
+        The complaint from educators was not "this is ugly". It was vaguer and worse: the product
+        <strong>felt unreliable</strong>. Vague feedback is a measurement problem, not a taste problem — so the
+        first job was to find something countable.
+      </p>
+      <p class="cs-section__text">
+        Underneath it sat a second challenge with nothing to do with pixels. A grade is a claim an educator has
+        to defend. If a student asks why they lost two marks, "the system decided" is not an answer anyone can
+        stand behind. Any product that puts a model near a transcript has to make the human's authority
+        <strong>structural</strong>, not implied.
+      </p>
+      <blockquote class="cs-blockquote">
+        "I'm not worried it will be wrong sometimes. I'm worried I'll have to explain a number I didn't arrive at."
+        <br><cite style="font-size:0.85rem;font-style:normal;color:var(--text-3)">— Educator, during shadowing</cite>
+      </blockquote>
+    </section>
+
+    <!-- ===== DISCOVER ===== -->
+    <section class="cs-section">
+      <p class="cs-phase">Phase 01 · Discover <span class="cs-tag">Diverge</span></p>
+      <h2 class="cs-section__title">Research &amp; Discovery</h2>
+      <p class="cs-section__text">
+        I did three things in parallel: captured the live product screen by screen, counted every typography and
+        spacing decision in the codebase, and watched educators actually open the tool at the start of a working
+        day.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">1. A fixed before-state</h3>
+      <p class="cs-section__text">
+        I captured the working product and committed the shots into the repository. A before-state nobody can
+        relitigate later is worth more than a memory of one.
+      </p>
+
+      <figure class="cs-figure">
+        <img src="img/assisty/before-landing.jpg" alt="Before: the Assisty landing screen with a connect-your-account banner and a single grey placeholder card" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--before">Before</span><span>The landing screen. A connect-your-account
+          banner in the most prominent position on the page, one card, a grey placeholder block — and nothing
+          telling an educator where to pick up the job they left running yesterday.</span></figcaption>
+      </figure>
+
+      <figure class="cs-figure">
+        <img src="img/assisty/before-create-assignment.jpg" alt="Before: the Create Assignment form with a native file control and flattened heading hierarchy" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--before">Before</span><span>Create Assignment. A native
+          <code>Choose file</code> control inside a designed form, and four intended levels of heading compressed
+          into two.</span></figcaption>
+      </figure>
+
+      <figure class="cs-figure">
+        <img src="img/assisty/before-canvas-dialog.jpg" alt="Before: a Connect your Canvas Account modal containing a six-step manual and an embedded YouTube video" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--before">Before</span><span>Connecting an LMS account: a six-step
+          manual and a third-party video embedded in a product dialog — a reliable sign that the integration
+          design had been deferred to documentation.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">2. Then I counted</h3>
+      <p class="cs-section__text">
+        Screenshots tell you something is wrong. Counting tells you what. I went through every typography and
+        spacing utility across <strong>423 source files</strong>.
+      </p>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr><th>Measured</th><th>Finding</th><th>Figure</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Type size</td><td>Share of all text set at 14px or 12px</td><td class="is-bad">77%</td></tr>
+            <tr><td>Type weight</td><td>Share of all weighted text set semibold</td><td class="is-bad">84%</td></tr>
+            <tr><td>Spacing</td><td>Utilities off the indexed scale (287 of 962)</td><td class="is-bad">30%</td></tr>
+            <tr><td>Worst offender</td><td><code>p-3</code> / 12px — a step the scale forbids</td><td class="is-bad">157 uses</td></tr>
+            <tr><td>Contrast</td><td>Inactive accordion rows faded to <code>opacity-65</code></td><td class="is-bad">3.82:1</td></tr>
+            <tr><td>Libraries</td><td>Component libraries shipping side by side</td><td class="is-bad">2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">3. And I watched people use it</h3>
+      <p class="cs-section__text">
+        The behavioural finding was blunter than any number: educators <strong>skipped the dashboard</strong>.
+        They opened Assisty mid-job — forty submissions uploaded yesterday, grading started, tab closed — wanting
+        one thing: <em>where do I pick up, and did anything break?</em>
+      </p>
+      <p class="cs-section__text">
+        The dashboard answered neither. It showed lifetime counts — 28 rubrics created, 340 evaluations completed
+        — in the largest type on the page, and the most recently <em>touched</em> assignment, which is never the
+        same as the one that needs you. If a run had failed at submission 12, the page said nothing at all.
+      </p>
+      <div class="cs-accent-box">
+        <h4>The insight</h4>
+        <p style="margin:0">It wasn't a bad dashboard. It was a dashboard answering a question nobody was asking.</p>
+      </div>
+    </section>
+
+    <!-- ===== DEFINE ===== -->
+    <section class="cs-section">
+      <p class="cs-phase">Phase 02 · Define <span class="cs-tag">Converge</span></p>
+      <h2 class="cs-section__title">Defining the Problem</h2>
+      <p class="cs-section__text">
+        Everything above narrowed into two sentences. The rest of the project is an answer to them.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:1.5rem">One: hierarchy is a ratio, and we had removed it</h3>
+      <p class="cs-section__text">
+        The type and spacing numbers looked like two problems. They were one — and naming it correctly is the piece
+        of work I would defend hardest here.
+      </p>
+      <p class="cs-section__text">
+        <strong>There was no typography primitive.</strong> Nothing in the codebase encoded <em>"this is a section
+        title"</em> — only <em>"this is 14px semibold"</em>. So roughly 375 text nodes each picked their own size
+        and weight, independently, at the moment they were written. A decision made 375 times in isolation always
+        converges on the safe middle of the scale. That is exactly what happened, and it explains the strangest
+        symptom: every single component passed review, and the assembled screen still read as mush.
+      </p>
+      <blockquote class="cs-blockquote">
+        Consistency is not a property a single component can have. It only exists across a set.
+      </blockquote>
+      <p class="cs-section__text">
+        Which reframed the fix entirely. The remedy was not more care per component — it was
+        <strong>fewer places where the decision could be made at all</strong>.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Two: the model may draft, but it may never publish</h3>
+      <p class="cs-section__text">
+        The trust problem needed a structural answer, not a reassuring one. The interaction model had to contain
+        explicit points where authority transfers from machine to human — and the product had to be incapable of
+        skipping them.
+      </p>
+      <div class="cs-flow">
+        <div class="cs-flow__step"><span class="cs-tag cs-tag--model">Model</span><strong>Draft rubric</strong>from marked examples</div>
+        <div class="cs-flow__step cs-flow__step--human"><span class="cs-tag cs-tag--live">Human</span><strong>Approve rubric</strong>nothing runs before this</div>
+        <div class="cs-flow__step"><span class="cs-tag cs-tag--model">Model</span><strong>Grade cohort</strong>against the approved rubric</div>
+        <div class="cs-flow__step cs-flow__step--human"><span class="cs-tag cs-tag--live">Human</span><strong>Review &amp; adjust</strong>every score, with evidence</div>
+        <div class="cs-flow__step cs-flow__step--human"><span class="cs-tag cs-tag--live">Human</span><strong>Published</strong>human-signed</div>
+      </div>
+      <p class="cs-section__text" style="font-size:0.9rem;color:var(--text-3)">
+        The human gate. Authority crosses the line twice, and neither crossing can be skipped or automated away.
+        Every claim the product makes about accountability reduces to this diagram.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The principles that came out of Define</h3>
+      <div class="cs-grid cs-grid--2">
+        <div class="cs-card">
+          <h4 class="cs-card__title">Urgency over recency</h4>
+          <p class="cs-card__text">Rank by what is blocked, not by what changed last. A failed run from Tuesday
+            outranks a healthy upload from an hour ago. Recency is a tiebreaker, never the sort key.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">Every number is a door</h4>
+          <p class="cs-card__text">A count that can't be acted on doesn't belong on the page. If a tile shows 6,
+            clicking it shows those six. Lifetime totals fail this test and were cut.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">An empty queue is the goal</h4>
+          <p class="cs-card__text">"You're all caught up" is a real answer and a good one — the state the page is
+            designed to reach, not a gap to pad with vanity metrics.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">Never credit the machine</h4>
+          <p class="cs-card__text">User-facing copy says Assisty, never "AI Grader", and never attributes a
+            judgement to AI. The educator owns the grade, so the interface never offers to share the blame.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEVELOP ===== -->
+    <section class="cs-section">
+      <p class="cs-phase">Phase 03 · Develop <span class="cs-tag">Diverge</span></p>
+      <h2 class="cs-section__title">Design Process</h2>
+      <p class="cs-section__text">
+        This is the part of my practice that changed most on this project. On a product whose behaviour
+        <em>is</em> the design — long grading runs, partial failure, confidence, human override — a static frame
+        can't carry the argument. So I stopped writing specs for other people to build, and built it.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Designing in code, against APIs that already existed</h3>
+      <p class="cs-section__text">
+        Every endpoint I needed was already live and stable. My job wasn't to negotiate a backend contract — it was
+        to find the interface hiding inside one that had been designed for a different UI. So I worked directly in
+        the codebase: one API slice, server state through RTK Query, generated hooks in components, and never a
+        raw request in a view. When an old response shape didn't fit a new screen, I composed around it on the
+        client rather than filing a ticket and waiting a sprint.
+      </p>
+      <p class="cs-section__text">
+        That produced a constraint worth naming honestly: <strong>two generations of the API are still live side by
+        side.</strong> The older endpoints stayed because Analytics reads them for assignments graded before the
+        redesign existed. Designing on top of your own history, rather than pretending it isn't there, is most of
+        the job on a product this age.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Collapsing a state machine into a walk</h3>
+      <p class="cs-section__text">
+        The grading backend tracks a dozen states. An earlier build exposed them as navigable sections and testing
+        was brutal — educators opened the tool, saw five places they could be, and asked which one they were
+        supposed to be in. The redesign derives a single screen from the assessment's state and renders only
+        that. Secondary surfaces open <em>over</em> the current step, never away from it, so someone working down
+        a roster never loses their place in it.
+      </p>
+      <div class="cs-card">
+        <p class="cs-phase" style="font-size:0.68rem;margin-bottom:0.3rem">12 backend states</p>
+        <div class="cs-chips">
+          <span>initial</span><span>generating</span><span>gen_failed</span><span>under_review</span><span>approved</span><span>in_progress</span><span>eval_failed</span><span>completed</span><span>…</span>
+        </div>
+        <p class="cs-phase" style="font-size:0.68rem;margin-bottom:0.3rem">Resolved to exactly one screen</p>
+        <div class="cs-chips">
+          <span>Confirm the assignment</span><span>Generate rubric</span><span class="is-active">Approve rubric · the human gate</span><span>Add submissions</span><span>Evaluate · run &amp; watch</span><span>Review detail</span>
+        </div>
+        <p class="cs-phase" style="font-size:0.68rem;margin-bottom:0.3rem">Opens over, never away</p>
+        <div class="cs-chips" style="margin-bottom:0">
+          <span>Rubrics panel</span><span>Analytics panel</span><span>Feedback panel</span>
+        </div>
+      </div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The primitive that fixed the ratio</h3>
+      <p class="cs-section__text">
+        Brand navy anchors at the wordmark's own colour rather than at the midpoint of a ramp, so every tint
+        derives from the mark, and the neutrals are hue-aligned to it rather than achromatic. Then the piece that
+        actually answered Define's first sentence: a <strong>Text primitive with named roles</strong>.
+      </p>
+      <p class="cs-section__text">
+        You no longer write a size and a weight. You name what the thing <em>is</em> — page-title, section-title,
+        field-label, body, caption — and the primitive owns the pair. If no variant fits, you add one to the
+        primitive. You never override at the call site, because that is precisely how the ramp collapsed the first
+        time.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Migrating off the old library, in the open</h3>
+      <p class="cs-section__text">
+        The redesign needed one component system, not two. I wrote the migration as a document anyone could
+        execute, ordered by how much time each item costs you when you get it wrong. The three traps, in order:
+      </p>
+      <ul class="cs-list">
+        <li><strong>The old library's spacing unit is 8px; the new one's is 4px.</strong> Every number doubles. A
+          padding of 2 becomes p-4.</li>
+        <li><strong>The xs breakpoint reverses meaning.</strong> In the old system it meant "0 and up"; in the new
+          one it means "≥600px". Porting it literally leaves phones unstyled — the single most common silent
+          regression in the whole migration.</li>
+        <li><strong>Never put both styling systems on one element.</strong> The old library emits unlayered CSS;
+          the new utilities live in a cascade layer, and unlayered always wins regardless of specificity. The new
+          class silently loses and you spend an afternoon on it.</li>
+      </ul>
+      <p class="cs-section__text">
+        It finished. The old library is out of the dependency tree, and the linter now <strong>errors</strong> on
+        any import of it — so the migration cannot quietly reverse.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">I turned my own process into tooling</h3>
+      <p class="cs-section__text">
+        Rather than keep the method in my head, I wrote it into the repository as a set of designer workflows that
+        live beside the code: <strong>design brief → information architecture → task breakdown → build → design
+        review</strong>, with a token workflow for palette work and a "grill me" one for stress-testing an approach
+        before committing to it.
+      </p>
+      <p class="cs-section__text">
+        Each surface's output lands in the repo as a brief, an IA document and a review. The reviews name defects
+        in computed pixels and contrast ratios rather than impressions — <em>"the search placeholder renders at
+        16px against 12px roster rows; the filter is a third larger than the list it filters"</em> — so a finding
+        is verifiable by someone who wasn't in the room.
+      </p>
+    </section>
+
+    <!-- ===== THE PRODUCT IN FULL ===== -->
+    <section class="cs-section">
+      <p class="cs-phase">Reference <span class="cs-tag">The whole app</span></p>
+      <h2 class="cs-section__title">The Product in Full</h2>
+      <p class="cs-section__text">
+        Everything above is method. This section is the product itself — every surface, in the order an educator
+        meets it, with the design reasoning attached to each one. If you only read one part of this case study,
+        read this: it is where the principles stop being principles and start being screens.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">What Assisty is</h3>
+      <p class="cs-section__text">
+        Assisty grades long-form, subjective student work. Not multiple choice — that grades itself. The things
+        worth asking: a derivation, a case analysis, a reflective essay on organisational behaviour, a design
+        rationale. Work where the reasoning matters as much as the answer, and where a human has to read the
+        reasoning to mark it fairly.
+      </p>
+      <p class="cs-section__text">
+        The users are university and bootcamp faculty, programme managers and teaching assistants handling cohorts
+        of twenty to several hundred. Their constraint is never "I can't grade this" — it is "I can't grade three
+        hundred of these by Friday, and if I split the batch across four people, two students who wrote the same
+        answer will get different marks."
+      </p>
+      <p class="cs-section__text">
+        So Assisty is not an autograder. It is a <strong>drafting and consistency instrument</strong> with a human
+        signature at both ends: the educator agrees to the standard before it is applied, and confirms every
+        result before it is published. The model does the volume. The educator keeps the authority.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Getting in</h3>
+      <p class="cs-section__text">
+        The login screen is the only piece of marketing the product has, and it does one job: state the promise
+        plainly before anyone has used anything. A split card — a duotone photograph of an educator marking papers
+        on the left, the form on the right — with a rotating value-proposition slider that says what the product
+        does in six short claims. Below the large breakpoint the marketing panel is dropped entirely; vertical
+        space on a phone belongs to the form.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/login.jpg" alt="Assisty login: a split card with a duotone photograph reading Built into your LMS beside the login form" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>The login screen. One promise, one form. The duotone treatment lets a single photograph carry the brand navy.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The dashboard is a work queue</h3>
+      <p class="cs-section__text">
+        This is where the Discover finding landed. The old dashboard showed lifetime totals in the largest type on
+        the page. The new one answers the only question educators arrive with: <em>where do I pick up, and did
+        anything break?</em> Four tiles — needs review, grading now, rubric drafts, failed — each one a door to the
+        items behind it. Below them, <strong>Needs your attention</strong>: a ranked list where every row carries
+        the action that unblocks it. A failed run outranks a fresh upload. When the list is empty, the page says
+        so, and that is the state it is designed to reach.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/dashboard.jpg" alt="Assisty dashboard: Welcome back, four count tiles (Needs review 40, Grading now, Rubric drafts, Failed) and a Needs your attention list with Review and Start grading actions" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>Urgency over recency. Every number is a door; every row carries its next action. Lifetime totals are gone.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Two front doors</h3>
+      <p class="cs-section__text">
+        The only genuine fork in the product: does your institution run Canvas, or not? Connect the LMS and every
+        course you teach arrives with its assignments and its enrolled students. Don't, and you upload an
+        assignment and a ZIP of submissions by hand. Both paths land in the same Assessments list, and behave
+        identically once opened.
+      </p>
+      <p class="cs-section__text">
+        Treating them as equals was deliberate. Manual import is not a degraded mode — plenty of programmes run
+        assessments outside the LMS entirely, and treating that as second-class quietly tells half your users
+        they're holding it wrong. The Canvas connection itself moved out of a one-time modal and into
+        <strong>Settings › Integrations</strong>, where connection state belongs and can be revisited.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/assessments.jpg" alt="Manual Imports list: two assignments with submission counts, points, creator, date and a Graded or Ready to Grade status" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>Assessments uploaded outside Canvas. Status is the first thing you read on a row, because it tells you what to do next.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Creating an assignment</h3>
+      <p class="cs-section__text">
+        Assignment creation is the longest form in the product, and the place where the most design time went. The
+        insight that shaped it: <strong>the educator already has the assignment.</strong> It exists as a Word
+        document or a PDF handed to students weeks ago. So the first choice on the screen is <em>upload the
+        assessment</em>, and Assisty prefills the title, the description, the questions and any marking criteria
+        it can find.
+      </p>
+      <p class="cs-section__text">
+        Extraction from an arbitrary document is probabilistic, and a silent mistake here poisons everything
+        downstream — a question worth ten marks read as worth one will quietly mis-grade an entire cohort. So the
+        interface says, at the point of upload, that the extracted content needs review. The product tells you it
+        might be wrong <em>before</em> you find out.
+      </p>
+      <p class="cs-section__text">
+        Each question carries its text, its points and an optional marking scheme: named criteria, each with its
+        own allocation. Making the scheme optional was contested. Requiring one would produce better rubrics every
+        time — but forcing educators who don't have one to invent it before seeing a single draft turns a
+        five-minute setup into an afternoon. Optional means the product meets both, and the rubric step fills
+        the gap for anyone who skipped it.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The assignment workspace</h3>
+      <p class="cs-section__text">
+        Every assignment, however it arrived, resolves to one workspace: Details, Questions and Rubrics on the
+        left, Submissions on the right. This is the product's spine. The grading backend tracks a dozen states,
+        but the workspace shows exactly one next step, and secondary surfaces open <em>over</em> it, never away
+        from it.
+      </p>
+      <p class="cs-section__text">
+        Submissions arrive as a ZIP, as loose files, or straight from the LMS, in named <em>batches</em> —
+        "Upload 1", "Section B resubmissions", "Late submissions" — that can be graded, reused and cloned. Real
+        cohorts don't arrive at once; modelling them as one forces educators into workarounds. Each batch shows
+        its own state, and a misnamed file is caught in a verification step before anything is committed. Caught
+        there it costs ten seconds; caught after grading it costs a re-run.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/workspace.jpg" alt="Assignment workspace: Details, Questions and Rubrics tabs on the left and a Submissions panel on the right showing two graded upload batches" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>The assignment workspace. Two batches, each with its own graded state, and the primary action always in the same place.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Generating the rubric</h3>
+      <p class="cs-section__text">
+        With the assignment and submissions in place, one button: <strong>Generate Rubric</strong>. Assisty reads
+        the assignment, the supporting material and the sample submissions, and drafts a rubric aligned to the
+        marking scheme if one exists — or proposes a structure if one doesn't. Reading real submissions is what
+        makes the output usable: a rubric written after seeing how twenty students actually answered captures the
+        misconceptions that specific cohort brought, which is exactly what an experienced marker calibrates
+        against on their first ten scripts.
+      </p>
+      <p class="cs-section__text">
+        The wait is designed honestly. The first build showed a spinner and educators reloaded — reasonably,
+        because a spinner makes no promise. The replacement shows the pipeline's stages, a determinate bar, and an
+        estimate that says <em>"Estimating"</em> while it is estimating rather than inventing a confident number.
+        You can leave the page; the work continues.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/generating-rubric.jpg" alt="Generating Rubric drawer over the workspace: a progress bar labelled Estimating time remaining, with Reading submissions complete and Building your rubric in progress" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>A countdown that lies once is never believed again, so this one admits when it is guessing.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Review and approve — the gate</h3>
+      <p class="cs-section__text">
+        The rubric is the contract: if an educator is going to stand behind two hundred grades, they agree to the
+        standard <em>before</em> it is applied, not audit it afterwards. Every criterion and every point value is
+        editable, criteria can be added or removed, and nothing runs until the educator presses
+        <strong>Approve &amp; Start Grading</strong>. There is no skip, no "use defaults", no path around it. The
+        label names both halves of what it does, because approving and starting are one decision, and splitting
+        them into two clicks only invites the first to be made carelessly.
+      </p>
+      <p class="cs-section__text">
+        A points chip on each question shows the criteria total against the question's actual marks and flags when
+        they diverge. A rubric whose criteria sum to eight against a ten-mark question will silently under-mark
+        every student. Catching that takes one chip. Catching it afterwards takes a regrade and an apology.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The review surface — where the product earns trust</h3>
+      <p class="cs-section__text">
+        Results stream, so submissions become reviewable as they finish rather than at the end. Opening one gives
+        the screen the whole product exists to reach. It is dense, and every element on it answers a question an
+        educator would otherwise have to ask.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/review.jpg" alt="Review surface: a roster of submissions with confidence labels on the left; on the right a score gauge reading 17.5 of 20, overall feedback, and strengths and areas to improve columns" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>The individual review. Roster with confidence on every row, score gauge, overall feedback, and strengths and gaps tied to specific questions. Below the fold: the per-question breakdown with quoted evidence.</span></figcaption>
+      </figure>
+      <ul class="cs-list">
+        <li><strong>A score gauge, not a number.</strong> 17.5 out of 20 reads as a position on an arc before it
+          reads as arithmetic, which is how people actually judge whether a mark looks right.</li>
+        <li><strong>Overall feedback, editable in place.</strong> Written to the student, in the second person, and
+          rewritable by the educator before it goes anywhere.</li>
+        <li><strong>Strengths and areas to improve, separated.</strong> Two columns, green and amber, each tied to
+          specific questions. Feedback that mixes praise and criticism in one paragraph gets read as neither.</li>
+        <li><strong>A question breakdown with the criteria visible.</strong> Each question shows what was awarded
+          against what was available, per criterion.</li>
+        <li><strong>Evidence from the submission, quoted.</strong> The actual sentences the score was drawn from,
+          with a <em>Find in submission</em> link that jumps to them in the source document.</li>
+        <li><strong>A reason for score.</strong> Prose explaining why those sentences earned those marks against
+          that criterion.</li>
+      </ul>
+      <div class="cs-accent-box">
+        <p style="margin:0">The evidence link is the single feature that changed how educators talked about the
+          product. Before it, checking a score meant re-reading the whole submission. After it, a disputed mark is
+          a two-second jump to the paragraph in question. It converts "do I trust this?" — unanswerable — into "is
+          this quote the right quote?", which anyone can settle in seconds.</p>
+      </div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Confidence, strictness and approval</h3>
+      <p class="cs-section__text">
+        Three controls sit on that screen, and each one is a deliberate answer to a worse alternative.
+      </p>
+      <ul class="cs-list">
+        <li><strong>Confidence</strong> — high, medium or low on every roster row, visible before anything is
+          selected. It is a triage instrument, not an accuracy claim: three levels are coarse enough to be truthful
+          about what the judgement can support, and sharp enough to sort a pile. A numeric certainty score would
+          imply a precision the model does not have; showing nothing would throw away the time saving.</li>
+        <li><strong>Strictness</strong> — lenient, moderate or strict, recalculating the whole batch against the
+          same approved rubric. It came straight from research: educators were already editing individual scores
+          in a consistent direction, one at a time, which is a person doing by hand what a parameter should do.
+          The rubric stays the contract; strictness is how firmly it's applied.</li>
+        <li><strong>Approval</strong> — the second human gate. Nothing reaches a student until an educator approves
+          it, individually or in bulk from the roster; disapprove sends one back rather than letting it through
+          silently. Bulk approval was the sharpest ethical question in the project. Removing it produces
+          rubber-stamping through fatigue, which is worse, so it stayed — with confidence visible before selection,
+          streamed results so review happens during the run, and an explicit action rather than a default.</li>
+      </ul>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Analytics</h3>
+      <p class="cs-section__text">
+        The analytics panel is not a dashboard and deliberately refuses to become one. It answers one question an
+        educator actually asks: <em>is this spread believable?</em> Highest, lowest and average. A score
+        distribution. Top and bottom five performers. A question-level view. That last one is the most used: a
+        question where the whole cohort scored badly is far more likely to be a badly worded question, or a topic
+        that wasn't taught well, than thirty students independently failing. It turns grading output into teaching
+        input. A flat distribution means the criteria didn't discriminate; a spike at zero means something is
+        broken. Both are caught here rather than discovered by a student.
+      </p>
+      <figure class="cs-figure">
+        <img src="img/assisty/analytics.jpg" alt="Analytics panel opened over the review surface: highest, average and lowest scores, a score distribution chart, and top and bottom five performers" loading="lazy" />
+        <figcaption><span class="cs-tag cs-tag--live">Live</span><span>Analytics opens over the review, never away from it. Every figure is clickable through to the students behind it.</span></figcaption>
+      </figure>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">Export</h3>
+      <p class="cs-section__text">
+        <strong>Download Results</strong> produces a CSV carrying student identifiers, assignment details,
+        qualitative feedback, and scores at both question and overall level. Faculty reconcile in spreadsheets,
+        submit marks through systems Assisty will never integrate with, and share results with co-instructors who
+        don't have accounts. Fighting that is pointless — and because a real export exists, nobody is
+        screenshotting a table to send to a colleague.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The rest of the application</h3>
+      <ul class="cs-list">
+        <li><strong>Courses and Assessments</strong> — the two entry points, unified so a Canvas course and a manual
+          assignment behave identically once opened.</li>
+        <li><strong>Rubrics</strong> — a library of approved rubrics, so a rubric refined over three cohorts is an
+          asset rather than something regenerated from scratch each term.</li>
+        <li><strong>Reports</strong> — submissions, grading progress and history across assignments, for programme
+          managers who need the view above a single cohort.</li>
+        <li><strong>Settings</strong> — integrations and API access, where connection state lives permanently
+          rather than inside a one-time modal.</li>
+        <li><strong>Help</strong> — a ten-step illustrated walkthrough inside the product.</li>
+      </ul>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">What runs underneath</h3>
+      <p class="cs-section__text">
+        React 19 and TypeScript, styled with Tailwind v4 against Untitled UI primitives built on React Aria, bundled
+        by Vite on the Rolldown toolchain. Server state runs through Redux Toolkit and RTK Query: one API slice,
+        generated hooks, and a rule the linter enforces — no component makes a raw request. Rich text is TipTap;
+        submissions render through a markdown pipeline and a custom PDF text renderer that recovers headings,
+        tables, footnotes and lists from a flat text stream, so a grader reads a document again, not a dump.
+      </p>
+      <p class="cs-section__text">
+        Formatting and linting run on Biome; the spacing and colour ratchets run on pre-commit through Lefthook.
+        Errors report to Rollbar. The whole frontend is 51,000 lines of TypeScript across 410 files, with the
+        grading workflow alone accounting for 124 of them.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2rem">The design system in practice</h3>
+      <p class="cs-section__text">Three rules carry most of the weight, and all three are executable:</p>
+      <ul class="cs-list">
+        <li><strong>Typography comes from the Text primitive.</strong> Name the role, never the size. Adding a
+          variant is allowed; overriding at the call site is not.</li>
+        <li><strong>Spacing comes from an indexed scale.</strong> A pre-commit check counts off-scale values and
+          fails when the count rises. The baseline came down from 383 to 101 as screens migrated.</li>
+        <li><strong>Colour lives in one theme file.</strong> No hex, rgb() or hsl() in a component — reach it
+          through a token or add one. Same ratchet, baseline 14.</li>
+      </ul>
+      <p class="cs-section__text">
+        Colour semantics are fixed rather than decorative. Green means settled — approved, graded, complete. Amber
+        means it needs you. Red belongs to destruction alone, which is why reset is the only red button in the
+        product and regrade is not. Once a colour has a meaning it cannot be borrowed to make a button look
+        livelier, and holding that line is most of what keeps a dense grading interface readable.
+      </p>
+    </section>
+
+    <!-- ===== DELIVER ===== -->
+    <section class="cs-section">
+      <p class="cs-phase">Phase 04 · Deliver <span class="cs-tag">Converge</span></p>
+      <h2 class="cs-section__title">What Shipped</h2>
+
+      <h3 class="cs-section__subtitle">Responsive is a definition of done, not a phase</h3>
+      <p class="cs-section__text">
+        A page is not migrated until it works at 375, 768 and 1440 with no horizontal scroll and nothing clipped.
+        Most old screens were fixed-width desktop layouts, so a 1:1 port would have reproduced something that was
+        never responsive. Every surface above has a phone layout that was designed, not tolerated.
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.5rem 0">
+        <img src="img/assisty/m-login.jpg" alt="Assisty login on a phone: the form alone, marketing panel dropped" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+        <img src="img/assisty/m-dashboard.jpg" alt="Assisty dashboard on a phone with count tiles and the attention queue" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+        <img src="img/assisty/m-workspace.jpg" alt="Assignment workspace on a phone showing three submission batches" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+        <img src="img/assisty/m-generating.jpg" alt="Rubric generation progress on a phone" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+        <img src="img/assisty/m-review.jpg" alt="Review surface on a phone: score gauge, overall feedback and strengths" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+        <img src="img/assisty/m-analytics.jpg" alt="Analytics panel on a phone" loading="lazy" style="width:100%;border-radius:12px;border:1px solid var(--border)" />
+      </div>
+      <p class="cs-section__text" style="font-size:0.9rem;color:var(--text-3)">
+        Login, dashboard, workspace, rubric generation, review and analytics at phone width. The two-pane review
+        collapses to a single scroll, which works but is the one surface still owed a proper design pass.
+      </p>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2.5rem">The review that found more than a layout</h3>
+      <p class="cs-section__text">
+        The login pass is a good argument for why a design review has to touch the code. The desktop card was fine.
+        Here is what the review actually caught:
+      </p>
+      <div class="cs-timeline">
+        <div class="cs-timeline__item">
+          <h3><span class="cs-tag cs-tag--must" style="margin-right:0.5rem">Must fix 1</span>"Keep me logged in" was a dead control</h3>
+          <p>The checkbox was read only by itself — the token was written to localStorage either way. A user on a
+            shared machine who deliberately unchecked it stayed signed in permanently. Now unchecked writes to
+            sessionStorage and clears the other store, so the two can never disagree.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3><span class="cs-tag cs-tag--must" style="margin-right:0.5rem">Must fix 2</span>Touch targets below WCAG 2.5.8</h3>
+          <p>The checkbox row measured 20px against a 24px minimum, and "Forgot password?" was bare 14px text.
+            Fixed by sizing the checkbox up and giving the link a 28px hit area with negative-margin padding —
+            growing the target without moving the row.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3><span class="cs-tag cs-tag--must" style="margin-right:0.5rem">Must fix 3</span>A carousel that could not be stopped</h3>
+          <p>Slides rotated every five seconds indefinitely and the dots jumped without pausing it — failing WCAG
+            2.2.2 and 2.3.3. It now pauses on hover and focus, and does not auto-advance at all under
+            prefers-reduced-motion.</p>
+        </div>
+      </div>
+
+      <h3 class="cs-section__subtitle" style="margin-top:2.5rem">The ratchets</h3>
+      <p class="cs-section__text">
+        A cleanup pass fixes a number. A ratchet fixes the trend. Both checks below run on pre-commit, count known
+        offenders, and <strong>fail only when the count rises</strong> — so the system can't regress while a
+        migration is still in flight, and every screen someone touches lowers the baseline.
+      </p>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr><th>Mechanism</th><th>What it prevents</th><th>Was</th><th>Now</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Text primitive</td><td>Size and weight chosen per call site</td><td class="is-bad">375 lone decisions</td><td class="is-good">6 named roles</td></tr>
+            <tr><td>Spacing check</td><td>Padding and gaps off the indexed scale</td><td class="is-bad">383</td><td class="is-good">101</td></tr>
+            <tr><td>Colour check</td><td>Raw hex or rgb() inside a component</td><td class="is-bad">unbounded</td><td class="is-good">14</td></tr>
+            <tr><td>Linter rule</td><td>The old component library returning</td><td class="is-bad">2 libraries</td><td class="is-good">error</td></tr>
+            <tr><td>Token file</td><td>Colour defined anywhere but the theme</td><td class="is-bad">4 undefined ramps</td><td class="is-good">all authored</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cs-accent-box">
+        <h4>The enforcement loop</h4>
+        <p style="margin:0">Decision → token → primitive → ratchet check → merged. When a count rises the build
+          fails and the argument goes back to the decision, not to a reviewer's opinion. The design rule and the
+          thing enforcing it live in the same repository, which is why the system holds.</p>
+      </div>
+    </section>
+
+    <!-- ===== KEY DESIGN DECISIONS ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Key Design Decisions</h2>
+      <div class="cs-timeline">
+        <div class="cs-timeline__item">
+          <h3>Approval before execution, not audit afterwards</h3>
+          <p>If an educator is going to stand behind two hundred grades, they agree to the standard <em>before</em>
+            it is applied. Rubric approval is a hard gate with per-question sign-off, not a review step you can skip.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>Every score shows its working, quoted from the source</h3>
+          <p>A score decomposes into criteria, each with the sentences from the submission it was drawn from and a
+            link that jumps to them in the document. It converts "do I trust this?" into "is this the right quote?"</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>Confidence as triage, not as an accuracy claim</h3>
+          <p>Three levels, not a percentage. Coarse enough to be truthful about what the judgement can support,
+            sharp enough to sort a pile of scripts by where attention is worth spending.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>Strictness as a batch parameter</h3>
+          <p>Educators were already adjusting scores in a consistent direction, one at a time. Exposing
+            lenient/moderate/strict makes an adjustment that was happening anyway explicit, uniform and reversible.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>An estimate that admits it is guessing</h3>
+          <p>The first build showed a spinner and educators reloaded the page. The replacement shows real progress
+            and says "Estimating" while it is estimating, rather than inventing a confident number.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>Prefill is framed as a draft, at the point of upload</h3>
+          <p>Extraction from an arbitrary document is probabilistic, and a misread mark allocation poisons an entire
+            cohort. The product says it might be wrong before you find out, not after.</p>
+        </div>
+        <div class="cs-timeline__item">
+          <h3>The destructive action is the only red one</h3>
+          <p>Regrade re-runs the model against the same approved rubric. Reset throws the whole workflow away. They
+            sound alike and are nothing alike, so only one is red, and only one is behind a confirmation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHALLENGES & LEARNINGS ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Challenges &amp; Learnings</h2>
+      <div class="cs-grid cs-grid--2">
+        <div class="cs-card">
+          <h4 class="cs-card__title">Designing on top of your own history</h4>
+          <p class="cs-card__text">Two API generations, two component libraries and three versions of the grading UI
+            were live at once. Nothing could be deleted on aesthetic grounds. The work was sequencing removals so
+            nothing regressed, not declaring a clean slate.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">Generated UI drifts in a specific way</h4>
+          <p class="cs-card__text">Every component had been produced to look correct <em>on its own</em>, and in
+            isolation each one was defensible. Drift that is invisible locally and obvious in aggregate is the
+            signature failure of building fast, and no amount of per-component review catches it.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">The ethics of a bulk action</h4>
+          <p class="cs-card__text">Bulk approval can turn a deliberate gate into a formality. Removing it produces
+            rubber-stamping through fatigue instead, which is worse. The resolution was safeguards around it —
+            streamed results, confidence visible before selection, an explicit action — not removal.</p>
+        </div>
+        <div class="cs-card">
+          <h4 class="cs-card__title">Enforcement beats intention</h4>
+          <p class="cs-card__text">The scale and the rules were documented long before the drift happened.
+            Documentation didn't stop it. A check that fails the build did. If a design rule isn't executable,
+            assume it is optional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FUTURE ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Future Enhancements</h2>
+      <p class="cs-section__text">Open in the repository today, stated plainly rather than tidied away:</p>
+      <ul class="cs-list">
+        <li>The <strong>contrast defect on inactive accordion rows</strong> is recorded in the audit and not yet
+          fixed. It needs a ground change or an ink step, not a fade.</li>
+        <li>Roughly <strong>360 text nodes</strong> outside the migrated screens still choose their own size and
+          weight. Mechanical now that the primitive exists — but not done.</li>
+        <li><strong>101 spacing utilities</strong> remain off-scale. The baseline comes down screen by screen.</li>
+        <li>Below the large breakpoint, <strong>two independent scroll panes can't survive on a phone</strong>. The
+          merge works but hasn't had a proper design pass.</li>
+        <li><strong>Rubric reuse across cohorts</strong> exists as a library but not yet as a workflow — a rubric
+          refined over three terms should be offered, not searched for.</li>
+      </ul>
+    </section>
+
+    <!-- ===== REFLECTION ===== -->
+    <section class="cs-section">
+      <h2 class="cs-section__title">Reflection</h2>
+      <p class="cs-section__text">
+        This was the first product I have taken from research all the way to production code myself, and the first
+        where the design system's real artefact was a script rather than a library.
+      </p>
+      <blockquote class="cs-blockquote">
+        Key takeaway: putting a model near a high-stakes judgement is not a modelling problem. Trust is built by the
+        interface — approval before execution, evidence attached to every number, and a human signature the product
+        cannot forge.
+      </blockquote>
+
+      <h3 class="cs-section__subtitle" style="margin-top:1.5rem">What made it work</h3>
+      <ul class="cs-list">
+        <li><strong>Measuring the artefact</strong> — "it feels unreliable" was unusable until it became "77% of
+          text is 14px". That turned a taste argument into an engineering one, and engineering arguments can be
+          closed.</li>
+        <li><strong>Finding the single root cause</strong> — two symptoms, one absent primitive. Fixing the cause
+          retired both.</li>
+        <li><strong>Building it myself</strong> — the prototype and the product were the same artefact, so the spec
+          never went stale and no decision waited on someone else's sprint.</li>
+        <li><strong>Writing the process down as tooling</strong> — briefs, IA and reviews versioned with the code,
+          so the method outlives my attention on it.</li>
+      </ul>
+
+      <div class="cs-feature-box" style="margin-top:2rem">
+        <h3 class="cs-feature-box__title">Personal Growth</h3>
+        <div class="cs-grid cs-grid--2">
+          <div>
+            <ul class="cs-list">
+              <li>Designing the <em>number of places a decision can be made</em>, rather than designing each decision.</li>
+              <li>Working inside a live codebase with two generations of everything, without demanding a rewrite.</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="cs-list">
+              <li>Writing design critique in computed pixels and contrast ratios, so it survives a room I'm not in.</li>
+              <li>Knowing which rules to make executable — and accepting that the rest are suggestions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="cs-section__text" style="margin-top:2rem;font-size:0.8rem;color:var(--text-3)">
+        Assisty — Great Learning, 2025–2026. Figures measured from the production repository in September 2026.
+        Live screenshots are from the shipped product, September 2026; before-state captures are committed in
+        the repository.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="cs-footer">
+    <p class="cs-footer__text">&copy; 2026 B. Sivarami Reddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Shared JS (spotlight, smooth scroll, GA) -->
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
