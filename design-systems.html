@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GL Design Systems — The Design System AI Agents Follow | B. Sivarami Reddy</title>
+  <meta name="description"
+    content="Three design systems for three audiences at Great Learning, extracted from Figma and delivered inside the skills AI coding agents auto-load, so humans and agents build from the same source of truth." />
+  <meta name="keywords" content="Design Systems, Design Engineering, AI Agents, Claude Code, Figma, Material 3, MUI, Great Learning, Vibe Coding" />
+  <meta name="author" content="B. Sivarami Reddy" />
+  <link rel="canonical" href="https://uxsiva.onrender.com/design-systems.html" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF03MQCYHW"></script>
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/design-systems.css">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="GL Design Systems — The Design System AI Agents Follow" />
+  <meta property="og:description"
+    content="Correct data in a format the consumer won't open is worthless. How three design systems became something AI agents actually build from." />
+  <meta property="og:image" content="https://uxsiva.onrender.com/img/glds/cover.jpg" />
+  <meta property="og:url" content="https://uxsiva.onrender.com/design-systems.html" />
+  <meta property="og:site_name" content="B. Sivarami Reddy Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GL Design Systems — The Design System AI Agents Follow" />
+  <meta name="twitter:description"
+    content="3 systems, 85 components, every value extracted from Figma — and the format pivot that made AI agents use them." />
+  <meta name="twitter:image" content="https://uxsiva.onrender.com/img/glds/cover.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+
+  <!-- Cursor Spotlight Overlay -->
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar__left">
+      <a href="index.html" class="topbar__back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Back
+      </a>
+      <span class="topbar__sep">/</span>
+      <span class="topbar__title">GL Design Systems</span>
+    </div>
+    <div class="topbar__right">
+      <div class="topbar__info">
+        <span class="topbar__name">B. Sivarami Reddy</span><br>
+        <span class="topbar__role">Principal Designer &amp; UX Design Manager</span>
+      </div>
+      <img src="img/avatar.png" alt="Profile" class="topbar__avatar" />
+    </div>
+  </header>
+
+  <main class="ds">
+
+    <!-- ===== HERO ===== -->
+    <section class="ds-hero">
+      <div>
+        <p class="ds-eyebrow">Design systems engineering · Great Learning</p>
+        <h1 class="ds-hero__title">The design system <em>AI agents</em> actually follow.</h1>
+        <p class="ds-hero__lede">
+          Great Learning had three products, one loosely held design system, and a growing share of front-end
+          code written by AI agents. I split it into three first-class systems, extracted every component value
+          from Figma, and moved the specs into the files agents already read. Now people and agents build
+          from the same source.
+        </p>
+      </div>
+
+      <dl class="ds-meta">
+        <div>
+          <dt>My role</dt>
+          <dd>Design engineer, end to end: Figma decoder, component specs, agent skills, handoff</dd>
+        </div>
+        <div>
+          <dt>Scope</dt>
+          <dd>3 design systems · 85 components · 1 repository</dd>
+        </div>
+        <div>
+          <dt>Built for</dt>
+          <dd>Engineers, PMs &amp; vibe coders, designers, content, and AI agents</dd>
+        </div>
+        <div>
+          <dt>Shipped as</dt>
+          <dd>System docs, Claude skills, and a 14-slide handoff deck</dd>
+        </div>
+      </dl>
+
+      <figure>
+        <div class="ds-specimens" role="img" aria-label="The same primary action rendered in three postures: a rounded touch button for Magna, a dense outlined toolbar for Jedi, and a bold conversion CTA for GLDS-Web.">
+          <div class="ds-specimen">
+            <div class="ds-specimen__stage"><span class="sp-magna">Continue learning</span></div>
+            <div class="ds-specimen__label"><strong>Magna</strong><span>mobile-first · 48dp touch</span></div>
+          </div>
+          <div class="ds-specimen">
+            <div class="ds-specimen__stage">
+              <div class="sp-jedi"><span>Save</span><span>Export</span><span>Filter</span><span>⋯</span></div>
+            </div>
+            <div class="ds-specimen__label"><strong>Jedi</strong><span>desktop-first · dense</span></div>
+          </div>
+          <div class="ds-specimen">
+            <div class="ds-specimen__stage">
+              <div class="sp-web"><b>Become job-ready in 6 months</b><span>Apply now</span></div>
+            </div>
+            <div class="ds-specimen__label"><strong>GLDS-Web</strong><span>conversion-first · 1 CTA</span></div>
+          </div>
+        </div>
+        <figcaption class="ds-caption">One intent, a primary action, shown in each system's posture. The rules come from the audience, not from a shared template.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 00 · THE BRIEF ===== -->
+    <section class="ds-chapter" aria-labelledby="brief">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">00</span>
+        <h2 class="ds-chapter__title" id="brief">One system was quietly serving three worlds</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          Great Learning runs a <strong>learner app</strong>, a suite of <strong>internal staff tools</strong>, and a
+          <strong>public marketing site</strong>. In practice, all three used Magna, the learner system, and the other two
+          improvised around it. They don't share a runtime, a component vocabulary, or an audience, so each one
+          drifted on its own.
+        </p>
+        <p>
+          Then AI coding agents arrived: Claude Code, Cursor, and PMs and designers generating UI from prompts.
+          Without an authoritative source, an agent fills the gaps with values it makes up.
+        </p>
+      </div>
+      <blockquote class="ds-quote">
+        When a person guesses a hex value wrong, it's one bug. When an agent invents values every time, the
+        system erodes at machine speed.
+      </blockquote>
+      <div class="ds-prose" style="margin-top:2rem">
+        <p>
+          So the brief was never "make it prettier." It was: <strong>three surfaces, three first-class systems,
+          one source of truth that humans and agents build from in the same way.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 01 · PURPOSE DEFINES THE SYSTEM ===== -->
+    <section class="ds-chapter" aria-labelledby="purpose">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">01</span>
+        <h2 class="ds-chapter__title" id="purpose">Equal, but distinct. Purpose sets the rules.</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          The founding decision: define each system by <strong>who it serves</strong>, not by a shared component list.
+          No abstraction layer forcing them into a fake common API. Each system's audience decided its rules,
+          down to the breakpoint.
+        </p>
+      </div>
+
+      <div class="ds-systems">
+        <article class="ds-system ds-system--magna">
+          <h3 class="ds-system__name">Magna</h3>
+          <p class="ds-system__for">Learners and students</p>
+          <dl>
+            <dt>Stack</dt><dd>Tamagui + React Native Web, Material 3</dd>
+            <dt>Posture</dt><dd>Warm, generous, touch-first</dd>
+          </dl>
+          <p class="ds-system__rule">Mobile-first at 360dp. Bottom navigation exists only at compact widths.</p>
+        </article>
+        <article class="ds-system ds-system--jedi">
+          <h3 class="ds-system__name">Jedi</h3>
+          <p class="ds-system__for">Staff, faculty and ops, all day on big monitors</p>
+          <dl>
+            <dt>Stack</dt><dd>MUI v6 + React</dd>
+            <dt>Posture</dt><dd>Dense, flat, keyboard-driven</dd>
+          </dl>
+          <p class="ds-system__rule">Desktop-first, min 1024px. Tables scroll horizontally instead of silently reflowing.</p>
+        </article>
+        <article class="ds-system ds-system--web">
+          <h3 class="ds-system__name">GLDS-Web</h3>
+          <p class="ds-system__for">Prospective learners, the public</p>
+          <dl>
+            <dt>Stack</dt><dd>Rails + HTML / CSS / jQuery</dd>
+            <dt>Posture</dt><dd>Scannable, persuasive</dd>
+          </dl>
+          <p class="ds-system__rule">Mobile-first is mandatory. At 360px, without scrolling, the hero answers: what is this, what do I get, what do I do.</p>
+        </article>
+      </div>
+
+      <figure class="ds-arch" aria-label="Architecture: a shared shell wraps three independent component engines">
+        <div class="ds-arch__shell">
+          <b>Shared shell</b>
+          <span class="ds-chip">showcase app</span>
+          <span class="ds-chip">navigation</span>
+          <span class="ds-chip">routing</span>
+          <span class="ds-chip">search</span>
+          <span class="ds-chip">publishing</span>
+          <span class="ds-chip ds-chip--ai">AI distribution</span>
+        </div>
+        <div class="ds-arch__engines">
+          <div class="ds-engine"><strong>Magna</strong><span>/magna · self-contained</span></div>
+          <div class="ds-engine"><strong>Jedi</strong><span>/jedi · self-contained</span></div>
+          <div class="ds-engine"><strong>GLDS-Web</strong><span>/glds-web · self-contained</span></div>
+          <div class="ds-engine ds-engine--next">+ a 4th system is a new folder, not a rewrite</div>
+        </div>
+      </figure>
+      <p class="ds-caption">Shared infrastructure on the outside, independent engines inside. The libraries never share code with each other.</p>
+    </section>
+
+    <!-- ===== 02 · CHANGELOG ===== -->
+    <section class="ds-chapter" aria-labelledby="changelog">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">02</span>
+        <h2 class="ds-chapter__title" id="changelog">The changelog of one Switch</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          The deepest work started with blunt feedback: the component definitions "weren't working." There were
+          two separate failures, found months apart, and each taught a different lesson. One component, the Switch,
+          shows the whole path.
+        </p>
+      </div>
+
+      <div class="ds-log">
+
+        <article class="ds-entry">
+          <span class="ds-ver">v0</span>
+          <div>
+            <h3 class="ds-entry__title">Names without substance</h3>
+            <div class="ds-entry__body">
+              <p>
+                The original definitions named components without defining them. "A button, primary variant." No
+                border, no height, no radius, no padding.
+              </p>
+              <p>
+                Asked to build a Magna button, an agent had no choice but to invent values, and invented values
+                are off-system by definition.
+              </p>
+            </div>
+            <div class="ds-status"><span class="ds-pill ds-pill--bad">Failure 1 · nothing to build from</span></div>
+          </div>
+          <div class="ds-code">
+            <div class="ds-code__bar"><span>switch.json</span><span class="ds-meter">defined <i style="--fill:6%"></i></span></div>
+<pre><span class="c">{</span>
+  <span class="k">"name"</span>: <span class="s">"Switch"</span>,
+  <span class="k">"variant"</span>: <span class="s">"default"</span>,
+  <span class="k">"description"</span>: <span class="s">"A toggle switch"</span>
+<span class="c">}</span>
+<span class="x">// colour? size? states? the agent guesses.</span></pre>
+          </div>
+        </article>
+
+        <article class="ds-entry">
+          <span class="ds-ver">v1</span>
+          <div>
+            <h3 class="ds-entry__title">Go to the source and read it</h3>
+            <div class="ds-entry__body">
+              <p>
+                The only honest source of a component's values is its <strong>Figma file</strong>, not the docs and
+                not anyone's memory. A .fig file is a ZIP around a kiwi-encoded binary, so I built a decoder that
+                unpacks it into a node tree: <strong>about 286,000 nodes for Magna alone.</strong>
+              </p>
+              <p>
+                Then came the real job: finding the component library in that tree and filtering out Android
+                system kits, flag icons, glyphs, payment logos and archived canvases. Missing a real component and
+                including a decoy break the output in the same way.
+              </p>
+              <p>
+                The first extractor read values off each component's <strong>outer frame</strong>. That was fine for
+                Buttons and empty for Switch, Checkbox and Radio, whose colour lives deeper, on the track and thumb.
+              </p>
+            </div>
+            <div class="ds-status"><span class="ds-pill ds-pill--warn">~⅓ of files came out hollow</span></div>
+          </div>
+          <div class="ds-code">
+            <div class="ds-code__bar"><span>switch.json</span><span class="ds-meter">defined <i style="--fill:18%"></i></span></div>
+<pre><span class="c">{</span>
+  <span class="k">"name"</span>: <span class="s">"Switch"</span>,
+  <span class="k">"width"</span>: <span class="n">52</span>,
+  <span class="k">"height"</span>: <span class="n">32</span>
+<span class="c">}</span>
+<span class="x">// outer frame only. track, thumb and outline</span>
+<span class="x">// are three levels down, unread.</span></pre>
+          </div>
+        </article>
+
+        <article class="ds-entry">
+          <span class="ds-ver">v1.1</span>
+          <div>
+            <h3 class="ds-entry__title">Owning the gap instead of footnoting it</h3>
+            <div class="ds-entry__body">
+              <p>
+                I shipped v1 anyway, with a politely worded "limitations" note. Stakeholders pushed back hard on
+                quality, and they were right.
+              </p>
+              <p>
+                Instead of defending the work, I put the evidence <strong>side by side</strong>: the flagship Button was
+                rich, a third of the library was hollow, and three dimensions (interaction states, dark mode and
+                per-component type) had never been specced at all. Naming that plainly put the work back on track.
+              </p>
+            </div>
+            <div class="ds-status"><span class="ds-pill ds-pill--warn">A limitations note is often a known defect with cover</span></div>
+          </div>
+          <div class="ds-code">
+            <div class="ds-code__bar"><span>audit.txt</span><span>side by side</span></div>
+<pre><span class="h">Button</span>     <span class="s">colour  size  radius  padding  type</span>
+<span class="h">Switch</span>     <span class="x">——————  size  ——————  ———————  ————</span>
+<span class="h">Checkbox</span>   <span class="x">——————  size  ——————  ———————  ————</span>
+<span class="h">Radio</span>      <span class="x">——————  size  ——————  ———————  ————</span>
+
+<span class="c">never specced, for any component:</span>
+  <span class="x">interaction states · dark mode · typography</span></pre>
+          </div>
+        </article>
+
+        <article class="ds-entry">
+          <span class="ds-ver">v2</span>
+          <div>
+            <h3 class="ds-entry__title">Deep extraction: correct, and still ignored</h3>
+            <div class="ds-entry__body">
+              <p>
+                The rewrite walks <strong>every descendant node</strong>, finds fills wherever they actually live, reads
+                type from text nodes, and sorts variants into three groups: canonical, interaction state, and dark mode.
+                It runs across all three systems: <strong>85 components</strong>, including all 43 of Jedi's, decoded
+                from its own Figma.
+              </p>
+              <p>
+                The JSON was now right, and agents <strong>still didn't use it</strong>. A JSON file in a folder is
+                passive. Nothing prompts an LLM to open it mid-task, and nothing says its numbers are non-negotiable.
+              </p>
+            </div>
+            <div class="ds-status"><span class="ds-pill ds-pill--bad">Failure 2 · right data, wrong format</span></div>
+          </div>
+          <div class="ds-code">
+            <div class="ds-code__bar"><span>switch.json</span><span class="ds-meter">defined <i style="--fill:92%"></i></span></div>
+<pre><span class="c">{</span>
+  <span class="k">"track"</span>:  <span class="c">{</span> <span class="k">"fill"</span>, <span class="k">"outline"</span>, <span class="k">"borderWidth"</span> <span class="c">}</span>,
+  <span class="k">"thumb"</span>:  <span class="c">{</span> <span class="k">"fill"</span>, <span class="k">"size"</span> <span class="c">}</span>,
+  <span class="k">"states"</span>: <span class="c">{</span> <span class="k">"hover"</span>, <span class="k">"pressed"</span>, <span class="k">"focused"</span>, <span class="k">"disabled"</span> <span class="c">}</span>,
+  <span class="k">"dark"</span>:   <span class="c">{</span> <span class="c">…overrides</span> <span class="c">}</span>,
+  <span class="k">"keyboard"</span>, <span class="k">"contrast"</span>, <span class="k">"responsive"</span>
+<span class="c">}</span>
+<span class="x">// complete. sitting in /components. unopened.</span></pre>
+          </div>
+        </article>
+
+        <article class="ds-entry ds-entry--win">
+          <span class="ds-ver">v3</span>
+          <div>
+            <h3 class="ds-entry__title">Change the delivery, not the data</h3>
+            <div class="ds-entry__body">
+              <p>
+                The instinct was to add more data. That was the wrong move. From the validated JSON I generated a
+                <strong>markdown reference</strong>: variant × size tables with hex, tokens, metrics, states, dark mode,
+                keyboard behaviour and computed contrast.
+              </p>
+              <p>
+                Then I put a <strong>mandatory-read rule and a component picker</strong> inside each system's Claude
+                skill, the file that auto-loads when an agent starts work. The JSON stays underneath as the
+                schema-validated source that generates the markdown, so the two can't drift.
+              </p>
+            </div>
+            <div class="ds-status"><span class="ds-pill ds-pill--good">Format beat data</span></div>
+          </div>
+          <div class="ds-code">
+            <div class="ds-code__bar"><span>magna/SKILL.md</span><span>auto-loads</span></div>
+<pre><span class="h">## Components — read before building UI</span>
+<span class="s">If a component is listed here, its values are law.</span>
+<span class="s">If it's missing, say so and flag a deviation.</span>
+
+<span class="c">| Component | Reference           |</span>
+<span class="c">|-----------|---------------------|</span>
+<span class="c">|</span> Switch    <span class="c">|</span> <span class="k">components.md#switch</span> <span class="c">|</span>
+<span class="c">|</span> Checkbox  <span class="c">|</span> <span class="k">components.md#checkbox</span><span class="c">|</span>
+<span class="c">  … 1 hop from where the agent already is</span></pre>
+          </div>
+        </article>
+
+      </div>
+      <p class="ds-caption">Code panels are illustrative excerpts that show the shape of each definition; real values are omitted.</p>
+    </section>
+
+    <!-- ===== 03 · WHERE THE AGENT LOOKS ===== -->
+    <section class="ds-chapter" aria-labelledby="looks">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">03</span>
+        <h2 class="ds-chapter__title" id="looks">Put the truth where the agent already looks</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          Before the pivot, the right values were two hops away and nothing pointed to them. After it, they sit inside
+          the one file every agent reads first, written as a rule rather than a suggestion.
+        </p>
+      </div>
+
+      <div class="ds-paths">
+        <figure class="ds-path">
+          <figcaption class="ds-path__label">v2 · data exists</figcaption>
+          <div class="ds-flow">
+            <div class="ds-node ds-node--agent">Agent starts task</div>
+            <div class="ds-edge">auto-loads</div>
+            <div class="ds-node">SKILL.md<small>Design rules in prose</small></div>
+            <div class="ds-edge ds-edge--broken">no pointer, never opened</div>
+            <div class="ds-node ds-node--far">/components/*.json<small>Correct, complete, invisible</small></div>
+            <div class="ds-edge ds-edge--broken">fills the gap itself</div>
+            <div class="ds-node">Invented values<small>Off-system UI</small></div>
+          </div>
+        </figure>
+        <figure class="ds-path ds-path--after">
+          <figcaption class="ds-path__label">v3 · data is delivered</figcaption>
+          <div class="ds-flow">
+            <div class="ds-node ds-node--agent">Agent starts task</div>
+            <div class="ds-edge ds-edge--ok">auto-loads</div>
+            <div class="ds-node ds-node--inner">SKILL.md
+              <small>Rules + "values are law" + component picker</small>
+            </div>
+            <div class="ds-nest">
+              <code>components.md</code>
+              <span>Variant × size tables, states, dark mode, keyboard, contrast</span>
+              <code style="color:var(--text-3)">↑ generated from schema-validated JSON</code>
+            </div>
+            <div class="ds-edge ds-edge--ok">builds from canon</div>
+            <div class="ds-node">On-system UI + coverage report<small>Assumptions and deviations listed, not hidden</small></div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== 04 · SKILLS SHAPED BY PURPOSE ===== -->
+    <section class="ds-chapter" aria-labelledby="skills">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">04</span>
+        <h2 class="ds-chapter__title" id="skills">Three skills, each shaped by its system</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          The skill is what gets the system to an agent. Every system ships one in two parts, design rules and content
+          rules, but they aren't copies of one template. Each system's purpose decides what comes first, and what
+          is forbidden is spelled out as carefully as what is allowed.
+        </p>
+      </div>
+
+      <div class="ds-matrix" role="table" aria-label="Skill contents per system">
+        <div class="ds-matrix__row ds-matrix__head" role="row">
+          <span role="columnheader"></span>
+          <span role="columnheader">Magna</span>
+          <span role="columnheader">Jedi</span>
+          <span role="columnheader">GLDS-Web</span>
+        </div>
+        <div class="ds-matrix__row" role="row">
+          <b role="rowheader">Design rules lead with</b>
+          <span role="cell" data-sys="Magna">M3 role tokens, Lucide-only icons, 48dp touch targets</span>
+          <span role="cell" data-sys="Jedi">Import from @gl/jedi, never @mui/material directly; flat, outlined surfaces; closed type scale</span>
+          <span role="cell" data-sys="GLDS-Web">CSS custom-property tokens; Freedom Blue reserved for CTAs; one filled CTA per band</span>
+        </div>
+        <div class="ds-matrix__row" role="row">
+          <b role="rowheader">Content rules</b>
+          <span role="cell" data-sys="Magna">Olympus product writing rules</span>
+          <span role="cell" data-sys="Jedi">Olympus rules, plus student-vs-faculty labels and status language</span>
+          <span role="cell" data-sys="GLDS-Web">SEO and keyword-density rules: mandatory here, meaningless in an app</span>
+        </div>
+        <div class="ds-matrix__row ds-matrix__never" role="row">
+          <b role="rowheader">Never generate</b>
+          <span role="cell" data-sys="Magna">Hardcoded colours instead of tokens</span>
+          <span role="cell" data-sys="Jedi">Colour-only status; happy-path-only components</span>
+          <span role="cell" data-sys="GLDS-Web">Fabricated urgency on marketing pages</span>
+        </div>
+      </div>
+
+      <ol class="ds-protocol" aria-label="Shared AI engagement protocol">
+        <li><strong>Enumerate every state</strong>before generating anything.</li>
+        <li><strong>Ask, assume, or build</strong>and state which one, every time.</li>
+        <li><strong>Reuse before creating</strong>with existing components first.</li>
+        <li><strong>Close with a coverage report</strong>that lists assumptions and deviations.</li>
+      </ol>
+      <p class="ds-caption">The shared engagement protocol, embedded in all three skills.</p>
+    </section>
+
+    <!-- ===== 05 · PROSE TO CONTRACT ===== -->
+    <section class="ds-chapter" aria-labelledby="contract">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">05</span>
+        <h2 class="ds-chapter__title" id="contract">If the system preaches it, encode it</h2>
+      </div>
+      <div class="ds-prose">
+        <p>
+          The old docs described responsiveness and accessibility in prose, and nothing a machine could follow.
+          Both became <strong>per-component fields</strong>. Contrast is computed rather than assumed, and AA failures
+          are flagged inside the definition, which gave designers a concrete list to fix.
+        </p>
+      </div>
+      <div class="ds-contract">
+        <div class="ds-prose-card">
+          <small>Before</small>
+          "Components should be accessible and responsive."
+        </div>
+        <div class="ds-code">
+          <div class="ds-code__bar"><span>after · every component</span><span>machine-readable</span></div>
+<pre><span class="k">keyboard</span>:
+  <span class="s">Space</span>   <span class="c">→</span> toggle
+  <span class="s">Tab</span>     <span class="c">→</span> move focus
+<span class="k">touchTarget</span>:  <span class="n">48dp</span> minimum
+<span class="k">contrast</span>:     computed per variant <span class="c">· AA fails flagged</span>
+<span class="k">responsive</span>:
+  <span class="k">behavior</span>:   per system rule <span class="c">(360dp / 1024px)</span></pre>
+        </div>
+      </div>
+      <div class="ds-prose" style="margin-top:2rem">
+        <p>
+          The same idea applies to content. A first attempt copied Great Learning's whole writing-review workflow
+          into the docs, including intake questions and output formats. The fix was to keep <strong>only the rules</strong>,
+          nested under the right section. Where a rule sits mattered as much as what it says.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 06 · WHAT SHIPPED ===== -->
+    <section class="ds-chapter" aria-labelledby="shipped">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">06</span>
+        <h2 class="ds-chapter__title" id="shipped">What shipped</h2>
+      </div>
+
+      <div class="ds-numbers">
+        <div class="ds-num"><b>3</b><span>first-class design systems in one repository</span></div>
+        <div class="ds-num"><b>85</b><span>components, every value traced to a Figma file</span></div>
+        <div class="ds-num"><b>286k</b><span>Figma nodes decoded for Magna alone</span></div>
+        <div class="ds-num"><b>100%</b><span>of definitions schema-valid</span></div>
+      </div>
+
+      <!-- TODO: add the before/after agent test here (same prompt with and without the skill:
+           off-token values, missing states, contrast failures). It's the strongest proof this page can carry. -->
+
+      <div class="ds-prose" style="margin-top:2.5rem">
+        <p>
+          Each system now has a <strong>self-contained design-system doc</strong> covering colour and type, responsiveness,
+          content rules, the AI protocol, the embedded component reference, and anti-patterns. Every definition holds
+          exact dev values <strong>and</strong> plain-language guidance (what it is, when to use it, when not to) in the
+          same file, so an engineer's spec and a PM's explanation can't fall out of sync.
+        </p>
+      </div>
+
+      <div class="ds-audience">
+        <div class="ds-aud"><strong>Engineers</strong>Real, buildable values and a coverage report that turns "looks done" into a checklist.</div>
+        <div class="ds-aud"><strong>PMs &amp; vibe coders</strong>Skills that auto-load, so prompts produce UI in the right system without reading source.</div>
+        <div class="ds-aud"><strong>Designers</strong>Accessibility and behaviour decisions survive the handoff into generated code.</div>
+        <div class="ds-aud"><strong>Content</strong>Writing rules versioned and shipped next to the components.</div>
+        <div class="ds-aud ds-aud--ai"><strong>AI agents</strong>Treated as a real consumer with their own needs, which is why the format changed.</div>
+      </div>
+    </section>
+
+    <!-- ===== 07 · CARRY FORWARD ===== -->
+    <section class="ds-chapter" aria-labelledby="forward">
+      <div class="ds-chapter__head">
+        <span class="ds-chapter__num">07</span>
+        <h2 class="ds-chapter__title" id="forward">What I'd carry forward</h2>
+      </div>
+      <div class="ds-lessons">
+        <div class="ds-lesson">
+          <span class="ds-lesson__n">01</span>
+          <h3>Format beats data.</h3>
+          <p>For an AI consumer, correct data in a file it never opens is worthless. The win came from putting the truth where the agent already looks and framing it as a rule.</p>
+        </div>
+        <div class="ds-lesson">
+          <span class="ds-lesson__n">02</span>
+          <h3>Extract, never guess.</h3>
+          <p>Every value traces back to a Figma file. Once a hex value is hand-waved, the system has started to drift.</p>
+        </div>
+        <div class="ds-lesson">
+          <span class="ds-lesson__n">03</span>
+          <h3>Name the gap early.</h3>
+          <p>The side-by-side of hollow and rich components moved the work further than any amount of polish. Owning a defect beats footnoting it.</p>
+        </div>
+      </div>
+
+      <div class="ds-end">
+        <span>Great Learning · Design systems engineering. Code excerpts are illustrative; real values are withheld.</span>
+        <span>Related: <a href="olympus.html">Olympus (Magna)</a> · <a href="Jedi.html">Jedi Dashboard</a></span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="cs-footer">
+    <p class="cs-footer__text">&copy; 2026 B. Sivarami Reddy. All rights reserved.</p>
+  </footer>
+
+  <!-- Shared JS (spotlight, smooth scroll, GA) -->
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/siva/work/uxsiva/img/grader/*.mov /Users/siva/work/uxsiva/img/grader/*.mp4)",
+      "Bash(grep -E \"\\(CONTEXT|index\\\\.html|style\\\\.css\\)$\")",
+      "Bash(git pull:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:snehanjan.com)",
+      "Bash(open /Users/siva/work/uxsiva/index.html)",
+      "Read(//Users/siva/**)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keygen -t ed25519 -C \"ux.siva@gmail.com\" -f ~/.ssh/id_ed25519 -N \"\")",
+      "Bash(git remote *)",
+      "Bash(pbcopy)",
+      "Bash(ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null && git push origin main)",
+      "Bash(open index.html)",
+      "Bash(sips -s format jpeg -Z 1400 img/olympus-2.jpg --out scratch-og.jpg)",
+      "Bash(sips -c 630 1200 scratch-og.jpg --out og-image.jpg)",
+      "Bash(sips -s format png -Z 180 img/avatar.png --out apple-touch-icon.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight og-image.jpg apple-touch-icon.png)",
+      "Bash(perl -i -pe 's{<div class=\"section__label\">\\(.*?\\)</div>}{<h2 class=\"section__label\">$1</h2>}g' index.html)",
+      "Bash(perl -i -pe 's{\\(<img class=\"card__image\" src=\"img/jedi-2\\\\.jpg\" alt=\"Jedi Dashboard\" loading=\"lazy\"\\)}{$1 width=\"160\" height=\"106\"}' index.html)",
+      "Bash(perl -i -pe 's{\\(<img class=\"card__image\" src=\"img/shine-2\\\\.jpg\" alt=\"GL Shine CRM\" loading=\"lazy\"\\)}{$1 width=\"160\" height=\"106\"}' index.html)",
+      "Bash(perl -i -pe 's{\\(<img class=\"card__image\" src=\"img/cv-1\\\\.jpg\" alt=\"AI Enabled CV Review\" loading=\"lazy\"\\)}{$1 width=\"160\" height=\"106\"}' index.html)",
+      "Bash(perl -i -pe 's{\\(<img class=\"card__image\" src=\"img/olympus-2\\\\.jpg\" alt=\"Olympus LMS Enhancement\" loading=\"lazy\"\\)}{$1 width=\"160\" height=\"106\"}' index.html)",
+      "Bash(perl -i -pe 's{\\(<img class=\"card__image\" src=\"img/grader/4\\\\.png\" alt=\"GlaideGrader AI-Powered Grading Platform\" loading=\"lazy\"\\)}{$1 width=\"160\" height=\"106\"}' index.html)",
+      "Bash(git config *)",
+      "Bash(git diff *)",
+      "Bash(git check-ignore *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m ' *)"
+    ],
+    "additionalDirectories": [
+      "/Users/siva/.ssh"
+    ]
+  }
+}
