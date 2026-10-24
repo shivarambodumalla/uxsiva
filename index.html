@@ -248,209 +248,222 @@
         <!-- ===== PROJECTS ===== -->
         <section id="projects" class="section">
             <h2 class="section__label">Work</h2>
-            <div class="card-group projects-group">
+            <div class="work">
 
                 <!-- Assisty -->
-                <a href="assisty.html" class="card card--project">
-                    <img class="card__image" src="img/assisty/dashboard.jpg" alt="Assisty grading assistant dashboard" loading="lazy" width="160" height="106" style="object-fit:cover;object-position:top left" />
-                    <div>
-                        <h3 class="card__title">
-                            Assisty: Making AI Grading Accountable
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            A grading assistant that drafts a rubric from marked scripts, grades the cohort against it,
-                            and hands back every score with its evidence. Audited the live product, found one root cause,
-                            rebuilt the system around two human gates, and shipped the production front end myself.<br><br>
-                            <strong>Impact:</strong> 785 commits, 51k lines of TypeScript, 375 &rarr; 6 typography roles, ratchets that fail the build<br>
-                            <strong>Role:</strong> Principal UX Designer (IC) | Research &rarr; production code
+                <a href="assisty.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/assisty.jpg" alt="Assisty review screen: a script graded against the rubric, with the evidence behind each score" loading="lazy" width="1400" height="738" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">AI grading &middot; Design engineering</p>
+                        <h3 class="work__title">Assisty <span>Making AI grading accountable</span></h3>
+                        <p class="work__hook">
+                            A grading assistant that drafts a rubric from scripts an educator has already marked, grades
+                            the whole cohort against it, and returns every score with its evidence. I audited the live
+                            product, traced the problems to one root cause, rebuilt it around two human approval gates,
+                            and shipped the production front end myself.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">AI/ML</li>
-                            <li class="tag">Design Engineering</li>
-                            <li class="tag">Design Systems</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>785</b>commits, research to production</li>
+                            <li><b>375 &rarr; 6</b>typography decisions to roles</li>
+                            <li><b>51k</b>lines of TypeScript</li>
                         </ul>
+                        <div class="work__foot"><span>Principal UX Designer (IC)</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- GL Design Systems -->
-                <a href="design-systems.html" class="card card--project">
-                    <img class="card__image" src="img/glds/cover.jpg" alt="GL Design Systems case study cover" loading="lazy" width="160" height="106" style="object-fit:cover;object-position:top left" />
-                    <div>
-                        <h3 class="card__title">
-                            GL Design Systems: The Design System AI Agents Follow
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Split one loosely held system into three, for learners, staff and the public. Extracted every
-                            component value from Figma and moved the specs into the skills AI agents auto-load, so
-                            people and agents build from the same source.<br><br>
-                            <strong>Impact:</strong> 3 systems, 85 components traced to Figma, 100% schema-valid<br>
-                            <strong>Role:</strong> Design Engineer | Figma decoder &rarr; agent skills
+                <a href="design-systems.html" class="work-item">
+                    <div class="work__media work__media--center"><img src="img/cards/glds.jpg" alt="One primary action shown in the three systems: Magna, Jedi and GLDS-Web" loading="lazy" width="1600" height="800" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Design systems &middot; AI agents</p>
+                        <h3 class="work__title">GL Design Systems <span>The design system AI agents follow</span></h3>
+                        <p class="work__hook">
+                            One loosely held system was serving a learner app, staff tools and the marketing site, while
+                            AI agents wrote more and more of the front end. I split it into three systems, extracted every
+                            component value from Figma, and put the specs inside the skills agents load automatically.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">Design Systems</li>
-                            <li class="tag">AI Agents</li>
-                            <li class="tag">Design Engineering</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>3</b>design systems, one repository</li>
+                            <li><b>85</b>components traced to Figma</li>
+                            <li><b>100%</b>schema-valid definitions</li>
                         </ul>
+                        <div class="work__foot"><span>Design Engineer</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- GlaideGrader -->
-                <a href="speedgrader.html" class="card card--project">
-                    <img class="card__image" src="img/grader/4.png" alt="GlaideGrader AI-Powered Grading Platform" loading="lazy" width="160" height="106" style="object-fit:cover;object-position:top left" />
-                    <div>
-                        <h3 class="card__title">
-                            GlaideGrader: AI-Powered Grading Platform
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Redesigned Great Learning's evaluator grading experience with AI quality checks, mobile
-                            support, and analytics &mdash; replacing Canvas LMS SpeedGrader across 200+ evaluators.<br><br>
-                            <strong>Impact:</strong> 45% faster grading, 95% satisfaction (from 62%), &#8377;15L annual savings<br>
-                            <strong>Role:</strong> Lead Designer + Product Manager | AI + Mobile UX
+                <a href="speedgrader.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/glaidegrader.jpg" alt="GlaideGrader grading view with a submission and rubric side by side" loading="lazy" width="1400" height="743" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">AI + mobile &middot; Evaluator tools</p>
+                        <h3 class="work__title">GlaideGrader <span>Grading evaluators rely on</span></h3>
+                        <p class="work__hook">
+                            200+ evaluators graded in Canvas SpeedGrader, a classroom tool, and lost 70% of their time to
+                            navigation, slow loads and workarounds. I redesigned grading around how they actually work,
+                            with AI quality checks, mobile grading and analytics.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">AI/ML</li>
-                            <li class="tag">EdTech</li>
-                            <li class="tag">Evaluator Tools</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>45%</b>faster grading per batch</li>
+                            <li><b>62 &rarr; 95%</b>evaluator satisfaction</li>
+                            <li><b>&#8377;15L</b>saved a year</li>
                         </ul>
+                        <div class="work__foot"><span>Lead Product Designer + PM</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
+
                 <!-- Content Delivery Automation -->
-                <a href="content-delivery.html" class="card card--project">
-                    <img class="card__image" src="img/delivery/[web] Batch Delivery Planning 0.jpg" alt="Content Delivery Automation" loading="lazy" style="object-fit:contain;background:var(--bg-alt)" />
-                    <div>
-                        <h3 class="card__title">
-                            Content Delivery Automation
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Designed week-based delivery automation that eliminated 1 full day of manual PM work per
-                            week. Academic Ops creates a master plan once &mdash; it syncs automatically to all 500+ program
-                            managers with smart conflict resolution.<br><br>
-                            <strong>Impact:</strong> 1 day &rarr; 0 hrs/week, &#8377;1.2Cr+ annual savings, 340 &rarr; 0 support tickets<br>
-                            <strong>Role:</strong> Lead IC Designer | Workflow Automation
+                <a href="content-delivery.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/delivery.jpg" alt="Batch delivery planning screen with weekly content schedule" loading="lazy" width="1400" height="995" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Workflow automation &middot; Academic ops</p>
+                        <h3 class="work__title">Content Delivery <span>From a day of PM work a week to zero</span></h3>
+                        <p class="work__hook">
+                            500+ program managers planned every content release by hand, a full day each week. Now
+                            Academic Ops builds one master plan, and it syncs to every batch with conflict resolution
+                            built in.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">Automation</li>
-                            <li class="tag">Workflow Design</li>
-                            <li class="tag">Enterprise Tool</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>1 day &rarr; 0</b>PM hours a week</li>
+                            <li><b>&#8377;1.2Cr+</b>saved a year</li>
+                            <li><b>340 &rarr; 0</b>monthly tickets</li>
                         </ul>
+                        <div class="work__foot"><span>Lead Product Designer (IC)</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Jedi Dashboard -->
-                <a href="Jedi.html" class="card card--project">
-                    <img class="card__image" src="img/jedi-2.jpg" alt="Jedi Dashboard" loading="lazy" width="160" height="106" />
-                    <div>
-                        <h3 class="card__title">
-                            Jedi Dashboard
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Created internal operations dashboard that increased team productivity 50-80% through
-                            automation. Designed and prototyped data visualization using React.<br><br>
-                            <strong>Impact:</strong> &#8377;15cr annual savings through reduced manual work<br>
-                            <strong>Role:</strong> IC Designer | React prototyping
+                <a href="Jedi.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/jedi.jpg" alt="Jedi dashboard showing a batch summary, learner activity and payments" loading="lazy" width="998" height="710" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Operations dashboard &middot; Program managers</p>
+                        <h3 class="work__title">Jedi Dashboard <span>Nearly twice the learners, same effort</span></h3>
+                        <p class="work__hook">
+                            One dashboard for program managers: learner segments, one-click actions, follow-up reminders,
+                            and a full log of emails, calls and WhatsApp messages. Each PM now handles nearly twice as
+                            many learners.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">Dashboard</li>
-                            <li class="tag">Operations</li>
-                            <li class="tag">Automation</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>120 &rarr; 200</b>learners per PM</li>
+                            <li><b>80%</b>more capacity</li>
+                            <li><b>3</b>channels logged: email, calls, WhatsApp</li>
                         </ul>
+                        <div class="work__foot"><span>IC Designer &middot; React prototyping</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Shine -->
-                <a href="shine.html" class="card card--project">
-                    <img class="card__image" src="img/shine-2.jpg" alt="GL Shine CRM" loading="lazy" width="160" height="106" />
-                    <div>
-                        <h3 class="card__title">
-                            GL Shine CRM
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Built sales CRM from 0&rarr;1, replacing LeadSquared and boosting task compliance 28%. Led
-                            end-to-end UX while managing 2 designers. Delivered migration in 4 months across 500+
-                            sales users.<br><br>
-                            <strong>Impact:</strong> &#8377;15cr annual savings<br>
-                            <strong>Role:</strong> Lead Designer | Product collaboration
+                <a href="shine.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/shine.jpg" alt="GL Shine dashboard with compliance, calls and critical tasks" loading="lazy" width="1000" height="564" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Sales CRM &middot; 0 &rarr; 1</p>
+                        <h3 class="work__title">GL Shine <span>Making compliance part of selling</span></h3>
+                        <p class="work__hook">
+                            Two earlier attempts had failed to balance sales targets with SOP compliance. I researched with
+                            about 30 learning consultants to find out why, then led the design of Shine v3, which replaced
+                            the third-party CRM for 500+ sales users.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">Sales CRM</li>
-                            <li class="tag">Compliance</li>
-                            <li class="tag">Desktop App</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>&#8377;50Cr</b>tool costs saved a year</li>
+                            <li><b>85%</b>SOP compliance</li>
+                            <li><b>4.65/5</b>rating on the sales floor</li>
                         </ul>
+                        <div class="work__foot"><span>Lead UX Designer &middot; team of 2</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- CV Review -->
-                <a href="cvreview.html" class="card card--project">
-                    <img class="card__image" src="img/cv-1.jpg" alt="AI Enabled CV Review" loading="lazy" width="160" height="106" />
-                    <div>
-                        <h3 class="card__title">
-                            AI Enabled CV Review
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Built AI-powered resume review tool using prompt engineering to validate student CVs and
-                            provide feedback. Designed validation logic and confidence scoring.<br><br>
-                            <strong>Impact:</strong> 70% reduction in manual review time<br>
-                            <strong>Role:</strong> AI Product Designer | Prompt Engineer
+                <a href="cvreview.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/cvreview.jpg" alt="AI resume builder home with resume list and enhance options" loading="lazy" width="1400" height="1050" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">AI product &middot; Career services</p>
+                        <h3 class="work__title">AI CV Review <span>Replacing slow, costly mentor reviews</span></h3>
+                        <p class="work__hook">
+                            Mentor-led resume reviews cost about &#8377;10Cr a year, took 48 hours, and varied in quality
+                            from mentor to mentor. I designed an AI review with role-aware inline feedback and confidence
+                            scoring.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">AI/ML</li>
-                            <li class="tag">UX Research</li>
-                            <li class="tag">Career Services</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>48h &rarr; 10m</b>per review</li>
+                            <li><b>$1.2M</b>saved a year</li>
+                            <li><b>72%</b>of AI suggestions accepted</li>
                         </ul>
+                        <div class="work__foot"><span>AI Product Designer</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- GLA Mobile App -->
-                <a href="gla.html" class="card card--project">
-                    <img class="card__image" style="height:auto;border:none;object-fit:contain;"
-                        src="img/GLA-app-mock.png" alt="Great Learning Academy Mobile App" loading="lazy" />
-                    <div>
-                        <h3 class="card__title">
-                            Great Learning Academy's Mobile App
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Designed mobile learning app from 0&rarr;1 for Great Learning Academy. Led user research,
-                            created design system, and worked with dev team on React Native implementation.<br><br>
-                            <strong>Result:</strong> 4.5&#9733; app store rating, 100K+ downloads<br>
-                            <strong>Role:</strong> IC Designer | Mobile UX
+                <a href="gla.html" class="work-item">
+                    <div class="work__media work__media--device"><img src="img/GLA-app-mock.png" alt="Great Learning Academy app showing a completed Pro course" loading="lazy" width="628" height="840" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Mobile app &middot; 1.6M+ learners</p>
+                        <h3 class="work__title">Great Learning Academy <span>From course portal to career companion</span></h3>
+                        <p class="work__hook">
+                            72% of learners study on their phones, but the app was little more than a learning portal. I
+                            redesigned it and launched Academy Pro, with AI resume help and guided learning paths.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">UX Design</li>
-                            <li class="tag">Mobile App</li>
-                            <li class="tag">Figma</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>3.2 &rarr; 4.6&#9733;</b>user rating</li>
+                            <li><b>+60%</b>learning hours</li>
+                            <li><b>3.2&times;</b>retention vs free tier</li>
                         </ul>
+                        <div class="work__foot"><span>IC Designer &middot; Mobile UX</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Olympus LMS -->
-                <a href="olympus.html" class="card card--project">
-                    <img class="card__image" src="img/olympus-2.jpg" alt="Olympus LMS Enhancement" loading="lazy" width="160" height="106" />
-                    <div>
-                        <h3 class="card__title">
-                            Olympus LMS Enhancement
-                            <span class="card__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-                        </h3>
-                        <p class="card__description">
-                            Redesigned learning platform serving 50K+ daily users, improving engagement 32% and
-                            achieving 5&#9733; satisfaction. Led research, prototyped key features in React, and shipped
-                            across web and mobile.<br><br>
-                            <strong>Impact:</strong> 35% faster release cycles, &#8377;20cr retained revenue<br>
-                            <strong>Role:</strong> Lead Designer | IC + Management
+                <a href="olympus.html" class="work-item">
+                    <div class="work__media"><img src="img/cards/olympus.jpg" alt="Olympus LMS video lesson with notes and AI mentor panel" loading="lazy" width="1400" height="1053" /></div>
+                    <div class="work__body">
+                        <div class="work__intro">
+                            <p class="work__meta">Learning platform &middot; Web &amp; mobile</p>
+                        <h3 class="work__title">Olympus LMS <span>A clearer campus for PG learners</span></h3>
+                        <p class="work__hook">
+                            Post-graduate learners, with anywhere from 0 to 25 years of experience, couldn't tell where
+                            they stood in a course. I led the research and the redesign into a structured, personalised
+                            campus across web and mobile.
                         </p>
-                        <ul class="tags">
-                            <li class="tag">LMS</li>
-                            <li class="tag">EdTech</li>
-                            <li class="tag">Web &amp; Mobile</li>
+                        </div>
+                        <div class="work__side">
+                            <ul class="work__stats">
+                            <li><b>45k+</b>learners</li>
+                            <li><b>4.78/5</b>post-launch score</li>
+                            <li><b>57.5k</b>videos downloaded</li>
                         </ul>
+                        <div class="work__foot"><span>Lead Designer &middot; IC + management</span><span class="work__cta">Read case study</span></div>
+                        </div>
                     </div>
                 </a>
 
