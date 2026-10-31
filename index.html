@@ -40,757 +40,450 @@
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <div class="spotlight" aria-hidden="true"></div>
-    <a href="#content" class="skip-link">Skip to Content</a>
+    <a href="#content" class="skip-link">Skip to content</a>
 
-    <!-- ===== TOP NAVIGATION ===== -->
+    <!-- ===== NAV ===== -->
     <header class="topnav">
-        <a href="/" class="topnav__logo">B. Sivarami Reddy</a>
-        <nav class="topnav__nav" id="primary-nav" aria-label="Main navigation">
-            <ul class="topnav__links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#expertise">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
+        <a href="/" class="topnav__logo disp">B. Sivarami Reddy</a>
+        <nav class="nl" aria-label="Primary">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#skills">Skills</a>
         </nav>
-        <a href="mailto:ux.siva@gmail.com" class="topnav__cta">Hire me</a>
-        <button class="topnav__toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+        <a href="mailto:ux.siva@gmail.com" class="btn btn-acc">Hire me</a>
     </header>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-        <div class="hero__inner">
-            <div class="hero__content">
-                <p class="hero__greeting">Available for new opportunities</p>
-                <h1 class="hero__headline">I build <span class="gradient">products,</span><br>not just <span class="hero__underline">prototypes.</span></h1>
-
-                <p class="hero__subtitle">I help teams define the product, design the experience, build production-ready front ends with AI, and improve them using real customer feedback.</p>
-                <p class="hero__subtitle hero__subtitle--muted">Product strategy. UX. AI workflows. Front-end engineering. I work across the product lifecycle to help teams ship faster without compromising quality.</p>
-
-                <div class="hero__chips">
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--violet">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
-                        </span>Product Strategy
-                    </span>
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--green">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l1.7 6.8L20.5 11l-6.8 1.7L12 19.5l-1.7-6.8L3.5 11l6.8-1.7z"/></svg>
-                        </span>AI Products
-                    </span>
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--violet">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
-                        </span>Product Owner
-                    </span>
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--green">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-                        </span>Design Systems
-                    </span>
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--violet">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 8 4 12 8 16"/><polyline points="16 8 20 12 16 16"/><line x1="13" y1="6" x2="11" y2="18"/></svg>
-                        </span>Front-End
-                    </span>
-                    <span class="chip">
-                        <span class="chip__ico chip__ico--amber">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2l1.3 5L17 8.3 12.3 9.6 11 15l-1.3-5.4L5 8.3 9.7 7z"/><path d="M18 13l.7 2.6L21 16.3l-2.3.7L18 20l-.7-3-2.3-.7 2.3-.7z"/></svg>
-                        </span>Prompt Engineering
-                    </span>
-                </div>
-
-                <div class="hero__ctas">
-                    <a href="#projects" class="btn btn--primary">See my work
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="8 7 17 7 17 16"/></svg>
-                    </a>
-                    <a href="mailto:ux.siva@gmail.com" class="btn btn--ghost">Say hello
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="hero__visual" aria-hidden="true">
-                <div class="viz">
-                    <div class="viz__glow"></div>
-                    <div class="viz__dots"></div>
-
-                    <!-- code editor card -->
-                    <div class="viz__code">
-                        <div class="viz__code-bar">
-                            <span class="viz__lights"><i></i><i></i><i></i></span>
-                            <span class="viz__tab">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 8 5 12 9 16"/><polyline points="15 8 19 12 15 16"/></svg>
-                                ActivationCard.tsx
-                            </span>
-                        </div>
-<pre class="viz__src"><span class="tk-kw">export function</span> <span class="tk-fn">ActivationCard</span><span class="tk-pun">() {</span>
-  <span class="tk-kw">const</span> { rate, delta } = <span class="tk-fn">useMetric</span><span class="tk-pun">()</span>
-  <span class="tk-kw">return</span> (
-    <span class="tk-pun">&lt;</span><span class="tk-tag">Card</span> <span class="tk-attr">title</span>=<span class="tk-str">"Activation"</span><span class="tk-pun">&gt;</span>
-      <span class="tk-pun">&lt;</span><span class="tk-tag">Stat</span> <span class="tk-attr">value</span>={rate} <span class="tk-attr">trend</span>={delta} <span class="tk-pun">/&gt;</span>
-    <span class="tk-pun">&lt;/</span><span class="tk-tag">Card</span><span class="tk-pun">&gt;</span>
-  )
-}</pre>
-                        <span class="viz__status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 7"/></svg>
-                            Shipped to production
-                        </span>
-                    </div>
-
-                    <!-- dashboard card -->
-                    <div class="viz__dash">
-                        <div class="viz__side">
-                            <span class="viz__side-ico is-active">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg>
-                            </span>
-                            <span class="viz__side-ico">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16" y2="16"/></svg>
-                            </span>
-                            <span class="viz__side-ico">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="4"/></svg>
-                            </span>
-                            <span class="viz__side-ico">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-                            </span>
-                        </div>
-                        <div class="viz__main">
-                            <div class="viz__head">
-                                <div class="viz__stat">
-                                    <span class="viz__label">Activation rate</span>
-                                    <span class="viz__value">72%</span>
-                                </div>
-                                <span class="viz__delta">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 16 10 10 14 14 20 8"/><polyline points="14 8 20 8 20 14"/></svg>
-                                    18%
-                                </span>
-                            </div>
-                            <div class="viz__panel viz__line">
-                                <span class="viz__panel-label">Weekly active users</span>
-                                <svg viewBox="0 0 220 70" preserveAspectRatio="none">
-                                    <defs>
-                                        <linearGradient id="vizArea" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
-                                            <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 208 30 214 26 L 214 70 L 0 70 Z" fill="url(#vizArea)"/>
-                                    <path d="M0 50 C 25 50 30 22 55 28 S 95 56 120 40 S 165 8 195 20 S 208 30 214 26" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="viz__row">
-                                <div class="viz__panel viz__donut">
-                                    <span class="viz__panel-label">Task success</span>
-                                    <span class="viz__ring">
-                                        <svg viewBox="0 0 60 60">
-                                            <circle cx="30" cy="30" r="22" fill="none" stroke="#e8e6f5" stroke-width="8"/>
-                                            <circle cx="30" cy="30" r="22" fill="none" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="19.3" transform="rotate(-90 30 30)"/>
-                                        </svg>
-                                        <span class="viz__donut-val">86%</span>
-                                    </span>
-                                </div>
-                                <div class="viz__panel viz__bars">
-                                    <span class="viz__panel-label">Releases</span>
-                                    <span class="viz__bars-track">
-                                        <span style="height:38%"></span>
-                                        <span style="height:62%"></span>
-                                        <span style="height:48%"></span>
-                                        <span style="height:70%"></span>
-                                        <span style="height:100%"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- annotation -->
-                    <div class="viz__note">
-                        <svg class="viz__note-arrow" viewBox="0 0 70 60" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M66 8 C 40 6 12 16 6 40"/>
-                            <path d="M6 40 L 2 30 M6 40 L 16 38"/>
-                        </svg>
-                        <span class="viz__note-text">From strategy<br>to impact</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
 
     <main id="content">
 
-        <!-- ===== ABOUT ===== -->
-        <section id="about" class="section about">
-            <h2 class="section__label">About</h2>
-            <p>
-                I'm a product designer who ships the code too. Most designers hand off specs and move on &mdash; I stay until it's in production, then I check the numbers.
-            </p>
-            <p>
-                Over 10+ years at <a href="https://www.greatlearning.in/" target="_blank" rel="noopener noreferrer">Great Learning</a>, I've designed and built AI-powered SaaS products across learning, assessment, and internal operations &mdash; from discovery through production. I owned AI products like Speed Grader, QC Checker, and a Resume Builder: defining the prompts, evaluation rules, and confidence thresholds, then building the front ends in React and Next.js with Claude Code and Cursor. That work cut manual effort by 70% and pulled validation cycles from two weeks down to three days.
-            </p>
-            <p>
-                Along the way I built an enterprise design system that cut UI inconsistencies by 60% and sped delivery by 35%, plus an AI design-system assistant that helps designers and engineers generate on-brand UI. Move me to strategy and I've driven &#8377;50Cr+ in annual impact, grown engagement 32%, and led a CRM migration off LeadSquared. I'm equally at home in a Figma file, a pull request, or a roadmap &mdash; often in the same week.
-            </p>
-            <p>
-                <strong>Currently looking for:</strong> a Principal or Staff Product Designer role on an AI-powered SaaS product, where designing the experience and building the front end happen together.
-            </p>
+        <!-- ===== HERO ===== -->
+        <section id="top" class="hero wrap">
+            <h1>I design the product, then <span>ship the front end.</span></h1>
+            <div class="hero__row">
+                <p class="hero__lead">Principal product designer for AI-powered SaaS. I define the product, design the experience, build the production front end with Claude Code and Cursor, then check the numbers after launch.</p>
+                <div class="hero__ctas">
+                    <a href="#work" class="btn btn-dark">See my work
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-line">Say hello</a>
+                </div>
+            </div>
+
+            <!-- Product viewer -->
+            <div class="viewer-wrap">
+                <div class="viewer">
+                    <div class="viewer__bar">
+                        <span></span><span></span><span></span>
+                        <span class="mono">Assisty, AI grading</span>
+                    </div>
+                    <div class="shot"><img src="img/assisty/review.jpg" alt="Assisty grading review screen with rubric scores, strengths and areas to improve"></div>
+                </div>
+                <div class="tabs" role="group" aria-label="Choose a product to preview">
+                    <button type="button" class="tab" aria-selected="true"
+                        data-title="Assisty, AI grading" data-img="img/assisty/review.jpg"
+                        data-alt="Assisty grading review screen with rubric scores, strengths and areas to improve">
+                        <span class="tab__label disp">Assisty</span>
+                        <span class="tab__stat">785 commits, research to production</span>
+                    </button>
+                    <button type="button" class="tab" aria-selected="false"
+                        data-title="GL Shine, sales CRM" data-img="img/cards/shine.jpg"
+                        data-alt="GL Shine sales CRM dashboard in dark mode">
+                        <span class="tab__label disp">GL Shine</span>
+                        <span class="tab__stat">85% SOP compliance, 500+ sales users</span>
+                    </button>
+                    <button type="button" class="tab" aria-selected="false"
+                        data-title="Content Delivery, academic ops" data-img="img/delivery/%5Bweb%5D%20Batch%20Delivery%20Planning%200.jpg"
+                        data-alt="Content Delivery plan builder for academic operations">
+                        <span class="tab__label disp">Content Delivery</span>
+                        <span class="tab__stat">PM planning time cut to zero hours</span>
+                    </button>
+                    <button type="button" class="tab" aria-selected="false" data-contain
+                        data-title="Great Learning Academy, mobile" data-img="img/GLA-app-mock.png"
+                        data-alt="Great Learning Academy mobile app course screen">
+                        <span class="tab__label disp">Academy app</span>
+                        <span class="tab__stat">4.6 rating, up from 3.2</span>
+                    </button>
+                </div>
+            </div>
         </section>
 
-        <!-- ===== PROJECTS ===== -->
-        <section id="projects" class="section">
-            <h2 class="section__label">Work</h2>
-            <div class="work">
+        <!-- ===== WORK ===== -->
+        <section id="work" class="work wrap sec-pad">
+            <div class="mono kicker">Selected work</div>
+            <h2 class="sec-title">Products. Every one measured after launch.</h2>
 
-                <!-- Assisty -->
-                <a href="assisty.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/assisty.jpg" alt="Assisty review screen: a script graded against the rubric, with the evidence behind each score" loading="lazy" width="1400" height="738" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">AI grading &middot; Design engineering</p>
-                        <h3 class="work__title">Assisty <span>Making AI grading accountable</span></h3>
-                        <p class="work__hook">
-                            A grading assistant that drafts a rubric from scripts an educator has already marked, grades
-                            the whole cohort against it, and returns every score with its evidence. I audited the live
-                            product, traced the problems to one root cause, rebuilt it around two human approval gates,
-                            and shipped the production front end myself.
-                        </p>
+            <div class="work__bar">
+                <div class="filters" role="group" aria-label="Filter work by type">
+                    <button type="button" class="fbtn" data-filter="all" aria-pressed="true">All work <span class="mono">9</span></button>
+                    <button type="button" class="fbtn" data-filter="ai" aria-pressed="false">AI products <span class="mono">3</span></button>
+                    <button type="button" class="fbtn" data-filter="ops" aria-pressed="false">Operations <span class="mono">3</span></button>
+                    <button type="button" class="fbtn" data-filter="mobile" aria-pressed="false">Mobile and web <span class="mono">3</span></button>
+                    <button type="button" class="fbtn" data-filter="systems" aria-pressed="false">Design systems <span class="mono">2</span></button>
+                </div>
+                <p class="work__count" aria-live="polite">Showing 9 of 9 products</p>
+            </div>
+
+            <!-- Feature project -->
+            <a href="assisty.html" class="card feature" data-tags="ai systems">
+                <div class="shot"><img src="img/cards/assisty.jpg" alt="Assisty overall feedback, rubric strengths and areas to improve"></div>
+                <div class="feature__body">
+                    <div>
+                        <div class="mono kicker">AI grading · Design engineering</div>
+                        <h3 class="ttl">Assisty</h3>
+                        <p class="feature__tagline disp">Making AI grading accountable</p>
+                        <p class="feature__text">A grading assistant that grades a whole cohort and returns every score with its evidence, rebuilt around two human approval gates.</p>
+                    </div>
+                    <div>
+                        <div class="m-row"><span class="disp">785</span><span>commits, from research to production</span></div>
+                        <div class="m-row"><span class="disp">51k</span><span>lines of TypeScript shipped</span></div>
+                        <div class="m-row"><span class="disp">6 roles</span><span>replaced 375 typography decisions</span></div>
+                        <div class="card__foot">
+                            <span>Principal UX Designer, individual contributor</span>
+                            <span class="go">Read case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>785</b>commits, research to production</li>
-                            <li><b>375 &rarr; 6</b>typography decisions to roles</li>
-                            <li><b>51k</b>lines of TypeScript</li>
-                        </ul>
-                        <div class="work__foot"><span>Principal UX Designer (IC)</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project grid -->
+            <div class="grid2">
+                <a href="design-systems.html" class="card" data-tags="systems">
+                    <div class="card__head">
+                        <h3 class="ttl">GL Design Systems</h3>
+                        <p class="card__tagline disp">The design system AI agents follow</p>
+                        <div class="metrics">
+                            <div><div class="disp">3</div><div>design systems, one repository</div></div>
+                            <div><div class="disp">85</div><div>components traced to Figma</div></div>
+                            <div><div class="disp">100%</div><div>schema-valid definitions</div></div>
+                        </div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/glds.jpg" alt="Three design systems side by side: Magna, Jedi and GLDS-Web" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Design systems · AI agents</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- GL Design Systems -->
-                <a href="design-systems.html" class="work-item">
-                    <div class="work__media work__media--center"><img src="img/cards/glds.jpg" alt="One primary action shown in the three systems: Magna, Jedi and GLDS-Web" loading="lazy" width="1600" height="800" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Design systems &middot; AI agents</p>
-                        <h3 class="work__title">GL Design Systems <span>The design system AI agents follow</span></h3>
-                        <p class="work__hook">
-                            One loosely held system was serving a learner app, staff tools and the marketing site, while
-                            AI agents wrote more and more of the front end. I split it into three systems, extracted every
-                            component value from Figma, and put the specs inside the skills agents load automatically.
-                        </p>
+                <a href="speedgrader.html" class="card" data-tags="ai mobile">
+                    <div class="card__head">
+                        <h3 class="ttl">GlaideGrader</h3>
+                        <p class="card__tagline disp">Grading evaluators rely on</p>
+                        <div class="metrics">
+                            <div><div class="disp">45%</div><div>faster grading per batch</div></div>
+                            <div><div class="disp">95%</div><div>evaluator satisfaction, up from 62%</div></div>
+                            <div><div class="disp">₹15L</div><div>saved a year</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>3</b>design systems, one repository</li>
-                            <li><b>85</b>components traced to Figma</li>
-                            <li><b>100%</b>schema-valid definitions</li>
-                        </ul>
-                        <div class="work__foot"><span>Design Engineer</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/glaidegrader.jpg" alt="GlaideGrader submission view with notebook and rubric panel" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">AI and mobile · Evaluator tools</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- GlaideGrader -->
-                <a href="speedgrader.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/glaidegrader.jpg" alt="GlaideGrader grading view with a submission and rubric side by side" loading="lazy" width="1400" height="743" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">AI + mobile &middot; Evaluator tools</p>
-                        <h3 class="work__title">GlaideGrader <span>Grading evaluators rely on</span></h3>
-                        <p class="work__hook">
-                            200+ evaluators graded in Canvas SpeedGrader, a classroom tool, and lost 70% of their time to
-                            navigation, slow loads and workarounds. I redesigned grading around how they actually work,
-                            with AI quality checks, mobile grading and analytics.
-                        </p>
+                <a href="content-delivery.html" class="card" data-tags="ops">
+                    <div class="card__head">
+                        <h3 class="ttl">Content Delivery</h3>
+                        <p class="card__tagline disp">From a day of PM work a week to zero</p>
+                        <div class="metrics">
+                            <div><div class="disp">0</div><div>PM hours a week, down from one day</div></div>
+                            <div><div class="disp">₹1.2Cr+</div><div>saved a year</div></div>
+                            <div><div class="disp">0</div><div>monthly tickets, down from 340</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>45%</b>faster grading per batch</li>
-                            <li><b>62 &rarr; 95%</b>evaluator satisfaction</li>
-                            <li><b>&#8377;15L</b>saved a year</li>
-                        </ul>
-                        <div class="work__foot"><span>Lead Product Designer + PM</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/delivery.jpg" alt="Content Delivery plan with scheduled deliveries and assessments" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Workflow automation · Academic ops</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-
-                <!-- Content Delivery Automation -->
-                <a href="content-delivery.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/delivery.jpg" alt="Batch delivery planning screen with weekly content schedule" loading="lazy" width="1400" height="995" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Workflow automation &middot; Academic ops</p>
-                        <h3 class="work__title">Content Delivery <span>From a day of PM work a week to zero</span></h3>
-                        <p class="work__hook">
-                            500+ program managers planned every content release by hand, a full day each week. Now
-                            Academic Ops builds one master plan, and it syncs to every batch with conflict resolution
-                            built in.
-                        </p>
+                <a href="Jedi.html" class="card" data-tags="ops">
+                    <div class="card__head">
+                        <h3 class="ttl">Jedi Dashboard</h3>
+                        <p class="card__tagline disp">Nearly twice the learners, same effort</p>
+                        <div class="metrics">
+                            <div><div class="disp">200</div><div>learners per PM, up from 120</div></div>
+                            <div><div class="disp">80%</div><div>more capacity</div></div>
+                            <div><div class="disp">3</div><div>channels logged: email, calls, WhatsApp</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>1 day &rarr; 0</b>PM hours a week</li>
-                            <li><b>&#8377;1.2Cr+</b>saved a year</li>
-                            <li><b>340 &rarr; 0</b>monthly tickets</li>
-                        </ul>
-                        <div class="work__foot"><span>Lead Product Designer (IC)</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/jedi.jpg" alt="Jedi dashboard showing a batch with learners, payments and activities" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Operations dashboard · Program managers</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Jedi Dashboard -->
-                <a href="Jedi.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/jedi.jpg" alt="Jedi dashboard showing a batch summary, learner activity and payments" loading="lazy" width="998" height="710" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Operations dashboard &middot; Program managers</p>
-                        <h3 class="work__title">Jedi Dashboard <span>Nearly twice the learners, same effort</span></h3>
-                        <p class="work__hook">
-                            One dashboard for program managers: learner segments, one-click actions, follow-up reminders,
-                            and a full log of emails, calls and WhatsApp messages. Each PM now handles nearly twice as
-                            many learners.
-                        </p>
+                <a href="shine.html" class="card" data-tags="ops">
+                    <div class="card__head">
+                        <h3 class="ttl">GL Shine</h3>
+                        <p class="card__tagline disp">Making compliance part of selling</p>
+                        <div class="metrics">
+                            <div><div class="disp">₹50Cr</div><div>tool costs saved a year</div></div>
+                            <div><div class="disp">85%</div><div>SOP compliance</div></div>
+                            <div><div class="disp">4.65/5</div><div>rating on the sales floor</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>120 &rarr; 200</b>learners per PM</li>
-                            <li><b>80%</b>more capacity</li>
-                            <li><b>3</b>channels logged: email, calls, WhatsApp</li>
-                        </ul>
-                        <div class="work__foot"><span>IC Designer &middot; React prototyping</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/shine.jpg" alt="GL Shine sales CRM home screen in dark mode" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Sales CRM · Built from scratch</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Shine -->
-                <a href="shine.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/shine.jpg" alt="GL Shine dashboard with compliance, calls and critical tasks" loading="lazy" width="1000" height="564" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Sales CRM &middot; 0 &rarr; 1</p>
-                        <h3 class="work__title">GL Shine <span>Making compliance part of selling</span></h3>
-                        <p class="work__hook">
-                            Two earlier attempts had failed to balance sales targets with SOP compliance. I researched with
-                            about 30 learning consultants to find out why, then led the design of Shine v3, which replaced
-                            the third-party CRM for 500+ sales users.
-                        </p>
+                <a href="cvreview.html" class="card" data-tags="ai">
+                    <div class="card__head">
+                        <h3 class="ttl">AI CV Review</h3>
+                        <p class="card__tagline disp">Replacing slow, costly mentor reviews</p>
+                        <div class="metrics">
+                            <div><div class="disp">10 min</div><div>per review, down from 48 hours</div></div>
+                            <div><div class="disp">$1.2M</div><div>saved a year</div></div>
+                            <div><div class="disp">72%</div><div>of AI suggestions accepted</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>&#8377;50Cr</b>tool costs saved a year</li>
-                            <li><b>85%</b>SOP compliance</li>
-                            <li><b>4.65/5</b>rating on the sales floor</li>
-                        </ul>
-                        <div class="work__foot"><span>Lead UX Designer &middot; team of 2</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/cvreview.jpg" alt="AI resume builder with a list of saved resumes" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">AI product · Career services</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- CV Review -->
-                <a href="cvreview.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/cvreview.jpg" alt="AI resume builder home with resume list and enhance options" loading="lazy" width="1400" height="1050" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">AI product &middot; Career services</p>
-                        <h3 class="work__title">AI CV Review <span>Replacing slow, costly mentor reviews</span></h3>
-                        <p class="work__hook">
-                            Mentor-led resume reviews cost about &#8377;10Cr a year, took 48 hours, and varied in quality
-                            from mentor to mentor. I designed an AI review with role-aware inline feedback and confidence
-                            scoring.
-                        </p>
+                <a href="gla.html" class="card" data-tags="mobile">
+                    <div class="card__head">
+                        <h3 class="ttl">Great Learning Academy</h3>
+                        <p class="card__tagline disp">From course portal to career companion</p>
+                        <div class="metrics">
+                            <div><div class="disp">4.6</div><div>user rating, up from 3.2</div></div>
+                            <div><div class="disp">+60%</div><div>learning hours</div></div>
+                            <div><div class="disp">3.2x</div><div>retention versus free tier</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>48h &rarr; 10m</b>per review</li>
-                            <li><b>$1.2M</b>saved a year</li>
-                            <li><b>72%</b>of AI suggestions accepted</li>
-                        </ul>
-                        <div class="work__foot"><span>AI Product Designer</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide shot--contain"><img src="img/GLA-app-mock.png" alt="Great Learning Academy mobile app course screen" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Mobile app · 1.6M+ learners</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
 
-                <!-- GLA Mobile App -->
-                <a href="gla.html" class="work-item">
-                    <div class="work__media work__media--device"><img src="img/GLA-app-mock.png" alt="Great Learning Academy app showing a completed Pro course" loading="lazy" width="628" height="840" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Mobile app &middot; 1.6M+ learners</p>
-                        <h3 class="work__title">Great Learning Academy <span>From course portal to career companion</span></h3>
-                        <p class="work__hook">
-                            72% of learners study on their phones, but the app was little more than a learning portal. I
-                            redesigned it and launched Academy Pro, with AI resume help and guided learning paths.
-                        </p>
+                <a href="olympus.html" class="card" data-tags="mobile">
+                    <div class="card__head">
+                        <h3 class="ttl">Olympus LMS</h3>
+                        <p class="card__tagline disp">A clearer campus for PG learners</p>
+                        <div class="metrics">
+                            <div><div class="disp">45k+</div><div>learners</div></div>
+                            <div><div class="disp">4.78/5</div><div>post-launch score</div></div>
+                            <div><div class="disp">57.5k</div><div>videos downloaded</div></div>
                         </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>3.2 &rarr; 4.6&#9733;</b>user rating</li>
-                            <li><b>+60%</b>learning hours</li>
-                            <li><b>3.2&times;</b>retention vs free tier</li>
-                        </ul>
-                        <div class="work__foot"><span>IC Designer &middot; Mobile UX</span><span class="work__cta">Read case study</span></div>
+                    </div>
+                    <div class="shot shot--wide"><img src="img/cards/olympus.jpg" alt="Olympus LMS course player with AI Mentor panel" loading="lazy"></div>
+                    <div class="card__body">
+                        <div class="card__foot">
+                            <span class="mono">Learning platform · Web and mobile</span>
+                            <span class="go">Case study
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
                         </div>
                     </div>
                 </a>
+            </div>
+        </section>
 
-                <!-- Olympus LMS -->
-                <a href="olympus.html" class="work-item">
-                    <div class="work__media"><img src="img/cards/olympus.jpg" alt="Olympus LMS video lesson with notes and AI mentor panel" loading="lazy" width="1400" height="1053" /></div>
-                    <div class="work__body">
-                        <div class="work__intro">
-                            <p class="work__meta">Learning platform &middot; Web &amp; mobile</p>
-                        <h3 class="work__title">Olympus LMS <span>A clearer campus for PG learners</span></h3>
-                        <p class="work__hook">
-                            Post-graduate learners, with anywhere from 0 to 25 years of experience, couldn't tell where
-                            they stood in a course. I led the research and the redesign into a structured, personalised
-                            campus across web and mobile.
-                        </p>
-                        </div>
-                        <div class="work__side">
-                            <ul class="work__stats">
-                            <li><b>45k+</b>learners</li>
-                            <li><b>4.78/5</b>post-launch score</li>
-                            <li><b>57.5k</b>videos downloaded</li>
-                        </ul>
-                        <div class="work__foot"><span>Lead Designer &middot; IC + management</span><span class="work__cta">Read case study</span></div>
-                        </div>
-                    </div>
-                </a>
-
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="wrap sec-pad">
+            <div class="about__cols">
+                <div>
+                    <div class="mono kicker">About</div>
+                    <h2 class="sec-title">A product designer who ships the code too.</h2>
+                </div>
+                <div class="about__text">
+                    <p>Most designers hand off specs and move on. I stay until it is in production, then I check the numbers.</p>
+                    <p>Over eight years at <a href="https://www.greatlearning.in/" target="_blank" rel="noopener noreferrer">Great Learning</a> I have designed and built AI-powered SaaS across learning, assessment and internal operations. I own the prompts, evaluation rules and confidence thresholds, then build the React and Next.js front ends with Claude Code and Cursor. That work cut manual effort by 70% and brought validation cycles from two weeks down to three days.</p>
+                    <p>I also built an enterprise design system that cut UI inconsistencies by 60%, and my work has driven over ₹50Cr in annual impact.</p>
+                    <p class="note"><strong>Currently looking for:</strong> a Principal or Staff Product Designer role on an AI-powered SaaS product, where designing the experience and building the front end happen together.</p>
+                </div>
             </div>
         </section>
 
         <!-- ===== EXPERIENCE ===== -->
-        <section id="experience" class="section">
-            <h2 class="section__label">Experience</h2>
-            <div class="card-group">
-
-                <div class="card">
-                    <div class="card__date">Feb 2018 &ndash; Present</div>
+        <section id="experience" class="experience wrap sec-pad">
+            <div class="mono kicker">Experience</div>
+            <h2 class="sec-title">Thirteen years, from HTML to AI products.</h2>
+            <div class="exp">
+                <div class="exp-row">
+                    <div class="mono">Feb 2018 to present</div>
                     <div>
-                        <h3 class="card__title">Principal Designer &middot; Great Learning</h3>
-                        <p class="card__subtitle">Bengaluru, India</p>
-                        <p class="card__description">
-                            Designed and shipped AI-powered SaaS products across learning, assessment, and internal
-                            operations &mdash; owning the experience from discovery to production. Built AI products
-                            including Speed Grader, QC Checker, and a Resume Builder, defining prompts, evaluation
-                            rules, and confidence thresholds that cut manual effort by 70%. Shipped 15+ features by
-                            designing, prototyping, and building production-ready front ends in React, Next.js,
-                            Claude Code, and Cursor &mdash; pulling validation cycles from 2 weeks to 3 days. Built an
-                            enterprise design system (&minus;60% UI inconsistencies, +35% delivery) plus an AI
-                            design-system assistant, and drove &#8377;50Cr+ annual impact, 32% higher Olympus
-                            engagement, and a LeadSquared&ndash;to&ndash;custom CRM migration (+28% task compliance).
-                        </p>
-                        <ul class="tags">
-                            <li class="tag">AI Product Design</li>
-                            <li class="tag">Prompt Engineering</li>
-                            <li class="tag">React / Next.js</li>
-                            <li class="tag">Design Systems</li>
-                            <li class="tag">UX Strategy</li>
-                            <li class="tag">Front-End</li>
-                        </ul>
+                        <h3><button type="button" class="exp-btn" aria-expanded="true" aria-controls="exp-1"><span>Principal Designer <span class="exp-org">at Great Learning</span></span><span class="exp-ico" aria-hidden="true">−</span></button></h3>
+                        <div class="exp-panel" id="exp-1">
+                            <p>Design and ship AI-powered SaaS products across learning, assessment and internal operations, from discovery to production. Built Speed Grader, QC Checker and a Resume Builder, shipped 15+ features with production-ready front ends, built an enterprise design system with an AI assistant, and led a CRM migration from LeadSquared to a custom build with 28% higher task compliance.</p>
+                            <div class="chips"><span class="chip">AI product design</span><span class="chip">Prompt engineering</span><span class="chip">React and Next.js</span><span class="chip">Design systems</span><span class="chip">UX strategy</span></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card__date">Jun 2017 &ndash; Feb 2018</div>
+                <div class="exp-row">
+                    <div class="mono">Jun 2017 to Feb 2018</div>
                     <div>
-                        <h3 class="card__title">Web Developer &middot; Pentaur Technology</h3>
-                        <p class="card__subtitle">Bengaluru, India</p>
-                        <p class="card__description">
-                            Increased engagement by 20% on Marketo and improved UX for Nurture Co., aligning
-                            storytelling-driven design with brand and automation strategy. Built responsive apps with
-                            95% accessibility compliance across Android and iOS, and developed cross-platform email
-                            campaigns for Visa and Northern Trust with 100% compatibility.
-                        </p>
-                        <ul class="tags">
-                            <li class="tag">HTML/CSS</li>
-                            <li class="tag">Email Design</li>
-                            <li class="tag">Marketo</li>
-                            <li class="tag">Responsive Design</li>
-                            <li class="tag">Accessibility</li>
-                        </ul>
+                        <h3><button type="button" class="exp-btn" aria-expanded="false" aria-controls="exp-2"><span>Web Developer <span class="exp-org">at Pentaur Technology</span></span><span class="exp-ico" aria-hidden="true">+</span></button></h3>
+                        <div class="exp-panel" id="exp-2" hidden>
+                            <p>Raised engagement by 20% on Marketo for Nurture Co. Built responsive apps with 95% accessibility compliance across Android and iOS, and cross-platform email campaigns for Visa and Northern Trust with 100% compatibility.</p>
+                            <div class="chips"><span class="chip">HTML and CSS</span><span class="chip">Email design</span><span class="chip">Marketo</span><span class="chip">Accessibility</span></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card__date">Apr 2015 &ndash; Mar 2017</div>
+                <div class="exp-row">
+                    <div class="mono">Apr 2015 to Mar 2017</div>
                     <div>
-                        <h3 class="card__title">Frontend Engineer &middot; Tyre Discounters</h3>
-                        <p class="card__subtitle">Bengaluru, India</p>
-                        <p class="card__description">
-                            Redesigned e-commerce product pages through UX research and user testing, lifting
-                            conversion 18%. Built a checkout-flow A/B testing framework with jQuery and Google
-                            Optimize to drive data-driven design decisions, and implemented a responsive design
-                            system that improved mobile load speed 30% and cut bounce rate 25%.
-                        </p>
-                        <ul class="tags">
-                            <li class="tag">JavaScript</li>
-                            <li class="tag">A/B Testing</li>
-                            <li class="tag">E-commerce</li>
-                            <li class="tag">Responsive Design</li>
-                        </ul>
+                        <h3><button type="button" class="exp-btn" aria-expanded="false" aria-controls="exp-3"><span>Frontend Engineer <span class="exp-org">at Tyre Discounters</span></span><span class="exp-ico" aria-hidden="true">+</span></button></h3>
+                        <div class="exp-panel" id="exp-3" hidden>
+                            <p>Redesigned e-commerce product pages through UX research and user testing, lifting conversion by 18%. Built a checkout A/B testing framework, and a responsive system that improved mobile load speed by 30% and cut bounce rate by 25%.</p>
+                            <div class="chips"><span class="chip">JavaScript</span><span class="chip">A/B testing</span><span class="chip">E-commerce</span><span class="chip">Responsive design</span></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card__date">Oct 2014 &ndash; Mar 2015</div>
+                <div class="exp-row">
+                    <div class="mono">Oct 2014 to Mar 2015</div>
                     <div>
-                        <h3 class="card__title">Co-Founder / Web Designer &middot; Web Foundation Media</h3>
-                        <p class="card__subtitle">Bengaluru, India</p>
-                        <p class="card__description">
-                            Founded and ran a web design studio, delivering 50+ client projects spanning responsive
-                            design, HTML/CSS development, and user experience.
-                        </p>
-                        <ul class="tags">
-                            <li class="tag">Web Design</li>
-                            <li class="tag">HTML/CSS</li>
-                            <li class="tag">UX</li>
-                            <li class="tag">Entrepreneurship</li>
-                        </ul>
+                        <h3><button type="button" class="exp-btn" aria-expanded="false" aria-controls="exp-4"><span>Co-Founder and Web Designer <span class="exp-org">at Web Foundation Media</span></span><span class="exp-ico" aria-hidden="true">+</span></button></h3>
+                        <div class="exp-panel" id="exp-4" hidden>
+                            <p>Founded and ran a web design studio, delivering 50+ client projects across responsive design, HTML and CSS development, and user experience.</p>
+                            <div class="chips"><span class="chip">Web design</span><span class="chip">UX</span><span class="chip">Entrepreneurship</span></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card__date">Aug 2013 &ndash; Sep 2014</div>
+                <div class="exp-row">
+                    <div class="mono">Aug 2013 to Sep 2014</div>
                     <div>
-                        <h3 class="card__title">Web Designer &middot; Dotline Technologies</h3>
-                        <p class="card__subtitle">Bengaluru, India</p>
-                        <p class="card__description">
-                            Translated wireframes into responsive, cross-browser HTML/CSS pages and built
-                            performance-optimized websites that improved load speed by 30% and lifted user
-                            engagement.
-                        </p>
-                        <ul class="tags">
-                            <li class="tag">Web Design</li>
-                            <li class="tag">HTML/CSS</li>
-                            <li class="tag">Responsive Layouts</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <a class="resume-link" href="Sivarami-Reddy-Resume.pdf" target="_blank">
-                View Full R&eacute;sum&eacute;
-                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" /></svg></span>
-            </a>
-        </section>
-
-        <!-- ===== EDUCATION ===== -->
-        <section id="education" class="section">
-            <h2 class="section__label">Education</h2>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card__date">2008 &ndash; 2012</div>
-                    <div>
-                        <h3 class="card__title">BE, Electronics &amp; Communications Engineering</h3>
-                        <p class="card__subtitle">GGR College of Engineering</p>
+                        <h3><button type="button" class="exp-btn" aria-expanded="false" aria-controls="exp-5"><span>Web Designer <span class="exp-org">at Dotline Technologies</span></span><span class="exp-ico" aria-hidden="true">+</span></button></h3>
+                        <div class="exp-panel" id="exp-5" hidden>
+                            <p>Translated wireframes into responsive, cross-browser pages and built performance-optimised websites that improved load speed by 30% and lifted user engagement.</p>
+                            <div class="chips"><span class="chip">Web design</span><span class="chip">HTML and CSS</span><span class="chip">Responsive layouts</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <a href="Sivarami-Reddy-Resume.pdf" target="_blank" rel="noopener" class="btn btn-line">View full résumé
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         </section>
 
-        <!-- ===== CERTIFICATIONS ===== -->
-        <section id="certifications" class="section">
-            <h2 class="section__label">Certifications</h2>
-
-            <div class="cert-highlight">
-                <img class="cert-highlight__logo" src="img/hfi.png" alt="HFI" loading="lazy" />
-                <div class="cert-highlight__body">
-                    <h3>Certified User Experience Analyst (CXA&trade;)</h3>
-                    <p>Human Factors International (HFI) &middot; Jul 2025</p>
+        <!-- ===== CREDENTIALS ===== -->
+        <section id="credentials" class="credentials wrap sec-pad">
+            <div class="mono kicker">Credentials</div>
+            <h2 class="sec-title">Education and certifications.</h2>
+            <div class="certs">
+                <div class="cert cert--dark">
+                    <span class="mono">2008 to 2012</span>
+                    <span class="disp">BE, Electronics and Communications Engineering</span>
+                    <span class="cert__org">GGR College of Engineering</span>
                 </div>
-                <a class="cert-highlight__link"
-                    href="https://www.credly.com/badges/3da25665-79b2-4d14-9296-df2a510d634b/public_url"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
-                    Verify
+                <a href="https://www.credly.com/badges/3da25665-79b2-4d14-9296-df2a510d634b/public_url" target="_blank" rel="noopener noreferrer" class="cert">
+                    <span class="mono">Jul 2025</span>
+                    <span class="disp">Certified User Experience Analyst (CXA)</span>
+                    <span class="cert__org">Human Factors International</span>
+                    <span class="go">Verify</span>
+                </a>
+                <a href="https://courses.edx.org/certificates/863eebb93de44710ab86dae9c24e0619" target="_blank" rel="noopener noreferrer" class="cert">
+                    <span class="mono">Jun 2025</span>
+                    <span class="disp">W3Cx: Introduction to Web Accessibility</span>
+                    <span class="cert__org">W3C via edX</span>
+                    <span class="go">Verify</span>
+                </a>
+                <a href="https://www.interaction-design.org/sivarami-reddy/certificate/course/NwgZFnPH7?r=sivarami-reddy" target="_blank" rel="noopener noreferrer" class="cert">
+                    <span class="mono">Sep 2017</span>
+                    <span class="disp">Human-Computer Interaction (HCI)</span>
+                    <span class="cert__org">Interaction Design Foundation</span>
+                    <span class="go">Verify</span>
                 </a>
             </div>
-
-            <div class="cert-highlight">
-                <img class="cert-highlight__logo" src="img/w3c.png" alt="W3C" loading="lazy" />
-                <div class="cert-highlight__body">
-                    <h3>W3Cx: Introduction to Web Accessibility</h3>
-                    <p>World Wide Web Consortium (W3C) via edX &middot; Jun 2025</p>
-                </div>
-                <a class="cert-highlight__link"
-                    href="https://courses.edx.org/certificates/863eebb93de44710ab86dae9c24e0619"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
-                    Verify
-                </a>
-            </div>
-
-            <div class="cert-highlight">
-                <img class="cert-highlight__logo" src="img/idf.jpeg" alt="IxDF" loading="lazy" />
-                <div class="cert-highlight__body">
-                    <h3>Human&ndash;Computer Interaction (HCI)</h3>
-                    <p>Interaction Design Foundation &middot; Sep 2017</p>
-                </div>
-                <a class="cert-highlight__link"
-                    href="https://www.interaction-design.org/sivarami-reddy/certificate/course/NwgZFnPH7?r=sivarami-reddy"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg>
-                    Verify
-                </a>
-            </div>
-
-            <ul class="cert-compact-list">
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">How to Create Intuitive Products</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/c4aad99d-3f06-41a4-b526-957f8e55bf6c" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">Qualitative Research Methods</span><span class="cert-compact-item__org">&middot; UoA</span></span>
-                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/T48JCK6KRL55" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">Quantitative Methods</span><span class="cert-compact-item__org">&middot; UoA</span></span>
-                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/QTV4BNUU6V8M" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">Social Psychology</span><span class="cert-compact-item__org">&middot; Wesleyan</span></span>
-                    <a class="cert-compact-item__link" href="https://www.coursera.org/account/accomplishments/certificate/F5ST39N3RZBE" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">User Research: Methods &amp; Best Practices</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/sivarami-reddy/certificate/course/Nrm0Dc4s4?r=sivarami-reddy" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">AI for Designers</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/46520d16-3ca8-4407-aaa4-354640344d3d" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">Conducting Usability Testing</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/2b177cf6-1c04-4459-b92a-e855d0d4c6bd" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">Perception &amp; Memory in HCI and UX</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/b977436e-10b2-435d-9835-b7d7eea884d1" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">The Brain and Technology</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/798a9903-0312-42ec-ae02-06854fb9f9ba" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">UI Design Patterns for Successful Software</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/42121cff-0a7d-4514-97e9-cd5c51627c1f" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-                <li class="cert-compact-item">
-                    <span><span class="cert-compact-item__name">UX Management: Strategy and Tactics</span><span class="cert-compact-item__org">&middot; IxDF</span></span>
-                    <a class="cert-compact-item__link" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/PLk5Nz0lQ" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5zm7.25-.75a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l5.47-5.47H12.25a.75.75 0 01-.75-.75z" /></svg> Verify</a>
-                </li>
-            </ul>
-
-        </section>
-
-        <!-- ===== SKILLS & EXPERTISE ===== -->
-        <section id="expertise" class="section">
-            <h2 class="section__label">Skills &amp; Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category__title">Product</h3>
-                    <ul class="skill-list">
-                        <li>Product Strategy &amp; Discovery</li>
-                        <li>Product Ownership</li>
-                        <li>Requirements Gathering</li>
-                        <li>Stakeholder Collaboration</li>
-                        <li>Roadmapping</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category__title">AI</h3>
-                    <ul class="skill-list">
-                        <li>AI Product Design</li>
-                        <li>Prompt Engineering</li>
-                        <li>AI Workflow Design &amp; Agentic UX</li>
-                        <li>AI Prototyping &amp; LLM Evaluation</li>
-                        <li>Claude Code, Cursor, OpenAI</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category__title">Design</h3>
-                    <ul class="skill-list">
-                        <li>Interaction Design &amp; UX Strategy</li>
-                        <li>Information Architecture</li>
-                        <li>User Research &amp; Rapid Prototyping</li>
-                        <li>Accessibility (WCAG)</li>
-                        <li>A/B Testing, Usability Testing, HCI</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category__title">Engineering</h3>
-                    <ul class="skill-list">
-                        <li>React, Next.js, JavaScript</li>
-                        <li>HTML, CSS</li>
-                        <li>Git, REST APIs</li>
-                        <li>Front-End Engineering</li>
-                        <li>AI-assisted &amp; vibe coding</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category__title">Tools</h3>
-                    <ul class="skill-list">
-                        <li>Figma, Figma Make, FigJam, Miro</li>
-                        <li>Claude Code, GitHub Copilot</li>
-                        <li>Adobe Suite, Sketch</li>
-                        <li>AI coding agents</li>
-                    </ul>
-                </div>
+            <button type="button" class="btn btn-line certs-toggle" aria-expanded="false" aria-controls="more-certs">Show 11 more courses</button>
+            <div class="chips more-certs" id="more-certs" hidden>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/c4aad99d-3f06-41a4-b526-957f8e55bf6c" target="_blank" rel="noopener noreferrer">How to Create Intuitive Products</a>
+                <a class="chip" href="https://www.coursera.org/account/accomplishments/certificate/T48JCK6KRL55" target="_blank" rel="noopener noreferrer">Qualitative Research Methods</a>
+                <a class="chip" href="https://www.coursera.org/account/accomplishments/certificate/QTV4BNUU6V8M" target="_blank" rel="noopener noreferrer">Quantitative Methods</a>
+                <a class="chip" href="https://www.coursera.org/account/accomplishments/certificate/F5ST39N3RZBE" target="_blank" rel="noopener noreferrer">Social Psychology</a>
+                <a class="chip" href="https://www.interaction-design.org/sivarami-reddy/certificate/course/Nrm0Dc4s4?r=sivarami-reddy" target="_blank" rel="noopener noreferrer">User Research: Methods and Best Practices</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/46520d16-3ca8-4407-aaa4-354640344d3d" target="_blank" rel="noopener noreferrer">AI for Designers</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/2b177cf6-1c04-4459-b92a-e855d0d4c6bd" target="_blank" rel="noopener noreferrer">Conducting Usability Testing</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/b977436e-10b2-435d-9835-b7d7eea884d1" target="_blank" rel="noopener noreferrer">Perception and Memory in HCI and UX</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/798a9903-0312-42ec-ae02-06854fb9f9ba" target="_blank" rel="noopener noreferrer">The Brain and Technology</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/42121cff-0a7d-4514-97e9-cd5c51627c1f" target="_blank" rel="noopener noreferrer">UI Design Patterns for Successful Software</a>
+                <a class="chip" href="https://www.interaction-design.org/members/sivarami-reddy/certificate/course/PLk5Nz0lQ" target="_blank" rel="noopener noreferrer">UX Management: Strategy and Tactics</a>
             </div>
         </section>
 
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="wrap sec-pad">
+            <div class="mono kicker">Skills and expertise</div>
+            <h2 class="sec-title">Strategy, design, AI and code in one person.</h2>
+            <div class="grid-skill">
+                <div class="skill">
+                    <div class="mono">Product</div>
+                    <ul><li>Product strategy and discovery</li><li>Product ownership</li><li>Requirements gathering</li><li>Stakeholder collaboration</li><li>Roadmapping</li></ul>
+                </div>
+                <div class="skill">
+                    <div class="mono">AI</div>
+                    <ul><li>AI product design</li><li>Prompt engineering</li><li>AI workflow design and agentic UX</li><li>AI prototyping and LLM evaluation</li><li>Claude Code, Cursor, OpenAI</li></ul>
+                </div>
+                <div class="skill">
+                    <div class="mono">Design</div>
+                    <ul><li>Interaction design and UX strategy</li><li>Information architecture</li><li>User research and rapid prototyping</li><li>Accessibility (WCAG)</li><li>A/B testing, usability testing, HCI</li></ul>
+                </div>
+                <div class="skill">
+                    <div class="mono">Engineering</div>
+                    <ul><li>React, Next.js, JavaScript</li><li>HTML, CSS</li><li>Git, REST APIs</li><li>Front-end engineering</li><li>AI-assisted and vibe coding</li></ul>
+                </div>
+                <div class="skill">
+                    <div class="mono">Tools</div>
+                    <ul><li>Figma, Figma Make, FigJam, Miro</li><li>Claude Code, GitHub Copilot</li><li>Adobe Suite, Sketch</li><li>AI coding agents</li></ul>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <p class="footer__text">
-            Designed &amp; built by <a href="/">B. Sivarami Reddy</a> &nbsp;&middot;&nbsp;
-            12.97&deg;&thinsp;N &middot; 77.59&deg;&thinsp;E &nbsp;&middot;&nbsp;
-            <a href="Sivarami-Reddy-Resume.pdf" target="_blank">R&eacute;sum&eacute;</a>
-        </p>
-        <ul class="social" aria-label="Social media">
-            <li>
-                <a class="social__link" href="https://linkedin.com/in/uxsiva" target="_blank"
-                    rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="social__link" href="mailto:ux.siva@gmail.com" aria-label="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="social__link" href="tel:9900014642" aria-label="Phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
+    <!-- ===== CONTACT ===== -->
+    <footer id="contact" class="contact">
+        <div class="wrap">
+            <div class="mono">Contact</div>
+            <h2>Let us build something people actually use.</h2>
+            <div class="contact__ctas">
+                <a href="mailto:ux.siva@gmail.com" class="btn btn-light">Email me</a>
+                <a href="https://linkedin.com/in/uxsiva" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn</a>
+                <a href="Sivarami-Reddy-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download résumé</a>
+            </div>
+            <div class="contact__foot">
+                <span>Designed and built by B. Sivarami Reddy</span>
+                <span>Bengaluru, India · 12.97° N, 77.59° E</span>
+            </div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
